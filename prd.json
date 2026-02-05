@@ -1,0 +1,160 @@
+{
+  "project": "LYNCK YouTube Landing Page",
+  "branchName": "ralph/landing-page-v2-fixes",
+  "description": "Fix 11 conversion and copy issues identified in page audit \u2014 align copy with service, fix currency, strengthen sections, add missing content",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Fix Shift section 'What actually works' copy",
+      "description": "As a visitor, I want the 'What actually works' column to describe paid subscriber acquisition (not content consulting) so the page doesn't overpromise.",
+      "acceptanceCriteria": [
+        "Replace 5 'What actually works' bullet points with copy about strategic paid acquisition, real subscribers, targeted campaigns, compliance, and measurable results",
+        "No references to content strategy, content pillars, or video engineering",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-002",
+      "title": "Fix proof explanation text",
+      "description": "As a visitor, I want the proof explanation to accurately describe how the case study results were achieved.",
+      "acceptanceCriteria": [
+        "Remove references to 'restructuring the channel' and 'engineering subscriber conversion into every video'",
+        "Replace with copy about targeted advertising campaigns and strategic subscriber acquisition",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 2,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-003",
+      "title": "Unify currency to USD across entire page",
+      "description": "As a visitor, I want consistent currency so I don't get confused by mixed $ and \u20ac symbols.",
+      "acceptanceCriteria": [
+        "Convert proof metric \u20ac0.39 to $0.40 (or equivalent USD)",
+        "Convert FAQ reference from \u20ac0.39 to $0.40",
+        "All monetary values use $ symbol",
+        "No \u20ac symbols remain on the page",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 3,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-004",
+      "title": "Fix 'not for you' contradiction about speed",
+      "description": "As a visitor, I don't want to see contradictory messaging about speed expectations.",
+      "acceptanceCriteria": [
+        "Replace 'You need instant results from a single campaign' with wording about guaranteed specific numbers regardless of niche",
+        "No contradiction with hero promise of fast results",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 4,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-005",
+      "title": "Remove case study placeholders",
+      "description": "As a visitor, I should not see empty 'coming soon' placeholders that signal the business is new.",
+      "acceptanceCriteria": [
+        "Remove both case-study-placeholder HTML blocks",
+        "Remove case-studies-grid container div",
+        "Page renders cleanly without gaps after proof section",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 5,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-006",
+      "title": "Differentiate Problem (01) and Shift (02) sections",
+      "description": "As a visitor, I want sections 01 and 02 to feel distinct rather than repetitive.",
+      "acceptanceCriteria": [
+        "Problem section (01) focuses on WHY channels fail (emotional/relatable)",
+        "Shift section (02) 'What doesn't work' focuses on specific TACTICS people try",
+        "Shift section (02) 'What actually works' aligns with LYNCK's actual service",
+        "No duplicate messaging between sections",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 6,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-007",
+      "title": "Add 'ad spend' FAQ question",
+      "description": "As a prospect, I want to understand total cost (service fee + ad spend) before purchasing.",
+      "acceptanceCriteria": [
+        "Add FAQ item: 'Is the ad spend included in the price?'",
+        "Answer explains: service fee covers strategy + management, ad spend is separate, typical range provided",
+        "Placed logically in FAQ order (after pricing-related questions)",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 7,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-008",
+      "title": "Add post-purchase timeline/expectations",
+      "description": "As a buyer, I want to know what happens after I pay so I feel confident purchasing.",
+      "acceptanceCriteria": [
+        "Add FAQ item: 'What happens after I purchase?'",
+        "Answer includes timeline: onboarding, campaign setup, first subscribers, reporting cadence",
+        "Clear, specific time expectations (days, not vague)",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 8,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-009",
+      "title": "Reduce nav badge size",
+      "description": "As a visitor on a laptop, I don't want the nav bar taking up excessive vertical space.",
+      "acceptanceCriteria": [
+        "Nav Google Partner badge reduced from 66px to 48px height",
+        "Nav bar total height is reasonable (~60px)",
+        "Badge still clearly visible and clickable",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 9,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-010",
+      "title": "Fix comparison table width constraint",
+      "description": "As a visitor, I want the comparison table to have enough room for its 3 columns.",
+      "acceptanceCriteria": [
+        "Comparison table breaks out of .narrow container constraint",
+        "Table uses full .container width (1200px) not .narrow (720px)",
+        "Table content is not cramped on medium screens",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 10,
+      "passes": true,
+      "notes": "Implemented"
+    },
+    {
+      "id": "US-011",
+      "title": "Add meta description and OG tags",
+      "description": "As a marketer, I need proper meta tags for SEO and social sharing.",
+      "acceptanceCriteria": [
+        "Add meta description tag (~155 chars, includes key value prop)",
+        "Add og:title, og:description, og:type, og:url tags",
+        "Add twitter:card, twitter:title, twitter:description tags",
+        "HTML validates without errors"
+      ],
+      "priority": 11,
+      "passes": true,
+      "notes": "Implemented"
+    }
+  ]
+}
