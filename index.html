@@ -197,11 +197,10 @@
 
         .hero .container {
             display: grid;
-            grid-template-columns: 1fr 1.05fr;
-            gap: var(--space-md);
-            align-items: center;
+            grid-template-columns: 1fr 1.2fr;
+            gap: var(--space-lg);
+            align-items: start;
             max-width: 1340px;
-            overflow: visible;
         }
 
         @media (max-width: 1024px) {
@@ -357,112 +356,190 @@
             color: var(--border);
         }
 
-        /* Hero Audience Badges */
-        .hero-audience-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
+        /* Hero Audience Cards */
+        .hero-audience-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
             margin-top: var(--space-md);
             opacity: 0;
             animation: fadeUp 0.8s ease 0.35s forwards;
         }
 
-        .audience-badge {
-            display: inline-flex;
+        @media (max-width: 640px) {
+            .hero-audience-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .audience-card {
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .audience-card:hover {
+            border-color: var(--success);
+            box-shadow: 0 4px 20px rgba(26, 95, 74, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .audience-card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .audience-card-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .audience-card-icon.creators {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(196, 30, 58, 0.05));
+            color: var(--accent);
+        }
+
+        .audience-card-icon.businesses {
+            background: linear-gradient(135deg, rgba(66, 133, 244, 0.1), rgba(66, 133, 244, 0.05));
+            color: var(--google-blue);
+        }
+
+        .audience-card-icon.brands {
+            background: linear-gradient(135deg, rgba(26, 95, 74, 0.1), rgba(26, 95, 74, 0.05));
+            color: var(--success);
+        }
+
+        .audience-card h4 {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 0.35rem;
+        }
+
+        .audience-card p {
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        /* Hero Proof Charts */
+        .hero-charts {
+            position: relative;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.4s forwards;
+        }
+
+        .hero-charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow:
+                0 32px 80px rgba(0,0,0,0.08),
+                0 16px 40px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            .hero-charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .hero-chart-card {
+            position: relative;
+        }
+
+        .hero-chart-label {
+            display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-chart-label-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-chart-label-icon svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .hero-chart-label-icon.long-term {
+            background: linear-gradient(135deg, rgba(26, 95, 74, 0.15), rgba(26, 95, 74, 0.05));
+            color: var(--success);
+        }
+
+        .hero-chart-label-icon.short-term {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.15), rgba(196, 30, 58, 0.05));
+            color: var(--accent);
+        }
+
+        .hero-chart-label h4 {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
             color: var(--ink);
-            background: linear-gradient(135deg, rgba(26, 95, 74, 0.08), rgba(26, 95, 74, 0.03));
-            padding: 0.5rem 1rem;
-            border: 1px solid rgba(26, 95, 74, 0.15);
+            margin: 0;
+        }
+
+        .hero-chart-label span {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--muted);
+            background: var(--paper-warm);
+            padding: 0.2rem 0.5rem;
             border-radius: 4px;
         }
 
-        .audience-badge svg {
-            width: 16px;
-            height: 16px;
-            color: var(--success);
-            flex-shrink: 0;
-        }
-
-        .audience-badge strong {
-            font-weight: 600;
-            color: var(--success);
-        }
-
-        /* Hero Trust Points */
-        .hero-objections {
-            display: flex;
-            flex-direction: column;
-            gap: 0.6rem;
-            margin-top: var(--space-sm);
-            opacity: 0;
-            animation: fadeUp 0.8s ease 0.4s forwards;
-        }
-
-        .hero-objection {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            font-size: 0.9rem;
-            color: var(--muted);
-        }
-
-        .hero-objection svg {
-            width: 18px;
-            height: 18px;
-            color: var(--success);
-            flex-shrink: 0;
-        }
-
-        /* Hero Proof Graph */
-        .hero-video {
-            position: relative;
-            opacity: 0;
-            animation: fadeUp 0.8s ease 0.4s forwards;
-            margin-top: 0;
-        }
-
-        .hero-graph-wrapper {
-            position: relative;
-            width: 142%;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            box-shadow:
-                0 32px 80px rgba(0,0,0,0.12),
-                0 16px 40px rgba(0,0,0,0.08);
-            background: var(--paper);
-        }
-
-        .hero-graph-wrapper img {
+        .hero-chart-img {
             width: 100%;
             height: auto;
             display: block;
+            border-radius: 6px;
+            border: 1px solid var(--border);
         }
 
-        .hero-video-label {
-            margin-top: var(--space-sm);
-            font-size: 0.8rem;
-            color: var(--muted);
+        .hero-charts-footer {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
             display: flex;
             align-items: center;
-            gap: 6px;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--muted);
         }
 
-        .hero-video-label svg {
+        .hero-charts-footer svg {
+            width: 14px;
+            height: 14px;
             color: var(--success);
         }
 
         @media (max-width: 1024px) {
-            .hero-video {
+            .hero-charts {
                 max-width: 100%;
                 margin: var(--space-lg) auto 0;
-            }
-
-            .hero-graph-wrapper {
-                width: 100%;
             }
         }
 
@@ -1796,50 +1873,78 @@
                     One-time service <span>·</span> We implement it for you <span>·</span> No ongoing contracts
                 </p>
 
-                <!-- Audience Qualifier Badges -->
-                <div class="hero-audience-badges">
-                    <div class="audience-badge">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                        <span><strong>Creators:</strong> Hit monetization faster</span>
+                <!-- Audience Cards -->
+                <div class="hero-audience-cards">
+                    <div class="audience-card">
+                        <div class="audience-card-icon creators">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
+                            </svg>
+                        </div>
+                        <h4>Creators</h4>
+                        <p>Reach 1K subs faster. Unlock monetization and start earning from your content.</p>
                     </div>
-                    <div class="audience-badge">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                        <span><strong>Businesses:</strong> Build an evergreen lead engine</span>
+                    <div class="audience-card">
+                        <div class="audience-card-icon businesses">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <h4>Businesses</h4>
+                        <p>Build an evergreen lead engine. Content you post today generates leads for years.</p>
                     </div>
-                    <div class="audience-badge">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                        <span><strong>Personal Brands:</strong> Establish authority in your space</span>
-                    </div>
-                </div>
-
-                <!-- Trust Points -->
-                <div class="hero-objections">
-                    <div class="hero-objection">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                        <span>Real subscribers via Google Ads — no bots, no fakes</span>
-                    </div>
-                    <div class="hero-objection">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                        <span>100% done-for-you — we implement, you watch it grow</span>
-                    </div>
-                    <div class="hero-objection">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-                        <span>YouTube is an asset that compounds — unlike ads that stop when you stop paying</span>
+                    <div class="audience-card">
+                        <div class="audience-card-icon brands">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h4>Personal Brands</h4>
+                        <p>Establish authority in your niche. Attract speaking gigs, clients, and opportunities.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Hero Proof Graph -->
-            <div class="hero-video">
-                <div class="hero-graph-wrapper">
-                    <img src="graph-365-days.png" alt="YouTube subscriber growth — flat for a year, then hockey stick growth after LYNCK system applied">
+            <!-- Hero Proof Charts -->
+            <div class="hero-charts">
+                <div class="hero-charts-grid">
+                    <!-- 365 Days Chart -->
+                    <div class="hero-chart-card">
+                        <div class="hero-chart-label">
+                            <div class="hero-chart-label-icon long-term">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v18h18"/><path d="M3 17l5-5 4 4 9-11"/>
+                                </svg>
+                            </div>
+                            <h4>The Full Picture</h4>
+                            <span>365 days</span>
+                        </div>
+                        <img src="graph-365-days.png" alt="YouTube subscriber growth over 365 days" class="hero-chart-img">
+                    </div>
+                    <!-- 28 Days Chart -->
+                    <div class="hero-chart-card">
+                        <div class="hero-chart-label">
+                            <div class="hero-chart-label-icon short-term">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                                    <polyline points="17 6 23 6 23 12"/>
+                                </svg>
+                            </div>
+                            <h4>The Growth Spike</h4>
+                            <span>28 days</span>
+                        </div>
+                        <img src="graph-28-days.png" alt="YouTube subscriber growth spike over 28 days" class="hero-chart-img">
+                    </div>
                 </div>
-                <p class="hero-video-label">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                        <path d="M3 3v18h18"/><path d="M3 17l5-5 4 4 9-11"/>
+                <div class="hero-charts-footer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 6L9 17l-5-5"/>
                     </svg>
-                    Real YouTube Studio data · 365 days · Channel name removed
-                </p>
+                    Real YouTube Studio data · Channel name removed for privacy
+                </div>
             </div>
         </div>
     </section>
