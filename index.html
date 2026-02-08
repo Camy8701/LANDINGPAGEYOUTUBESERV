@@ -197,10 +197,10 @@
 
         .hero .container {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: var(--space-lg);
-            align-items: start;
-            max-width: 1340px;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+            max-width: 1400px;
         }
 
         @media (max-width: 1024px) {
@@ -438,22 +438,15 @@
         }
 
         .hero-charts-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            background: var(--paper);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            background: var(--ink);
+            border-radius: 16px;
+            padding: 1.75rem;
             box-shadow:
-                0 32px 80px rgba(0,0,0,0.08),
-                0 16px 40px rgba(0,0,0,0.05);
-        }
-
-        @media (max-width: 768px) {
-            .hero-charts-grid {
-                grid-template-columns: 1fr;
-            }
+                0 32px 80px rgba(0,0,0,0.2),
+                0 16px 40px rgba(0,0,0,0.15);
         }
 
         .hero-chart-card {
@@ -463,77 +456,75 @@
         .hero-chart-label {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.75rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid var(--border);
+            gap: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         .hero-chart-label-icon {
-            width: 28px;
-            height: 28px;
-            border-radius: 6px;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .hero-chart-label-icon svg {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
         }
 
         .hero-chart-label-icon.long-term {
-            background: linear-gradient(135deg, rgba(26, 95, 74, 0.15), rgba(26, 95, 74, 0.05));
-            color: var(--success);
+            background: rgba(26, 95, 74, 0.25);
+            color: #4ade80;
         }
 
         .hero-chart-label-icon.short-term {
-            background: linear-gradient(135deg, rgba(196, 30, 58, 0.15), rgba(196, 30, 58, 0.05));
-            color: var(--accent);
+            background: rgba(196, 30, 58, 0.25);
+            color: #f87171;
         }
 
         .hero-chart-label h4 {
             font-family: var(--font-body);
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 600;
-            color: var(--ink);
+            color: var(--paper);
             margin: 0;
         }
 
         .hero-chart-label span {
             font-family: var(--font-mono);
-            font-size: 0.7rem;
-            color: var(--muted);
-            background: var(--paper-warm);
-            padding: 0.2rem 0.5rem;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.1);
+            padding: 0.25rem 0.6rem;
             border-radius: 4px;
+            margin-left: auto;
         }
 
         .hero-chart-img {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 6px;
-            border: 1px solid var(--border);
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .hero-charts-footer {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
             font-size: 0.8rem;
-            color: var(--muted);
+            color: rgba(255,255,255,0.5);
         }
 
         .hero-charts-footer svg {
             width: 14px;
             height: 14px;
-            color: var(--success);
+            color: #4ade80;
         }
 
         @media (max-width: 1024px) {
