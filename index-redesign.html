@@ -739,7 +739,7 @@
         </div>
     </section>
 
-    <!-- The Reality + Solution Section (Combined) -->
+    <!-- The Reality + Comparison Section (Combined) -->
     <section class="py-20 bg-brand-red-soft border-b-2 border-black">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
@@ -748,7 +748,8 @@
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">Subscriber growth doesn't happen by accident. You need a system that actually works.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <!-- 3 Problem/Fix Cards -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
                 <!-- Problem 1 -->
                 <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard card-glow">
                     <div class="flex items-center gap-3 mb-4">
@@ -807,21 +808,148 @@
                 </div>
             </div>
 
-            <!-- Summary Banner -->
-            <div class="bg-green-50 rounded-2xl border-2 border-black p-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 bg-green-600 rounded-xl border-2 border-black flex items-center justify-center flex-shrink-0">
-                        <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
+            <!-- Comparison Table -->
+            <div class="text-center mb-10">
+                <h3 class="text-2xl md:text-3xl font-display mb-2">Cheap Subscribers vs. Real Growth</h3>
+                <p class="text-gray-600">Not all subscribers are created equal. Here's what you're actually buying.</p>
+            </div>
+
+            <!-- Desktop Table - Clean 3-Column -->
+            <div class="comparison-table">
+                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
+                    <!-- Header Row -->
+                    <div class="grid grid-cols-3">
+                        <div class="bg-ink text-white p-6">
+                            <p class="font-bold text-lg">Factor</p>
+                        </div>
+                        <div class="bg-brand-red text-white p-6 text-center">
+                            <p class="font-bold text-lg">Cheap Services</p>
+                            <p class="text-sm opacity-80">($120 for 500 subs)</p>
+                        </div>
+                        <div class="bg-green-700 text-white p-6 text-center">
+                            <p class="font-bold text-lg">LYNCK System</p>
+                            <p class="text-sm opacity-80">(Real Google Ads growth)</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-lg">The LYNCK Difference</h4>
-                        <p class="text-gray-600 text-sm">100% YouTube-compliant · Real targeted subscribers · Transparent cost-per-sub</p>
+                    <!-- Data Rows -->
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Subscriber Type</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Bots & fake accounts</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real people via Google Ads</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Watch Time</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>0 hours (bots don't watch)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real potential viewers</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Engagement</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Zero (dead audience)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Likes, comments, shares</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">YouTube ToS</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Violation (ban risk)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Fully compliant</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Monetization Path</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Still blocked (no watch hours)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real path to monetization</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Longevity</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Purged in next YouTube sweep</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Permanent real followers</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Business Value</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Zero (no real audience)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Actual audience asset</div>
                     </div>
                 </div>
-                <a href="#pricing" class="flex items-center gap-2 bg-green-600 text-white border-2 border-black rounded-full px-6 py-3 font-bold shadow-hard-sm hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all whitespace-nowrap">
-                    See How It Works
-                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
+            </div>
+
+            <!-- Mobile Cards -->
+            <div class="comparison-cards space-y-4">
+                <!-- Cheap Services Card -->
+                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
+                    <div class="bg-brand-red text-white p-4 font-bold text-center">
+                        Cheap Services<br><span class="font-normal text-xs opacity-80">($120 for 500 subs)</span>
+                    </div>
+                    <div class="p-4 space-y-3 text-sm">
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Subscriber Type:</strong> Bots & fake accounts</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Watch Time:</strong> 0 hours (bots don't watch)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Engagement:</strong> Zero (dead audience)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>YouTube ToS:</strong> Violation (ban risk)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Monetization:</strong> Still blocked (no watch hours)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Longevity:</strong> Purged in YouTube sweeps</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Business Value:</strong> Zero (no real audience)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LYNCK System Card -->
+                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
+                    <div class="bg-green-700 text-white p-4 font-bold text-center">
+                        LYNCK System<br><span class="font-normal text-xs opacity-80">(Real Google Ads growth)</span>
+                    </div>
+                    <div class="p-4 space-y-3 text-sm">
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Subscriber Type:</strong> Real people via Google Ads</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Watch Time:</strong> Real potential viewers</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Engagement:</strong> Likes, comments, shares</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>YouTube ToS:</strong> Fully compliant</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Monetization:</strong> Real path to monetization</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Longevity:</strong> Permanent real followers</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Business Value:</strong> Actual audience asset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Line -->
+            <div class="mt-8 bg-white rounded-2xl border-2 border-black p-6 text-center">
+                <p class="text-lg text-gray-700"><strong class="text-ink">Bottom line:</strong> Cheap subscribers cost you money AND your channel's future. Real subscribers build an actual audience.</p>
             </div>
         </div>
     </section>
@@ -1158,154 +1286,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comparison Table - Clean 3-Column Design -->
-    <section class="py-20 bg-brand-red-soft border-b-2 border-black">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="text-center mb-10">
-                <h3 class="text-2xl md:text-3xl font-display mb-2">Cheap Subscribers vs. Real Growth</h3>
-                <p class="text-gray-600">Not all subscribers are created equal. Here's what you're actually buying.</p>
-            </div>
-
-            <!-- Desktop Table - Clean 3-Column -->
-            <div class="comparison-table">
-                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
-                    <!-- Header Row -->
-                    <div class="grid grid-cols-3">
-                        <div class="bg-ink text-white p-6">
-                            <p class="font-bold text-lg">Factor</p>
-                        </div>
-                        <div class="bg-brand-red text-white p-6 text-center">
-                            <p class="font-bold text-lg">Cheap Services</p>
-                            <p class="text-sm opacity-80">($120 for 500 subs)</p>
-                        </div>
-                        <div class="bg-green-700 text-white p-6 text-center">
-                            <p class="font-bold text-lg">LYNCK System</p>
-                            <p class="text-sm opacity-80">(Real Google Ads growth)</p>
-                        </div>
-                    </div>
-                    <!-- Data Rows -->
-                    <div class="grid grid-cols-3 border-t border-gray-200">
-                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Subscriber Type</div>
-                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Bots & fake accounts</div>
-                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real people via Google Ads</div>
-                    </div>
-                    <div class="grid grid-cols-3 border-t border-gray-200">
-                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Watch Time</div>
-                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>0 hours (bots don't watch)</div>
-                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real potential viewers</div>
-                    </div>
-                    <div class="grid grid-cols-3 border-t border-gray-200">
-                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Engagement</div>
-                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Zero (dead audience)</div>
-                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Likes, comments, shares</div>
-                    </div>
-                    <div class="grid grid-cols-3 border-t border-gray-200">
-                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">YouTube ToS</div>
-                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Violation (ban risk)</div>
-                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Fully compliant</div>
-                    </div>
-                    <div class="grid grid-cols-3 border-t border-gray-200">
-                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Monetization Path</div>
-                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Still blocked (no watch hours)</div>
-                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real path to monetization</div>
-                    </div>
-                    <div class="grid grid-cols-3 border-t border-gray-200">
-                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Longevity</div>
-                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Purged in next YouTube sweep</div>
-                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Permanent real followers</div>
-                    </div>
-                    <div class="grid grid-cols-3 border-t border-gray-200">
-                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Business Value</div>
-                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Zero (no real audience)</div>
-                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Actual audience asset</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mobile Cards -->
-            <div class="comparison-cards space-y-4">
-                <!-- Cheap Services Card -->
-                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
-                    <div class="bg-brand-red text-white p-4 font-bold text-center">
-                        Cheap Services<br><span class="font-normal text-xs opacity-80">($120 for 500 subs)</span>
-                    </div>
-                    <div class="p-4 space-y-3 text-sm">
-                        <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Subscriber Type:</strong> Bots & fake accounts</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Watch Time:</strong> 0 hours (bots don't watch)</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Engagement:</strong> Zero (dead audience)</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>YouTube ToS:</strong> Violation (ban risk)</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Monetization:</strong> Still blocked (no watch hours)</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Longevity:</strong> Purged in YouTube sweeps</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Business Value:</strong> Zero (no real audience)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- LYNCK System Card -->
-                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
-                    <div class="bg-green-700 text-white p-4 font-bold text-center">
-                        LYNCK System<br><span class="font-normal text-xs opacity-80">(Real Google Ads growth)</span>
-                    </div>
-                    <div class="p-4 space-y-3 text-sm">
-                        <div class="flex items-center gap-2 text-green-700">
-                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Subscriber Type:</strong> Real people via Google Ads</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-green-700">
-                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Watch Time:</strong> Real potential viewers</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-green-700">
-                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Engagement:</strong> Likes, comments, shares</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-green-700">
-                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>YouTube ToS:</strong> Fully compliant</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-green-700">
-                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Monetization:</strong> Real path to monetization</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-green-700">
-                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Longevity:</strong> Permanent real followers</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-green-700">
-                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
-                            <span><strong>Business Value:</strong> Actual audience asset</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom Line -->
-            <div class="mt-8 bg-brand-red-soft rounded-2xl border-2 border-black p-6 text-center">
-                <p class="text-lg text-gray-700"><strong class="text-ink">Bottom line:</strong> Cheap subscribers cost you money AND your channel's future. Real subscribers build an actual audience.</p>
             </div>
         </div>
     </section>
