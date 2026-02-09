@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete your LYNCK order - YouTube subscriber growth service checkout.">
+    <title>Checkout — LYNCK</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='%23faf9f7' font-family='monospace' font-weight='bold' font-size='18'>L</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Titan+One&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#c41e3a',
+                        'brand-red-light': '#e63950',
+                        'brand-red-soft': '#fef2f2',
+                        'brand-pink': '#ffe4e6',
+                        'ink': '#0a0a0a',
+                        'paper': '#faf9f7',
+                    },
+                    fontFamily: {
+                        'display': ['Titan One', 'cursive'],
+                        'body': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .font-display { font-family: 'Titan One', cursive; }
+        .shadow-hard { box-shadow: 4px 4px 0px 0px #000000; }
+        .shadow-hard-sm { box-shadow: 2px 2px 0px 0px #000000; }
+        ::selection { background: #c41e3a; color: white; }
+        html { scroll-behavior: smooth; }
+
+        /* Plan card selection */
+        .plan-card {
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .plan-card:hover {
+            transform: translateY(-2px);
+        }
+        .plan-card.selected {
+            border-color: #c41e3a;
+            box-shadow: 4px 4px 0px 0px #c41e3a;
+        }
+        .plan-card.selected .plan-radio {
+            background: #c41e3a;
+            border-color: #c41e3a;
+        }
+        .plan-card.selected .plan-radio::after {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .plan-radio {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="bg-brand-red-soft text-ink antialiased min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-brand-red-soft border-b-2 border-black px-4 md:px-6 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="index-redesign.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-ink rounded-lg flex items-center justify-center group-hover:rotate-6 transition-transform">
+                        <span class="text-white font-bold text-xl">L</span>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight">LYNCK</span>
+                </a>
+                <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="hidden sm:block">
+                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12">
+                </a>
+            </div>
+            <a href="index-redesign.html" class="flex items-center gap-2 text-gray-600 hover:text-ink transition-colors font-semibold text-sm">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main class="py-8 md:py-12">
+        <div class="max-w-5xl mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">SECURE CHECKOUT</span>
+                <h1 class="text-3xl md:text-4xl font-display mb-2">Complete Your Order</h1>
+                <p class="text-gray-600">Choose your plan and enter your details below</p>
+            </div>
+
+            <div class="grid lg:grid-cols-5 gap-8">
+                <!-- Left Column - Form -->
+                <div class="lg:col-span-3 space-y-6">
+
+                    <!-- Step 1: Choose Plan -->
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
+                            <h2 class="font-bold text-xl">Choose Your Plan</h2>
+                        </div>
+
+                        <div class="space-y-4">
+                            <!-- Starter Plan -->
+                            <div class="plan-card bg-brand-red-soft rounded-xl border-2 border-black p-4" data-plan="starter" data-price="999" data-subs="1000">
+                                <div class="flex items-start gap-4">
+                                    <div class="plan-radio mt-1"></div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-1">
+                                            <h3 class="font-bold">Monetization Milestone</h3>
+                                            <span class="font-display text-xl">$999</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 mb-2">Unlock the YouTube Partner Program — hit the 1,000 subscriber requirement.</p>
+                                        <div class="flex items-center gap-4 text-xs text-gray-500">
+                                            <span>1,000 subscribers</span>
+                                            <span>~$1.00/sub</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Growth Plan -->
+                            <div class="plan-card selected bg-brand-red-soft rounded-xl border-2 border-black p-4" data-plan="growth" data-price="2999" data-subs="5000">
+                                <div class="flex items-start gap-4">
+                                    <div class="plan-radio mt-1"></div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-1">
+                                            <div class="flex items-center gap-2">
+                                                <h3 class="font-bold">Authority Builder</h3>
+                                                <span class="bg-ink text-white text-xs px-2 py-0.5 rounded-full">BEST VALUE</span>
+                                            </div>
+                                            <span class="font-display text-xl">$2,999</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 mb-2">Build real authority — algorithm momentum, sponsor interest, and serious social proof.</p>
+                                        <div class="flex items-center gap-4 text-xs text-gray-500">
+                                            <span>5,000 subscribers</span>
+                                            <span>~$0.60/sub</span>
+                                            <span class="text-green-600 font-semibold">Save 40%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Scale Plan -->
+                            <div class="plan-card bg-brand-red-soft rounded-xl border-2 border-black p-4" data-plan="scale" data-price="4999" data-subs="10000">
+                                <div class="flex items-start gap-4">
+                                    <div class="plan-radio mt-1"></div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-1">
+                                            <h3 class="font-bold">Niche Dominator</h3>
+                                            <span class="font-display text-xl">$4,999</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 mb-2">Dominate your niche — 10,000 subscribers puts you in the top tier of channels.</p>
+                                        <div class="flex items-center gap-4 text-xs text-gray-500">
+                                            <span>10,000 subscribers</span>
+                                            <span>~$0.50/sub</span>
+                                            <span class="text-green-600 font-semibold">Save 50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Your Details -->
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
+                            <h2 class="font-bold text-xl">Your Details</h2>
+                        </div>
+
+                        <form id="checkout-form" class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold mb-2">First Name *</label>
+                                    <input type="text" name="firstName" required class="w-full bg-brand-red-soft border-2 border-black rounded-xl px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-brand-red">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold mb-2">Last Name *</label>
+                                    <input type="text" name="lastName" required class="w-full bg-brand-red-soft border-2 border-black rounded-xl px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-brand-red">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email Address *</label>
+                                <input type="email" name="email" required class="w-full bg-brand-red-soft border-2 border-black rounded-xl px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-brand-red">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">YouTube Channel URL *</label>
+                                <input type="url" name="channelUrl" required placeholder="https://youtube.com/@yourchannel" class="w-full bg-brand-red-soft border-2 border-black rounded-xl px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-brand-red placeholder-gray-400">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Your Niche/Industry *</label>
+                                <select name="niche" required class="w-full bg-brand-red-soft border-2 border-black rounded-xl px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-brand-red">
+                                    <option value="">Select your niche</option>
+                                    <option value="tech">Tech / Software</option>
+                                    <option value="finance">Finance / Business</option>
+                                    <option value="education">Education / How-to</option>
+                                    <option value="health">Health / Fitness</option>
+                                    <option value="lifestyle">Lifestyle / Vlog</option>
+                                    <option value="gaming">Gaming / Entertainment</option>
+                                    <option value="beauty">Beauty / Fashion</option>
+                                    <option value="food">Food / Cooking</option>
+                                    <option value="travel">Travel</option>
+                                    <option value="music">Music</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Additional Notes <span class="text-gray-400 font-normal">(optional)</span></label>
+                                <textarea name="notes" rows="3" placeholder="Any specific targeting preferences or goals for your campaign..." class="w-full bg-brand-red-soft border-2 border-black rounded-xl px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-brand-red placeholder-gray-400 resize-none"></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Step 3: Payment -->
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
+                            <h2 class="font-bold text-xl">Payment</h2>
+                        </div>
+
+                        <!-- Stripe Element Placeholder -->
+                        <div id="stripe-placeholder" class="bg-brand-red-soft border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+                            <i data-lucide="credit-card" class="w-12 h-12 text-gray-400 mx-auto mb-4"></i>
+                            <p class="text-gray-500 font-medium mb-2">Stripe Payment Form</p>
+                            <p class="text-gray-400 text-sm">Secure payment integration will be added here</p>
+                        </div>
+
+                        <!-- Payment Security -->
+                        <div class="flex items-center justify-center gap-4 mt-4 text-xs text-gray-500">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="lock" class="w-3 h-3"></i>
+                                <span>SSL Encrypted</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="shield-check" class="w-3 h-3"></i>
+                                <span>Secure Checkout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Order Summary -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard sticky top-24">
+                        <h2 class="font-bold text-xl mb-6">Order Summary</h2>
+
+                        <!-- Selected Plan -->
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-4 mb-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <p class="font-bold" id="summary-plan-name">Authority Builder</p>
+                                    <p class="text-sm text-gray-600" id="summary-plan-subs">5,000 subscribers</p>
+                                </div>
+                                <p class="font-display text-xl" id="summary-plan-price">$2,999</p>
+                            </div>
+                        </div>
+
+                        <!-- What's Included -->
+                        <div class="mb-6">
+                            <p class="text-sm font-semibold mb-3">What's included:</p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                    <span>Custom targeting campaign</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                    <span>All ad spend included</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                    <span>Daily optimization</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                    <span>Performance reporting</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                    <span>Google Partner-level management</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="border-t-2 border-black/10 pt-4 mb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-600">Subtotal</span>
+                                <span class="font-semibold" id="summary-subtotal">$2,999</span>
+                            </div>
+                            <div class="flex justify-between items-center text-lg font-bold">
+                                <span>Total</span>
+                                <span class="font-display text-brand-red" id="summary-total">$2,999</span>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" form="checkout-form" class="w-full flex items-center justify-center gap-3 bg-brand-red text-white border-2 border-black rounded-xl px-6 py-4 font-bold shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all mb-4">
+                            Complete Purchase
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </button>
+
+                        <!-- Guarantee -->
+                        <div class="bg-green-50 rounded-xl border border-green-200 p-4 text-center">
+                            <div class="flex items-center justify-center gap-2 mb-1">
+                                <i data-lucide="shield-check" class="w-4 h-4 text-green-600"></i>
+                                <span class="font-semibold text-sm text-green-700">Delivery Guarantee</span>
+                            </div>
+                            <p class="text-xs text-gray-600">We guarantee delivery of your subscriber count or your money back.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-white py-8 mt-12 border-t-2 border-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold">L</span>
+                    </div>
+                    <span class="font-bold">LYNCK</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
+                    <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="refund.html" class="hover:text-white transition-colors">Refund Policy</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <p class="text-center text-xs text-gray-500 mt-4">&copy; 2026 LYNCK. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Plan selection logic
+        const planCards = document.querySelectorAll('.plan-card');
+        const summaryPlanName = document.getElementById('summary-plan-name');
+        const summaryPlanSubs = document.getElementById('summary-plan-subs');
+        const summaryPlanPrice = document.getElementById('summary-plan-price');
+        const summarySubtotal = document.getElementById('summary-subtotal');
+        const summaryTotal = document.getElementById('summary-total');
+
+        const planNames = {
+            'starter': 'Monetization Milestone',
+            'growth': 'Authority Builder',
+            'scale': 'Niche Dominator'
+        };
+
+        planCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Remove selected from all
+                planCards.forEach(c => c.classList.remove('selected'));
+                // Add selected to clicked
+                card.classList.add('selected');
+
+                // Update summary
+                const plan = card.dataset.plan;
+                const price = card.dataset.price;
+                const subs = card.dataset.subs;
+
+                summaryPlanName.textContent = planNames[plan];
+                summaryPlanSubs.textContent = parseInt(subs).toLocaleString() + ' subscribers';
+                summaryPlanPrice.textContent = '$' + parseInt(price).toLocaleString();
+                summarySubtotal.textContent = '$' + parseInt(price).toLocaleString();
+                summaryTotal.textContent = '$' + parseInt(price).toLocaleString();
+            });
+        });
+
+        // Form submission placeholder
+        document.getElementById('checkout-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Payment integration coming soon! Please contact us at info@lynckstudio.pro to complete your order.');
+        });
+    </script>
+</body>
+</html>

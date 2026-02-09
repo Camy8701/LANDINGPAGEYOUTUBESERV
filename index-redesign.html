@@ -8,7 +8,9 @@
     <meta property="og:description" content="Turn your YouTube channel into a revenue engine. Unlock monetization, generate organic leads, and build real authority — done-for-you by a Google Partner.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.lynckstudio.pro/">
+    <meta property="og:image" content="https://www.lynckstudio.pro/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.lynckstudio.pro/og-image.png">
     <meta name="twitter:title" content="LYNCK — YouTube Revenue System | Monetization, Leads, Authority">
     <meta name="twitter:description" content="Turn your YouTube channel into a revenue engine. Unlock monetization, generate organic leads, and build real authority — done-for-you by a Google Partner.">
     <title>LYNCK — YouTube Revenue System | Monetization, Leads, Authority</title>
@@ -98,6 +100,40 @@
             background: #c41e3a;
             color: white;
         }
+
+        /* Hover glow animation for cards */
+        .card-glow {
+            transition: all 0.3s ease;
+        }
+        .card-glow:hover {
+            box-shadow: 4px 4px 0px 0px #000000, 0 0 20px rgba(196, 30, 58, 0.3), 0 0 40px rgba(196, 30, 58, 0.15);
+            transform: translateY(-4px);
+        }
+
+        /* Glow variant for dark backgrounds */
+        .card-glow-light:hover {
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.25), 0 0 50px rgba(196, 30, 58, 0.2);
+            transform: translateY(-4px);
+        }
+
+        /* Pricing card glow */
+        .pricing-card-glow {
+            transition: all 0.3s ease;
+        }
+        .pricing-card-glow:hover {
+            box-shadow: 4px 4px 0px 0px #000000, 0 0 30px rgba(196, 30, 58, 0.4), 0 0 60px rgba(196, 30, 58, 0.2);
+            transform: translateY(-6px);
+        }
+
+        /* Mobile comparison table - hide table, show cards */
+        @media (max-width: 768px) {
+            .comparison-table { display: none; }
+            .comparison-cards { display: block; }
+        }
+        @media (min-width: 769px) {
+            .comparison-table { display: block; }
+            .comparison-cards { display: none; }
+        }
     </style>
 </head>
 <body class="bg-brand-red-soft text-ink antialiased overflow-x-hidden">
@@ -114,13 +150,12 @@
                     <span class="text-2xl font-bold tracking-tight">LYNCK</span>
                 </a>
                 <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="hidden sm:block">
-                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-16">
+                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12">
                 </a>
             </div>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-6 font-semibold text-sm">
-                <a href="#proof" class="hover:text-brand-red transition-colors">Proof</a>
                 <a href="#benefits" class="hover:text-brand-red transition-colors">Benefits</a>
                 <a href="#how-it-works" class="hover:text-brand-red transition-colors">How It Works</a>
                 <a href="#pricing" class="hover:text-brand-red transition-colors">Pricing</a>
@@ -142,94 +177,121 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative pt-28 pb-16 md:pt-36 md:pb-24 min-h-screen flex flex-col justify-center overflow-hidden bg-brand-red-soft">
+    <!-- Hero Section - Split Layout -->
+    <section id="home" class="relative pt-28 pb-16 md:pt-32 md:pb-20 overflow-hidden bg-brand-red-soft">
 
         <!-- Decorative shapes -->
         <div class="absolute top-20 left-10 w-32 h-32 bg-brand-red/10 rounded-full blur-2xl"></div>
         <div class="absolute bottom-40 right-10 w-48 h-48 bg-brand-red/10 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/2 left-1/4 w-4 h-4 bg-brand-red rounded-full opacity-50"></div>
-        <div class="absolute top-1/3 right-1/3 w-3 h-3 bg-ink rounded-full opacity-30"></div>
 
-        <!-- Main Content -->
-        <div class="relative z-10 max-w-6xl mx-auto w-full px-4">
+        <!-- Main Content - Split Layout -->
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-4">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            <!-- Badge -->
-            <div class="flex justify-center mb-6">
-                <div class="inline-flex items-center gap-2 bg-white border-2 border-black rounded-full px-4 py-2 shadow-hard-sm">
-                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span class="text-sm font-semibold">Proven system · Real results</span>
-                </div>
-            </div>
-
-            <!-- Headline -->
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display text-center mb-6 tracking-tight leading-tight">
-                Turn Your YouTube<br>
-                Into a <span class="text-brand-red">Revenue Engine</span>
-            </h1>
-
-            <!-- Stats Badge -->
-            <div class="flex justify-center mb-6">
-                <div class="inline-flex items-center gap-3 bg-ink text-white rounded-full px-6 py-3 text-sm font-semibold">
-                    <span>3,500+ real subscribers</span>
-                    <span class="w-1 h-1 bg-brand-red rounded-full"></span>
-                    <span>46 days</span>
-                    <span class="w-1 h-1 bg-brand-red rounded-full"></span>
-                    <span>$0.40/sub</span>
-                </div>
-            </div>
-
-            <!-- Description -->
-            <p class="text-lg md:text-xl text-center text-gray-600 max-w-3xl mx-auto mb-10">
-                Monetize faster. Generate organic leads. Build real authority. We deliver the subscribers you need to unlock what YouTube can actually do for you.
-            </p>
-
-            <!-- CTAs -->
-            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
-                <a href="#pricing" class="w-full md:w-auto flex items-center justify-center gap-4 bg-brand-red text-white border-2 border-black rounded-full pl-2 pr-8 py-2 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
-                    <div class="bg-white border-2 border-black rounded-full p-2">
-                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-black"></i>
+                <!-- Left Column - Headline & CTAs -->
+                <div class="text-center lg:text-left">
+                    <!-- Badge -->
+                    <div class="flex justify-center lg:justify-start mb-6">
+                        <div class="inline-flex items-center gap-2 bg-white border-2 border-black rounded-full px-4 py-2 shadow-hard-sm">
+                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-sm font-semibold">Proven system · Real results</span>
+                        </div>
                     </div>
-                    <span class="font-bold">Choose Your Plan</span>
-                </a>
 
-                <a href="#proof" class="w-full md:w-auto flex items-center justify-center gap-4 bg-white border-2 border-black rounded-full pl-2 pr-8 py-2 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
-                    <div class="bg-brand-pink border-2 border-black rounded-full p-2">
-                        <i data-lucide="play" class="w-5 h-5 text-brand-red"></i>
-                    </div>
-                    <span class="font-bold">See the Proof</span>
-                </a>
-            </div>
+                    <!-- Headline -->
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-tight">
+                        Turn Your YouTube<br>
+                        Into a <span class="text-brand-red">Revenue Engine</span>
+                    </h1>
 
-            <!-- Audience Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                <div class="bg-white rounded-2xl border-2 border-black p-5 shadow-hard-sm hover:-translate-y-1 transition-transform">
-                    <div class="w-12 h-12 bg-brand-red rounded-xl border-2 border-black flex items-center justify-center mb-4">
-                        <i data-lucide="play-circle" class="w-6 h-6 text-white"></i>
+                    <!-- Description -->
+                    <p class="text-lg md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0 mb-8">
+                        Monetize faster. Generate organic leads. Build real authority. We deliver the subscribers you need to unlock what YouTube can actually do for you.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <a href="#pricing" class="flex items-center justify-center gap-4 bg-brand-red text-white border-2 border-black rounded-full pl-2 pr-8 py-2 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                            <div class="bg-white border-2 border-black rounded-full p-2">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5 text-black"></i>
+                            </div>
+                            <span class="font-bold">Choose Your Plan</span>
+                        </a>
+                        <a href="#benefits" class="flex items-center justify-center gap-4 bg-white border-2 border-black rounded-full pl-2 pr-8 py-2 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                            <div class="bg-brand-pink border-2 border-black rounded-full p-2">
+                                <i data-lucide="calculator" class="w-5 h-5 text-brand-red"></i>
+                            </div>
+                            <span class="font-bold">Calculate ROI</span>
+                        </a>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Creators</h3>
-                    <p class="text-gray-600 text-sm">Reach 1K subs faster. Unlock monetization and start earning from your content.</p>
+
+                    <!-- Audience Pills -->
+                    <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
+                        <span class="text-sm text-gray-500">Perfect for:</span>
+                        <span class="bg-white border border-black/20 rounded-full px-3 py-1 text-xs font-semibold">Creators</span>
+                        <span class="bg-white border border-black/20 rounded-full px-3 py-1 text-xs font-semibold">Businesses</span>
+                        <span class="bg-white border border-black/20 rounded-full px-3 py-1 text-xs font-semibold">Personal Brands</span>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-2xl border-2 border-black p-5 shadow-hard-sm hover:-translate-y-1 transition-transform">
-                    <div class="w-12 h-12 bg-brand-red rounded-xl border-2 border-black flex items-center justify-center mb-4">
-                        <i data-lucide="building-2" class="w-6 h-6 text-white"></i>
+                <!-- Right Column - Proof Panel -->
+                <div id="proof" class="bg-white rounded-3xl border-2 border-black p-6 shadow-hard">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="inline-block bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full border border-black">REAL RESULTS</span>
+                        <span class="text-xs text-gray-500">Not a mockup</span>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Businesses</h3>
-                    <p class="text-gray-600 text-sm">Build an evergreen lead engine. Content you post today generates leads for years.</p>
-                </div>
 
-                <div class="bg-white rounded-2xl border-2 border-black p-5 shadow-hard-sm hover:-translate-y-1 transition-transform">
-                    <div class="w-12 h-12 bg-brand-red rounded-xl border-2 border-black flex items-center justify-center mb-4">
-                        <i data-lucide="user" class="w-6 h-6 text-white"></i>
+                    <!-- Metrics Grid -->
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-3 text-center">
+                            <div class="text-2xl md:text-3xl font-display text-brand-red">3,571</div>
+                            <div class="text-xs text-gray-500 font-semibold">New Subscribers</div>
+                        </div>
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-3 text-center">
+                            <div class="text-2xl md:text-3xl font-display text-brand-red">46</div>
+                            <div class="text-xs text-gray-500 font-semibold">Days</div>
+                        </div>
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-3 text-center">
+                            <div class="text-2xl md:text-3xl font-display text-brand-red">$0.40</div>
+                            <div class="text-xs text-gray-500 font-semibold">Per Subscriber</div>
+                        </div>
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-3 text-center">
+                            <div class="text-2xl md:text-3xl font-display text-brand-red">500+</div>
+                            <div class="text-xs text-gray-500 font-semibold">Subs/Week</div>
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Personal Brands</h3>
-                    <p class="text-gray-600 text-sm">Establish authority in your niche. Attract speaking gigs, clients, and opportunities.</p>
+
+                    <!-- Badges -->
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex items-center gap-1.5 bg-green-50 rounded-full px-3 py-1 text-xs font-semibold text-green-700 border border-green-200">
+                            <i data-lucide="shield-check" class="w-3 h-3"></i>
+                            100% compliant
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-blue-50 rounded-full px-3 py-1 text-xs font-semibold text-blue-700 border border-blue-200">
+                            <i data-lucide="users" class="w-3 h-3"></i>
+                            Real people
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-red-50 rounded-full px-3 py-1 text-xs font-semibold text-brand-red border border-red-200">
+                            <i data-lucide="ban" class="w-3 h-3"></i>
+                            No bots
+                        </div>
+                    </div>
+
+                    <!-- Graph Preview -->
+                    <div class="relative rounded-xl overflow-hidden border border-black/20 mb-3">
+                        <img src="graph-28-days.png" alt="28 day subscriber growth" class="w-full">
+                        <div class="absolute top-2 left-2 bg-ink text-white text-xs font-bold px-2 py-0.5 rounded-full">28 Days</div>
+                    </div>
+
+                    <p class="text-xs text-gray-500 text-center flex items-center justify-center gap-1">
+                        <i data-lucide="lock" class="w-3 h-3"></i>
+                        Real YouTube Studio data · Channel name removed for privacy
+                    </p>
                 </div>
             </div>
 
             <!-- Sub-text -->
-            <p class="text-center text-sm text-gray-500 mt-8">
+            <p class="text-center text-sm text-gray-500 mt-10">
                 One-time service <span class="mx-2">·</span> We implement it for you <span class="mx-2">·</span> No ongoing contracts
             </p>
         </div>
@@ -390,7 +452,7 @@
     <section id="benefits" class="py-20 bg-white border-b-2 border-black">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">05 — THE OPPORTUNITY</span>
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">THE OPPORTUNITY</span>
                 <h2 class="text-3xl md:text-5xl font-display mb-4">What Could Your Channel Be Worth?</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">YouTube isn't just a platform — it's an asset that pays you for years</p>
             </div>
@@ -668,188 +730,89 @@
         </div>
     </section>
 
-    <!-- Proof Section -->
-    <section id="proof" class="py-20 bg-brand-red-soft border-b-2 border-black">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">04 — PROOF</span>
-                <h2 class="text-3xl md:text-5xl font-display mb-4">Real Results, Real Channel</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Not a mockup. Not a demo account. This is actual YouTube Studio data from a channel using our system.</p>
-            </div>
-
-            <!-- Proof Card -->
-            <div class="bg-brand-red-soft rounded-3xl border-2 border-black p-6 md:p-10 shadow-hard max-w-4xl mx-auto">
-                <!-- Metrics -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                    <div class="bg-white rounded-xl border-2 border-black p-4 text-center shadow-hard-sm">
-                        <div class="text-3xl md:text-4xl font-display text-brand-red">3,571</div>
-                        <div class="text-xs text-gray-500 font-semibold">New Subscribers</div>
-                    </div>
-                    <div class="bg-white rounded-xl border-2 border-black p-4 text-center shadow-hard-sm">
-                        <div class="text-3xl md:text-4xl font-display text-brand-red">46</div>
-                        <div class="text-xs text-gray-500 font-semibold">Days</div>
-                    </div>
-                    <div class="bg-white rounded-xl border-2 border-black p-4 text-center shadow-hard-sm">
-                        <div class="text-3xl md:text-4xl font-display text-brand-red">$0.40</div>
-                        <div class="text-xs text-gray-500 font-semibold">Cost per Sub</div>
-                    </div>
-                    <div class="bg-white rounded-xl border-2 border-black p-4 text-center shadow-hard-sm">
-                        <div class="text-3xl md:text-4xl font-display text-brand-red">500+</div>
-                        <div class="text-xs text-gray-500 font-semibold">Subs/Week</div>
-                    </div>
-                </div>
-
-                <!-- Differentiators -->
-                <div class="flex flex-wrap justify-center gap-3 mb-8">
-                    <div class="flex items-center gap-2 bg-white rounded-full px-4 py-2 border-2 border-black text-sm font-semibold">
-                        <i data-lucide="shield-check" class="w-4 h-4 text-green-600"></i>
-                        100% compliant
-                    </div>
-                    <div class="flex items-center gap-2 bg-white rounded-full px-4 py-2 border-2 border-black text-sm font-semibold">
-                        <i data-lucide="users" class="w-4 h-4 text-blue-600"></i>
-                        Real people
-                    </div>
-                    <div class="flex items-center gap-2 bg-white rounded-full px-4 py-2 border-2 border-black text-sm font-semibold">
-                        <i data-lucide="ban" class="w-4 h-4 text-brand-red"></i>
-                        No bots
-                    </div>
-                    <div class="flex items-center gap-2 bg-white rounded-full px-4 py-2 border-2 border-black text-sm font-semibold">
-                        <i data-lucide="x" class="w-4 h-4 text-brand-red"></i>
-                        No engagement pods
-                    </div>
-                </div>
-
-                <!-- Explanation -->
-                <div class="bg-white rounded-xl border-2 border-black p-6 mb-8">
-                    <p class="text-gray-700 mb-2"><strong class="text-ink">No viral videos. No trends. No luck.</strong> Just a strategically targeted Google Ads campaign that put this channel in front of the right audience — people who watched, subscribed, and stayed.</p>
-                    <p class="text-gray-600">This is the exact system we implement for you.</p>
-                </div>
-
-                <!-- Graph Images -->
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div class="relative">
-                        <img src="graph-28-days.png" alt="28 day growth" class="w-full rounded-xl border-2 border-black">
-                        <div class="absolute top-3 left-3 bg-ink text-white text-xs font-bold px-3 py-1 rounded-full">28 Days</div>
-                    </div>
-                    <div class="relative">
-                        <img src="graph-90-days.png" alt="90 day growth" class="w-full rounded-xl border-2 border-black">
-                        <div class="absolute top-3 left-3 bg-ink text-white text-xs font-bold px-3 py-1 rounded-full">90 Days</div>
-                    </div>
-                </div>
-
-                <p class="text-center text-sm text-gray-500 mt-4 flex items-center justify-center gap-2">
-                    <i data-lucide="lock" class="w-4 h-4"></i>
-                    Real YouTube Studio data · Channel name removed for privacy
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problem Section -->
+    <!-- The Reality + Solution Section (Combined) -->
     <section class="py-20 bg-brand-red-soft border-b-2 border-black">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <span class="inline-block bg-ink text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">01 — THE REALITY</span>
-                <h2 class="text-3xl md:text-5xl font-display mb-4">Most YouTube channels never reach their potential.</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Whether you're chasing monetization or building a lead engine for your business — subscriber growth doesn't happen by accident. You need a system.</p>
+                <span class="inline-block bg-ink text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">THE REALITY</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">Most channels stay stuck.<br>Here's why — and the fix.</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Subscriber growth doesn't happen by accident. You need a system that actually works.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
-                    <div class="w-14 h-14 bg-brand-pink rounded-xl border-2 border-black flex items-center justify-center mb-4">
-                        <i data-lucide="clock" class="w-7 h-7 text-brand-red"></i>
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <!-- Problem 1 -->
+                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard card-glow">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-brand-red/10 rounded-lg border border-brand-red/20 flex items-center justify-center">
+                            <i data-lucide="x" class="w-5 h-5 text-brand-red"></i>
+                        </div>
+                        <span class="text-xs font-bold text-brand-red uppercase">The Problem</span>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">Waiting for Organic Growth</h3>
-                    <p class="text-gray-600">Hoping the algorithm will find you. Most channels wait months or years and never break the 1,000 subscriber threshold.</p>
+                    <h3 class="font-bold text-lg mb-2">Waiting for Organic</h3>
+                    <p class="text-gray-500 text-sm mb-4">Hoping the algorithm finds you. Most channels wait years and never break 1K subs.</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+                            <span class="text-xs font-bold text-green-600 uppercase">The Fix</span>
+                        </div>
+                        <p class="text-gray-700 text-sm">Targeted Google Ads put your channel in front of the right audience immediately.</p>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
-                    <div class="w-14 h-14 bg-brand-pink rounded-xl border-2 border-black flex items-center justify-center mb-4">
-                        <i data-lucide="target" class="w-7 h-7 text-brand-red"></i>
+                <!-- Problem 2 -->
+                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard card-glow">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-brand-red/10 rounded-lg border border-brand-red/20 flex items-center justify-center">
+                            <i data-lucide="x" class="w-5 h-5 text-brand-red"></i>
+                        </div>
+                        <span class="text-xs font-bold text-brand-red uppercase">The Problem</span>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">DIY Guesswork</h3>
-                    <p class="text-gray-600">Trying every tactic from YouTube gurus. No cohesive strategy. No measurable results. Just wasted time and effort.</p>
+                    <h3 class="font-bold text-lg mb-2">Buying Fake Subs</h3>
+                    <p class="text-gray-500 text-sm mb-4">Cheap services deliver bots that don't watch, don't engage, and get purged.</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+                            <span class="text-xs font-bold text-green-600 uppercase">The Fix</span>
+                        </div>
+                        <p class="text-gray-700 text-sm">Real subscribers via Google Ads — people who watch, engage, and stay.</p>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
-                    <div class="w-14 h-14 bg-brand-pink rounded-xl border-2 border-black flex items-center justify-center mb-4">
-                        <i data-lucide="alert-triangle" class="w-7 h-7 text-brand-red"></i>
+                <!-- Problem 3 -->
+                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard card-glow">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-brand-red/10 rounded-lg border border-brand-red/20 flex items-center justify-center">
+                            <i data-lucide="x" class="w-5 h-5 text-brand-red"></i>
+                        </div>
+                        <span class="text-xs font-bold text-brand-red uppercase">The Problem</span>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">The Monetization Barrier</h3>
-                    <p class="text-gray-600">Stuck below 1,000 subscribers means no ad revenue, no sponsorships, no credibility. It's the ceiling that keeps most channels invisible.</p>
+                    <h3 class="font-bold text-lg mb-2">DIY Guesswork</h3>
+                    <p class="text-gray-500 text-sm mb-4">Trying random tactics from YouTube gurus. No strategy, no results, wasted time.</p>
+                    <div class="border-t border-gray-200 pt-4">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+                            <span class="text-xs font-bold text-green-600 uppercase">The Fix</span>
+                        </div>
+                        <p class="text-gray-700 text-sm">Done-for-you by a Google Partner with proven, trackable results.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Shift Section -->
-    <section id="how-it-works" class="py-20 bg-white border-b-2 border-black">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">02 — THE SHIFT</span>
-                <h2 class="text-3xl md:text-5xl font-display mb-4">Why most channels fail<br>& what actually works</h2>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Wrong -->
-                <div class="bg-gray-100 rounded-2xl border-2 border-black p-6">
-                    <h3 class="font-bold text-xl mb-6 text-gray-500 flex items-center gap-2">
-                        <i data-lucide="x-circle" class="w-6 h-6 text-brand-red"></i>
-                        What people try
-                    </h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-600">Buying $10 subscriber packages from Fiverr</span>
-                        </div>
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-600">Sub-for-sub groups and engagement pods</span>
-                        </div>
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-600">Running untargeted ads without a strategy</span>
-                        </div>
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-600">Hiring a YouTube "guru" who delivers a PDF</span>
-                        </div>
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-600">Waiting months for organic growth that never comes</span>
-                        </div>
+            <!-- Summary Banner -->
+            <div class="bg-green-50 rounded-2xl border-2 border-black p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-green-600 rounded-xl border-2 border-black flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">The LYNCK Difference</h4>
+                        <p class="text-gray-600 text-sm">100% YouTube-compliant · Real targeted subscribers · Transparent cost-per-sub</p>
                     </div>
                 </div>
-
-                <!-- Right -->
-                <div class="bg-green-50 rounded-2xl border-2 border-black p-6">
-                    <h3 class="font-bold text-xl mb-6 text-green-700 flex items-center gap-2">
-                        <i data-lucide="check-circle" class="w-6 h-6 text-green-600"></i>
-                        What actually works
-                    </h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-700">Running targeted Google Ads that attract real subscribers</span>
-                        </div>
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-700">Acquiring people who watch, engage, and stick around</span>
-                        </div>
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-700">Partnering with a certified Google Ads agency</span>
-                        </div>
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-700">Tracking every dollar with transparent cost-per-subscriber</span>
-                        </div>
-                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
-                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-gray-700">Building 100% YouTube-compliant growth that compounds</span>
-                        </div>
-                    </div>
-                </div>
+                <a href="#pricing" class="flex items-center gap-2 bg-green-600 text-white border-2 border-black rounded-full px-6 py-3 font-bold shadow-hard-sm hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all whitespace-nowrap">
+                    See How It Works
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -858,8 +821,8 @@
     <section class="py-20 bg-ink text-white border-b-2 border-black">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-white mb-4">03 — HOW IT WORKS</span>
-                <h2 class="text-3xl md:text-5xl font-display mb-4">From stuck to<br>monetization-ready in weeks</h2>
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-white mb-4">HOW IT WORKS</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">From zero momentum to<br>real growth in weeks</h2>
                 <p class="text-lg text-gray-400 max-w-2xl mx-auto">A simple, proven process that delivers real subscribers without you lifting a finger.</p>
             </div>
 
@@ -903,14 +866,14 @@
     <section id="pricing" class="py-20 bg-brand-red-soft border-b-2 border-black">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">06 — PRICING</span>
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">PRICING</span>
                 <h2 class="text-3xl md:text-5xl font-display mb-4">Choose your path to results</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">One-time payment. We handle everything. Monetization, leads, or authority — pick your outcome.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Tier 1 -->
-                <div class="bg-white rounded-3xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
+                <div class="bg-white rounded-3xl border-2 border-black p-6 shadow-hard pricing-card-glow">
                     <div class="mb-6">
                         <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Starter</span>
                         <h3 class="text-2xl font-bold mt-1">Monetization Milestone</h3>
@@ -938,13 +901,13 @@
                         </li>
                     </ul>
                     <div class="text-xs text-gray-500 mb-4 text-center">1,000 real subscribers · ~$1.00/sub</div>
-                    <a href="#" class="block w-full py-3 text-center rounded-xl border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
+                    <a href="checkout.html" class="block w-full py-3 text-center rounded-xl border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
                         Choose Plan
                     </a>
                 </div>
 
                 <!-- Tier 2 - Popular -->
-                <div class="bg-brand-red text-white rounded-3xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform relative">
+                <div class="bg-brand-red text-white rounded-3xl border-2 border-black p-6 shadow-hard pricing-card-glow relative">
                     <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-ink text-white text-xs font-bold px-4 py-1 rounded-full border-2 border-white">BEST VALUE</div>
                     <div class="mb-6">
                         <span class="text-xs font-bold text-red-200 uppercase tracking-wider">Growth</span>
@@ -977,13 +940,13 @@
                         </li>
                     </ul>
                     <div class="text-xs text-red-200 mb-4 text-center">5,000 real subscribers · ~$0.60/sub · Save 40%</div>
-                    <a href="#" class="block w-full py-3 text-center rounded-xl bg-white text-brand-red border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
+                    <a href="checkout.html" class="block w-full py-3 text-center rounded-xl bg-white text-brand-red border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
                         Choose Plan
                     </a>
                 </div>
 
                 <!-- Tier 3 -->
-                <div class="bg-white rounded-3xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
+                <div class="bg-white rounded-3xl border-2 border-black p-6 shadow-hard pricing-card-glow">
                     <div class="mb-6">
                         <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Scale</span>
                         <h3 class="text-2xl font-bold mt-1">Niche Dominator</h3>
@@ -1015,7 +978,7 @@
                         </li>
                     </ul>
                     <div class="text-xs text-gray-500 mb-4 text-center">10,000 real subscribers · ~$0.50/sub · Save 50%</div>
-                    <a href="#" class="block w-full py-3 text-center rounded-xl border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
+                    <a href="checkout.html" class="block w-full py-3 text-center rounded-xl border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
                         Choose Plan
                     </a>
                 </div>
@@ -1036,7 +999,7 @@
     <section id="faq" class="py-20 bg-white border-b-2 border-black">
         <div class="max-w-3xl mx-auto px-4">
             <div class="text-center mb-12">
-                <span class="inline-block bg-ink text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">07 — QUESTIONS</span>
+                <span class="inline-block bg-ink text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">FAQ</span>
                 <h2 class="text-3xl md:text-5xl font-display mb-4">Before you decide</h2>
             </div>
 
@@ -1123,7 +1086,8 @@
                 <p class="text-gray-600">Not all subscribers are created equal. Here's what you're actually buying.</p>
             </div>
 
-            <div class="overflow-x-auto">
+            <!-- Desktop Table -->
+            <div class="comparison-table overflow-x-auto">
                 <table class="w-full bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
                     <thead>
                         <tr>
@@ -1160,6 +1124,67 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Mobile Cards -->
+            <div class="comparison-cards space-y-4">
+                <!-- Cheap Services Card -->
+                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
+                    <div class="bg-brand-red text-white p-4 font-bold text-center">
+                        Cheap Services<br><span class="font-normal text-xs opacity-80">($120 for 500 subs)</span>
+                    </div>
+                    <div class="p-4 space-y-3 text-sm">
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <span><strong>Subscriber Type:</strong> Bots & fake accounts</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <span><strong>Watch Time:</strong> 0 hours (bots don't watch)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <span><strong>YouTube ToS:</strong> Violation (ban risk)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <span><strong>Longevity:</strong> Purged in YouTube sweeps</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <span><strong>Business Value:</strong> Zero (no real audience)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LYNCK System Card -->
+                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
+                    <div class="bg-green-600 text-white p-4 font-bold text-center">
+                        LYNCK System<br><span class="font-normal text-xs opacity-80">(Real Google Ads)</span>
+                    </div>
+                    <div class="p-4 space-y-3 text-sm">
+                        <div class="flex items-center gap-2 text-green-600">
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                            <span><strong>Subscriber Type:</strong> Real people via Google Ads</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-600">
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                            <span><strong>Watch Time:</strong> Real potential viewers</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-600">
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                            <span><strong>YouTube ToS:</strong> Fully compliant</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-600">
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                            <span><strong>Longevity:</strong> Permanent real followers</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-600">
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                            <span><strong>Business Value:</strong> Actual audience asset</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="mt-6 bg-green-50 rounded-xl border-2 border-black p-4 text-center">
@@ -1246,7 +1271,7 @@
             <i data-lucide="x" class="w-8 h-8 text-black"></i>
         </button>
         <a href="#home" class="text-2xl font-display hover:text-brand-red">Home</a>
-        <a href="#proof" class="text-2xl font-display hover:text-brand-red">Proof</a>
+        <a href="#benefits" class="text-2xl font-display hover:text-brand-red">Benefits</a>
         <a href="#how-it-works" class="text-2xl font-display hover:text-brand-red">How It Works</a>
         <a href="#pricing" class="text-2xl font-display hover:text-brand-red">Pricing</a>
         <a href="#faq" class="text-2xl font-display hover:text-brand-red">FAQ</a>
