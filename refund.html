@@ -6,399 +6,332 @@
     <meta name="description" content="LYNCK Refund Policy — Our guarantee and refund terms for YouTube subscriber growth services.">
     <title>Refund Policy — LYNCK</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='%23faf9f7' font-family='monospace' font-weight='bold' font-size='18'>L</text></svg>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Titan+One&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#c41e3a',
+                        'brand-red-light': '#e63950',
+                        'brand-red-soft': '#fef2f2',
+                        'brand-pink': '#ffe4e6',
+                        'ink': '#0a0a0a',
+                        'paper': '#faf9f7',
+                    },
+                    fontFamily: {
+                        'display': ['Titan One', 'cursive'],
+                        'body': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        :root {
-            --ink: #0a0a0a;
-            --paper: #faf9f7;
-            --paper-warm: #f5f3ef;
-            --accent: #c41e3a;
-            --muted: #6b6b6b;
-            --border: #e0ddd8;
-            --success: #1a5f4a;
-            --font-display: 'Instrument Serif', Georgia, serif;
-            --font-body: 'DM Sans', -apple-system, sans-serif;
-            --font-mono: 'JetBrains Mono', monospace;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 17px; }
-
-        body {
-            font-family: var(--font-body);
-            background: var(--paper);
-            color: var(--ink);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        nav {
-            padding: 1rem 0;
-            background: var(--paper);
-            border-bottom: 1px solid var(--border);
-        }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-        }
-
-        .logo {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: var(--ink);
-        }
-
-        .back-link {
-            font-size: 0.9rem;
-            color: var(--muted);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: color 0.2s;
-        }
-
-        .back-link:hover { color: var(--ink); }
-
-        .page-header {
-            padding: 4rem 0 2rem;
-            text-align: center;
-        }
-
-        .page-header h1 {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            font-weight: 400;
-            margin-bottom: 0.5rem;
-        }
-
-        .page-header .last-updated {
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            color: var(--muted);
-        }
-
-        .page-content {
-            padding: 2rem 0 4rem;
-        }
-
-        .legal-section {
-            margin-bottom: 2.5rem;
-        }
-
-        .legal-section h2 {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 400;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .legal-section h3 {
-            font-family: var(--font-body);
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin: 1.5rem 0 0.75rem;
-        }
-
-        .legal-section p {
-            color: var(--muted);
-            margin-bottom: 1rem;
-        }
-
-        .legal-section ul {
-            color: var(--muted);
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .legal-section li {
-            margin-bottom: 0.5rem;
-        }
-
-        .legal-section strong {
-            color: var(--ink);
-        }
-
-        .guarantee-box {
-            background: linear-gradient(135deg, rgba(26, 95, 74, 0.08), rgba(26, 95, 74, 0.03));
-            border: 1px solid rgba(26, 95, 74, 0.2);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .guarantee-box .icon {
-            width: 48px;
-            height: 48px;
-            margin: 0 auto 1rem;
-            color: var(--success);
-        }
-
-        .guarantee-box h3 {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            color: var(--success);
-            margin-bottom: 0.5rem;
-        }
-
-        .guarantee-box p {
-            color: var(--ink);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .highlight-box {
-            background: var(--paper-warm);
-            border-left: 3px solid var(--accent);
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .highlight-box p {
-            margin: 0;
-            color: var(--ink);
-        }
-
-        .scenario-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-        }
-
-        .scenario-table th,
-        .scenario-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .scenario-table th {
-            font-weight: 600;
-            color: var(--ink);
-            background: var(--paper-warm);
-        }
-
-        .scenario-table td {
-            color: var(--muted);
-        }
-
-        .scenario-table td:last-child {
-            color: var(--ink);
-            font-weight: 500;
-        }
-
-        .refund-eligible {
-            color: var(--success) !important;
-        }
-
-        .refund-partial {
-            color: #b45309 !important;
-        }
-
-        .refund-none {
-            color: var(--accent) !important;
-        }
-
-        footer {
-            background: var(--ink);
-            color: var(--paper);
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        footer .container { max-width: 1200px; }
-
-        footer p {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.5);
-        }
-
-        footer a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-        }
-
-        footer a:hover { color: var(--paper); }
+        body { font-family: 'Montserrat', sans-serif; }
+        .font-display { font-family: 'Titan One', cursive; }
+        .shadow-hard { box-shadow: 4px 4px 0px 0px #000000; }
+        .shadow-hard-sm { box-shadow: 2px 2px 0px 0px #000000; }
+        ::selection { background: #c41e3a; color: white; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body>
-    <nav>
-        <div class="container">
-            <a href="index.html" class="logo">LYNCK</a>
-            <a href="index.html" class="back-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                </svg>
+<body class="bg-brand-red-soft text-ink antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-brand-red-soft border-b-2 border-black px-4 md:px-6 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="index-redesign.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-ink rounded-lg flex items-center justify-center group-hover:rotate-6 transition-transform">
+                        <span class="text-white font-bold text-xl">L</span>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight">LYNCK</span>
+                </a>
+                <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="hidden sm:block">
+                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-14">
+                </a>
+            </div>
+            <a href="index-redesign.html" class="flex items-center gap-2 text-gray-600 hover:text-ink transition-colors font-semibold text-sm">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
                 Back to Home
             </a>
         </div>
     </nav>
 
-    <main>
-        <div class="container">
-            <div class="page-header">
-                <h1>Refund Policy</h1>
-                <p class="last-updated">Last Updated: February 2026</p>
+    <main class="py-12 md:py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-10">
+                <span class="inline-block bg-ink text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">LEGAL</span>
+                <h1 class="text-4xl md:text-5xl font-display mb-4">Refund Policy</h1>
+                <p class="text-sm text-gray-500 font-medium">Last Updated: February 2026</p>
             </div>
 
-            <div class="page-content">
-                <div class="guarantee-box">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <path d="M9 12l2 2 4-4"/>
-                    </svg>
-                    <h3>Subscriber Delivery Guarantee</h3>
-                    <p>We guarantee delivery of the subscriber count specified in your purchased plan. If we fail to deliver, you're eligible for a refund.</p>
+            <!-- Guarantee Box -->
+            <div class="bg-green-50 rounded-2xl border-2 border-black p-6 mb-8 text-center shadow-hard">
+                <div class="w-16 h-16 bg-green-600 rounded-xl border-2 border-black flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="shield-check" class="w-8 h-8 text-white"></i>
                 </div>
+                <h2 class="text-2xl font-display text-green-700 mb-2">Subscriber Delivery Guarantee</h2>
+                <p class="text-gray-600 max-w-lg mx-auto">We guarantee delivery of the subscriber count specified in your purchased plan. If we fail to deliver, you're eligible for a refund.</p>
+            </div>
 
-                <div class="legal-section">
-                    <h2>1. Our Commitment</h2>
-                    <p>At LYNCK, we stand behind our service. We commit to delivering the number of subscribers specified in your purchased plan through compliant Google Ads campaigns. If we cannot deliver what we promised, we make it right.</p>
-                </div>
+            <!-- Content -->
+            <div class="bg-white rounded-2xl border-2 border-black p-6 md:p-8 shadow-hard space-y-8">
 
-                <div class="legal-section">
-                    <h2>2. Refund Eligibility</h2>
-                    <p>You may be eligible for a refund under the following circumstances:</p>
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">1</span>
+                        Our Commitment
+                    </h2>
+                    <p class="text-gray-600">At LYNCK, we stand behind our service. We commit to delivering the number of subscribers specified in your purchased plan through compliant Google Ads campaigns. If we cannot deliver what we promised, we make it right.</p>
+                </section>
 
-                    <table class="scenario-table">
-                        <thead>
-                            <tr>
-                                <th>Scenario</th>
-                                <th>Refund Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Campaign not started within 7 days of purchase</td>
-                                <td class="refund-eligible">Full refund</td>
-                            </tr>
-                            <tr>
-                                <td>We fail to deliver any subscribers after 30 days</td>
-                                <td class="refund-eligible">Full refund</td>
-                            </tr>
-                            <tr>
-                                <td>We deliver less than 50% of promised subscribers after campaign completion</td>
-                                <td class="refund-partial">Pro-rata refund for undelivered portion</td>
-                            </tr>
-                            <tr>
-                                <td>Technical issue on our end prevents campaign execution</td>
-                                <td class="refund-eligible">Full refund</td>
-                            </tr>
-                            <tr>
-                                <td>Change of mind after campaign has started and subscribers delivered</td>
-                                <td class="refund-none">No refund</td>
-                            </tr>
-                            <tr>
-                                <td>YouTube channel terminated due to client's content violations</td>
-                                <td class="refund-none">No refund</td>
-                            </tr>
-                            <tr>
-                                <td>Client fails to respond to communications for 14+ days</td>
-                                <td class="refund-none">No refund</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">2</span>
+                        Refund Eligibility
+                    </h2>
+                    <p class="text-gray-600 mb-4">You may be eligible for a refund under the following circumstances:</p>
 
-                <div class="legal-section">
-                    <h2>3. What's NOT Covered</h2>
-                    <p>Refunds are not available for the following reasons:</p>
-                    <ul>
-                        <li><strong>Monetization not achieved:</strong> We deliver subscribers, not watch hours. Monetization requires both — we can only help with one.</li>
-                        <li><strong>Lower engagement than expected:</strong> Engagement depends on your content quality and posting consistency.</li>
-                        <li><strong>Subscriber churn:</strong> Some natural unsubscribing is normal on all channels and is not grounds for a refund.</li>
-                        <li><strong>YouTube algorithm changes:</strong> We cannot control YouTube's platform decisions.</li>
-                        <li><strong>Change of mind:</strong> Once a campaign is underway and delivering subscribers, refunds are not available.</li>
-                        <li><strong>Channel termination:</strong> If YouTube terminates your channel due to policy violations you committed, no refund is available.</li>
-                        <li><strong>Dissatisfaction with niche fit:</strong> If subscribers match the targeting criteria but you feel they're "not your audience," this is not grounds for refund — targeting is based on the information you provide.</li>
-                    </ul>
-
-                    <div class="highlight-box">
-                        <p><strong>Important:</strong> By purchasing our services, you acknowledge that we deliver subscribers, not guaranteed outcomes like monetization, revenue, or engagement rates.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-2 border-black rounded-xl overflow-hidden">
+                            <thead>
+                                <tr class="bg-ink text-white">
+                                    <th class="p-4 text-left font-bold">Scenario</th>
+                                    <th class="p-4 text-left font-bold">Refund Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm">
+                                <tr class="border-t-2 border-black">
+                                    <td class="p-4 text-gray-600">Campaign not started within 7 days of purchase</td>
+                                    <td class="p-4 font-semibold text-green-600">Full refund</td>
+                                </tr>
+                                <tr class="border-t-2 border-black bg-gray-50">
+                                    <td class="p-4 text-gray-600">We fail to deliver any subscribers after 30 days</td>
+                                    <td class="p-4 font-semibold text-green-600">Full refund</td>
+                                </tr>
+                                <tr class="border-t-2 border-black">
+                                    <td class="p-4 text-gray-600">We deliver less than 50% of promised subscribers after campaign completion</td>
+                                    <td class="p-4 font-semibold text-amber-600">Pro-rata refund</td>
+                                </tr>
+                                <tr class="border-t-2 border-black bg-gray-50">
+                                    <td class="p-4 text-gray-600">Technical issue on our end prevents campaign execution</td>
+                                    <td class="p-4 font-semibold text-green-600">Full refund</td>
+                                </tr>
+                                <tr class="border-t-2 border-black">
+                                    <td class="p-4 text-gray-600">Change of mind after campaign has started and subscribers delivered</td>
+                                    <td class="p-4 font-semibold text-brand-red">No refund</td>
+                                </tr>
+                                <tr class="border-t-2 border-black bg-gray-50">
+                                    <td class="p-4 text-gray-600">YouTube channel terminated due to client's content violations</td>
+                                    <td class="p-4 font-semibold text-brand-red">No refund</td>
+                                </tr>
+                                <tr class="border-t-2 border-black">
+                                    <td class="p-4 text-gray-600">Client fails to respond to communications for 14+ days</td>
+                                    <td class="p-4 font-semibold text-brand-red">No refund</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
+                </section>
 
-                <div class="legal-section">
-                    <h2>4. Refund Timeline</h2>
-                    <p>If you're eligible for a refund:</p>
-                    <ul>
-                        <li><strong>Processing time:</strong> Refund requests are reviewed within 5 business days</li>
-                        <li><strong>Refund method:</strong> Refunds are issued to the original payment method</li>
-                        <li><strong>Bank processing:</strong> Please allow 5-10 business days for the refund to appear in your account, depending on your bank</li>
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">3</span>
+                        What's NOT Covered
+                    </h2>
+                    <p class="text-gray-600 mb-4">Refunds are not available for the following reasons:</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Monetization not achieved:</strong> We deliver subscribers, not watch hours. Monetization requires both — we can only help with one.</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Lower engagement than expected:</strong> Engagement depends on your content quality and posting consistency.</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Subscriber churn:</strong> Some natural unsubscribing is normal on all channels and is not grounds for a refund.</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">YouTube algorithm changes:</strong> We cannot control YouTube's platform decisions.</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Change of mind:</strong> Once a campaign is underway and delivering subscribers, refunds are not available.</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Channel termination:</strong> If YouTube terminates your channel due to policy violations you committed, no refund is available.</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Dissatisfaction with niche fit:</strong> If subscribers match the targeting criteria but you feel they're "not your audience," this is not grounds for refund — targeting is based on the information you provide.</span>
+                        </li>
                     </ul>
-                </div>
 
-                <div class="legal-section">
-                    <h2>5. How to Request a Refund</h2>
-                    <p>To request a refund, please:</p>
-                    <ol>
-                        <li>Email us at <strong>info@lynckstudio.pro</strong> with subject line "Refund Request"</li>
-                        <li>Include your order number or email used at purchase</li>
-                        <li>Provide your YouTube channel URL</li>
-                        <li>Explain the reason for your refund request</li>
-                        <li>Include any relevant screenshots or documentation</li>
+                    <div class="bg-amber-50 rounded-xl border-2 border-black p-4 mt-4 flex items-start gap-3">
+                        <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5"></i>
+                        <p class="text-sm text-gray-700"><strong class="text-amber-700">Important:</strong> By purchasing our services, you acknowledge that we deliver subscribers, not guaranteed outcomes like monetization, revenue, or engagement rates.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">4</span>
+                        Refund Timeline
+                    </h2>
+                    <p class="text-gray-600 mb-4">If you're eligible for a refund:</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Processing time:</strong> Refund requests are reviewed within 5 business days</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Refund method:</strong> Refunds are issued to the original payment method</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Bank processing:</strong> Please allow 5-10 business days for the refund to appear in your account, depending on your bank</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">5</span>
+                        How to Request a Refund
+                    </h2>
+                    <p class="text-gray-600 mb-4">To request a refund, please:</p>
+                    <ol class="space-y-2">
+                        <li class="flex items-start gap-3 text-gray-600">
+                            <span class="w-6 h-6 bg-brand-red-soft rounded-full flex items-center justify-center text-sm font-bold text-brand-red flex-shrink-0">1</span>
+                            Email us at <strong class="text-ink">info@lynckstudio.pro</strong> with subject line "Refund Request"
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-600">
+                            <span class="w-6 h-6 bg-brand-red-soft rounded-full flex items-center justify-center text-sm font-bold text-brand-red flex-shrink-0">2</span>
+                            Include your order number or email used at purchase
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-600">
+                            <span class="w-6 h-6 bg-brand-red-soft rounded-full flex items-center justify-center text-sm font-bold text-brand-red flex-shrink-0">3</span>
+                            Provide your YouTube channel URL
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-600">
+                            <span class="w-6 h-6 bg-brand-red-soft rounded-full flex items-center justify-center text-sm font-bold text-brand-red flex-shrink-0">4</span>
+                            Explain the reason for your refund request
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-600">
+                            <span class="w-6 h-6 bg-brand-red-soft rounded-full flex items-center justify-center text-sm font-bold text-brand-red flex-shrink-0">5</span>
+                            Include any relevant screenshots or documentation
+                        </li>
                     </ol>
-                    <p>We will review your request and respond within 5 business days.</p>
-                </div>
+                    <p class="text-gray-600 mt-4">We will review your request and respond within 5 business days.</p>
+                </section>
 
-                <div class="legal-section">
-                    <h2>6. Partial Delivery</h2>
-                    <p>If we deliver subscribers but fall short of the promised amount:</p>
-                    <ul>
-                        <li>We will first attempt to complete delivery through extended campaign run time</li>
-                        <li>If full delivery is not possible, we will offer a pro-rata refund for the undelivered portion</li>
-                        <li>Example: If you purchased 5,000 subscribers and we delivered 4,000, you would receive a 20% refund</li>
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">6</span>
+                        Partial Delivery
+                    </h2>
+                    <p class="text-gray-600 mb-4">If we deliver subscribers but fall short of the promised amount:</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            We will first attempt to complete delivery through extended campaign run time
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            If full delivery is not possible, we will offer a pro-rata refund for the undelivered portion
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="check" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            <span><strong class="text-ink">Example:</strong> If you purchased 5,000 subscribers and we delivered 4,000, you would receive a 20% refund</span>
+                        </li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="legal-section">
-                    <h2>7. Chargebacks</h2>
-                    <p>We ask that you contact us first before initiating a chargeback with your bank. We're committed to resolving issues fairly and promptly. Unjustified chargebacks may result in:</p>
-                    <ul>
-                        <li>Termination of services</li>
-                        <li>Inability to purchase from us in the future</li>
-                        <li>Potential collection action for services rendered</li>
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">7</span>
+                        Chargebacks
+                    </h2>
+                    <p class="text-gray-600 mb-4">We ask that you contact us first before initiating a chargeback with your bank. We're committed to resolving issues fairly and promptly. Unjustified chargebacks may result in:</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            Termination of services
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            Inability to purchase from us in the future
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="x" class="w-4 h-4 text-brand-red flex-shrink-0 mt-1"></i>
+                            Potential collection action for services rendered
+                        </li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="legal-section">
-                    <h2>8. Exceptions</h2>
-                    <p>In rare circumstances, we may make exceptions to this policy at our sole discretion. Any exception made does not obligate us to make similar exceptions in the future.</p>
-                </div>
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">8</span>
+                        Exceptions
+                    </h2>
+                    <p class="text-gray-600">In rare circumstances, we may make exceptions to this policy at our sole discretion. Any exception made does not obligate us to make similar exceptions in the future.</p>
+                </section>
 
-                <div class="legal-section">
-                    <h2>9. Contact Us</h2>
-                    <p>If you have questions about this Refund Policy or need to request a refund, please contact us:</p>
-                    <p><strong>Email:</strong> info@lynckstudio.pro</p>
-                    <p><strong>Subject Line:</strong> "Refund Request" or "Refund Policy Question"</p>
-                    <p>We aim to respond to all inquiries within 24-48 hours during business days.</p>
-                </div>
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-8 bg-brand-red text-white rounded-lg flex items-center justify-center text-sm font-bold">9</span>
+                        Contact Us
+                    </h2>
+                    <p class="text-gray-600 mb-4">If you have questions about this Refund Policy or need to request a refund, please contact us:</p>
+                    <div class="flex items-center gap-3 bg-brand-red-soft rounded-xl border-2 border-black p-4 mb-4">
+                        <i data-lucide="mail" class="w-5 h-5 text-brand-red"></i>
+                        <a href="mailto:info@lynckstudio.pro" class="font-semibold hover:text-brand-red transition-colors">info@lynckstudio.pro</a>
+                    </div>
+                    <p class="text-gray-500 text-sm">We aim to respond to all inquiries within 24-48 hours during business days.</p>
+                </section>
+
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 LYNCK. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="refund.html">Refund Policy</a></p>
+    <!-- Footer -->
+    <footer class="bg-ink text-white py-12 border-t-2 border-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">L</span>
+                    </div>
+                    <span class="text-2xl font-bold">LYNCK</span>
+                </div>
+                <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank">
+                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12">
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-400 mb-6">
+                <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="refund.html" class="hover:text-white transition-colors">Refund Policy</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <p class="text-center text-xs text-gray-500">&copy; 2026 LYNCK. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
