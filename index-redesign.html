@@ -134,6 +134,15 @@
             .comparison-table { display: block; }
             .comparison-cards { display: none; }
         }
+
+        /* Graph tabs */
+        .graph-tab.active {
+            background: #c41e3a;
+            color: white;
+        }
+        .graph-content.hidden {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-brand-red-soft text-ink antialiased overflow-x-hidden">
@@ -177,122 +186,122 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Split Layout -->
-    <section id="home" class="relative pt-28 pb-16 md:pt-32 md:pb-20 overflow-hidden bg-brand-red-soft">
+    <!-- Hero Section - Split Layout (40% larger) -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-brand-red-soft">
 
         <!-- Decorative shapes -->
-        <div class="absolute top-20 left-10 w-32 h-32 bg-brand-red/10 rounded-full blur-2xl"></div>
-        <div class="absolute bottom-40 right-10 w-48 h-48 bg-brand-red/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-24 left-10 w-44 h-44 bg-brand-red/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-48 right-10 w-64 h-64 bg-brand-red/10 rounded-full blur-3xl"></div>
 
         <!-- Main Content - Split Layout -->
-        <div class="relative z-10 max-w-7xl mx-auto w-full px-4">
-            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                 <!-- Left Column - Headline & CTAs -->
                 <div class="text-center lg:text-left">
                     <!-- Badge -->
-                    <div class="flex justify-center lg:justify-start mb-6">
-                        <div class="inline-flex items-center gap-2 bg-white border-2 border-black rounded-full px-4 py-2 shadow-hard-sm">
-                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                            <span class="text-sm font-semibold">Proven system · Real results</span>
+                    <div class="flex justify-center lg:justify-start mb-8">
+                        <div class="inline-flex items-center gap-3 bg-white border-2 border-black rounded-full px-6 py-3 shadow-hard-sm">
+                            <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-base font-semibold">Proven system · Real results</span>
                         </div>
                     </div>
 
                     <!-- Headline -->
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-display mb-6 tracking-tight leading-tight">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-display mb-8 tracking-tight leading-tight">
                         Turn Your YouTube<br>
                         Into a <span class="text-brand-red">Revenue Engine</span>
                     </h1>
 
                     <!-- Description -->
-                    <p class="text-lg md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0 mb-8">
+                    <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed">
                         Monetize faster. Generate organic leads. Build real authority. We deliver the subscribers you need to unlock what YouTube can actually do for you.
                     </p>
 
                     <!-- CTAs -->
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                        <a href="#pricing" class="flex items-center justify-center gap-4 bg-brand-red text-white border-2 border-black rounded-full pl-2 pr-8 py-2 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
-                            <div class="bg-white border-2 border-black rounded-full p-2">
-                                <i data-lucide="arrow-up-right" class="w-5 h-5 text-black"></i>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mb-10">
+                        <a href="#pricing" class="flex items-center justify-center gap-4 bg-brand-red text-white border-2 border-black rounded-full pl-3 pr-10 py-3 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                            <div class="bg-white border-2 border-black rounded-full p-3">
+                                <i data-lucide="arrow-up-right" class="w-6 h-6 text-black"></i>
                             </div>
-                            <span class="font-bold">Choose Your Plan</span>
+                            <span class="font-bold text-lg">Choose Your Plan</span>
                         </a>
-                        <a href="#benefits" class="flex items-center justify-center gap-4 bg-white border-2 border-black rounded-full pl-2 pr-8 py-2 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
-                            <div class="bg-brand-pink border-2 border-black rounded-full p-2">
-                                <i data-lucide="calculator" class="w-5 h-5 text-brand-red"></i>
+                        <a href="#benefits" class="flex items-center justify-center gap-4 bg-white border-2 border-black rounded-full pl-3 pr-10 py-3 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                            <div class="bg-brand-pink border-2 border-black rounded-full p-3">
+                                <i data-lucide="calculator" class="w-6 h-6 text-brand-red"></i>
                             </div>
-                            <span class="font-bold">Calculate ROI</span>
+                            <span class="font-bold text-lg">Calculate ROI</span>
                         </a>
                     </div>
 
                     <!-- Audience Pills -->
-                    <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
-                        <span class="text-sm text-gray-500">Perfect for:</span>
-                        <span class="bg-white border border-black/20 rounded-full px-3 py-1 text-xs font-semibold">Creators</span>
-                        <span class="bg-white border border-black/20 rounded-full px-3 py-1 text-xs font-semibold">Businesses</span>
-                        <span class="bg-white border border-black/20 rounded-full px-3 py-1 text-xs font-semibold">Personal Brands</span>
+                    <div class="flex flex-wrap gap-3 justify-center lg:justify-start items-center">
+                        <span class="text-base text-gray-500">Perfect for:</span>
+                        <span class="bg-white border border-black/20 rounded-full px-4 py-2 text-sm font-semibold">Creators</span>
+                        <span class="bg-white border border-black/20 rounded-full px-4 py-2 text-sm font-semibold">Businesses</span>
+                        <span class="bg-white border border-black/20 rounded-full px-4 py-2 text-sm font-semibold">Personal Brands</span>
                     </div>
                 </div>
 
                 <!-- Right Column - Proof Panel -->
-                <div id="proof" class="bg-white rounded-3xl border-2 border-black p-6 shadow-hard">
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="inline-block bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full border border-black">REAL RESULTS</span>
-                        <span class="text-xs text-gray-500">Not a mockup</span>
+                <div id="proof" class="bg-white rounded-3xl border-2 border-black p-8 shadow-hard">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="inline-block bg-brand-red text-white text-sm font-bold px-4 py-2 rounded-full border border-black">REAL RESULTS</span>
+                        <span class="text-sm text-gray-500">Not a mockup</span>
                     </div>
 
                     <!-- Metrics Grid -->
-                    <div class="grid grid-cols-2 gap-3 mb-4">
-                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-3 text-center">
-                            <div class="text-2xl md:text-3xl font-display text-brand-red">3,571</div>
-                            <div class="text-xs text-gray-500 font-semibold">New Subscribers</div>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-4 text-center">
+                            <div class="text-3xl md:text-4xl font-display text-brand-red">3,571</div>
+                            <div class="text-sm text-gray-500 font-semibold mt-1">New Subscribers</div>
                         </div>
-                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-3 text-center">
-                            <div class="text-2xl md:text-3xl font-display text-brand-red">46</div>
-                            <div class="text-xs text-gray-500 font-semibold">Days</div>
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-4 text-center">
+                            <div class="text-3xl md:text-4xl font-display text-brand-red">46</div>
+                            <div class="text-sm text-gray-500 font-semibold mt-1">Days</div>
                         </div>
-                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-3 text-center">
-                            <div class="text-2xl md:text-3xl font-display text-brand-red">$0.40</div>
-                            <div class="text-xs text-gray-500 font-semibold">Per Subscriber</div>
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-4 text-center">
+                            <div class="text-3xl md:text-4xl font-display text-brand-red">$0.40</div>
+                            <div class="text-sm text-gray-500 font-semibold mt-1">Per Subscriber</div>
                         </div>
-                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-3 text-center">
-                            <div class="text-2xl md:text-3xl font-display text-brand-red">500+</div>
-                            <div class="text-xs text-gray-500 font-semibold">Subs/Week</div>
+                        <div class="bg-brand-red-soft rounded-xl border border-black/20 p-4 text-center">
+                            <div class="text-3xl md:text-4xl font-display text-brand-red">500+</div>
+                            <div class="text-sm text-gray-500 font-semibold mt-1">Subs/Week</div>
                         </div>
                     </div>
 
                     <!-- Badges -->
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <div class="flex items-center gap-1.5 bg-green-50 rounded-full px-3 py-1 text-xs font-semibold text-green-700 border border-green-200">
-                            <i data-lucide="shield-check" class="w-3 h-3"></i>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <div class="flex items-center gap-2 bg-green-50 rounded-full px-4 py-2 text-sm font-semibold text-green-700 border border-green-200">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i>
                             100% compliant
                         </div>
-                        <div class="flex items-center gap-1.5 bg-blue-50 rounded-full px-3 py-1 text-xs font-semibold text-blue-700 border border-blue-200">
-                            <i data-lucide="users" class="w-3 h-3"></i>
+                        <div class="flex items-center gap-2 bg-blue-50 rounded-full px-4 py-2 text-sm font-semibold text-blue-700 border border-blue-200">
+                            <i data-lucide="users" class="w-4 h-4"></i>
                             Real people
                         </div>
-                        <div class="flex items-center gap-1.5 bg-red-50 rounded-full px-3 py-1 text-xs font-semibold text-brand-red border border-red-200">
-                            <i data-lucide="ban" class="w-3 h-3"></i>
+                        <div class="flex items-center gap-2 bg-red-50 rounded-full px-4 py-2 text-sm font-semibold text-brand-red border border-red-200">
+                            <i data-lucide="ban" class="w-4 h-4"></i>
                             No bots
                         </div>
                     </div>
 
                     <!-- Graph Preview -->
-                    <div class="relative rounded-xl overflow-hidden border border-black/20 mb-3">
+                    <div class="relative rounded-xl overflow-hidden border-2 border-black/20 mb-4">
                         <img src="graph-28-days.png" alt="28 day subscriber growth" class="w-full">
-                        <div class="absolute top-2 left-2 bg-ink text-white text-xs font-bold px-2 py-0.5 rounded-full">28 Days</div>
+                        <div class="absolute top-3 left-3 bg-ink text-white text-sm font-bold px-3 py-1 rounded-full">28 Days</div>
                     </div>
 
-                    <p class="text-xs text-gray-500 text-center flex items-center justify-center gap-1">
-                        <i data-lucide="lock" class="w-3 h-3"></i>
+                    <p class="text-sm text-gray-500 text-center flex items-center justify-center gap-2">
+                        <i data-lucide="lock" class="w-4 h-4"></i>
                         Real YouTube Studio data · Channel name removed for privacy
                     </p>
                 </div>
             </div>
 
             <!-- Sub-text -->
-            <p class="text-center text-sm text-gray-500 mt-10">
-                One-time service <span class="mx-2">·</span> We implement it for you <span class="mx-2">·</span> No ongoing contracts
+            <p class="text-center text-base text-gray-500 mt-12">
+                One-time service <span class="mx-3">·</span> We implement it for you <span class="mx-3">·</span> No ongoing contracts
             </p>
         </div>
     </section>
@@ -817,8 +826,83 @@
         </div>
     </section>
 
+    <!-- Case Study Section - From 1,000 to 4,500+ subscribers -->
+    <section class="py-20 bg-white border-b-2 border-black">
+        <div class="max-w-5xl mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-display mb-4">
+                    From 1,000 to <span class="text-green-700">4,500+ subscribers</span><br>in 46 days
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">A product-driven YouTube channel using the exact system we implement for you.</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="bg-brand-red-soft rounded-3xl border-2 border-black p-8 mb-8">
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 text-center shadow-hard-sm">
+                        <div class="text-4xl md:text-5xl font-display text-green-700 mb-2">+3,512</div>
+                        <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide">Subscribers in 46 Days</div>
+                    </div>
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 text-center shadow-hard-sm">
+                        <div class="text-4xl md:text-5xl font-display text-green-700 mb-2">$0.40</div>
+                        <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide">Cost Per Subscriber</div>
+                    </div>
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 text-center shadow-hard-sm">
+                        <div class="text-4xl md:text-5xl font-display text-green-700 mb-2">500+</div>
+                        <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide">New Subscribers Per Week</div>
+                    </div>
+                </div>
+
+                <!-- What We Didn't Use Banner -->
+                <div class="bg-ink rounded-xl border-2 border-black p-4 flex flex-wrap justify-center gap-6 mb-8">
+                    <div class="flex items-center gap-2 text-white">
+                        <i data-lucide="x" class="w-4 h-4 text-brand-red"></i>
+                        <span class="text-sm font-medium">No bots or fake accounts</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white">
+                        <i data-lucide="x" class="w-4 h-4 text-brand-red"></i>
+                        <span class="text-sm font-medium">No Shorts or viral gimmicks</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white">
+                        <i data-lucide="x" class="w-4 h-4 text-brand-red"></i>
+                        <span class="text-sm font-medium">No engagement pods</span>
+                    </div>
+                </div>
+
+                <!-- Explanation -->
+                <div class="text-center mb-8">
+                    <p class="text-gray-600 text-lg mb-4 max-w-2xl mx-auto">This growth didn't come from a viral video or a trend. It came from a strategically targeted advertising campaign that put the channel in front of the right audience — real people who chose to subscribe.</p>
+                    <p class="font-bold text-ink text-lg">This is the exact service we deliver for you.</p>
+                </div>
+
+                <!-- Graph Tabs -->
+                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden">
+                    <div class="flex border-b-2 border-black">
+                        <button class="graph-tab flex-1 py-4 font-bold text-center bg-brand-red-soft border-r border-black active" data-graph="28">Last 28 Days</button>
+                        <button class="graph-tab flex-1 py-4 font-bold text-center hover:bg-gray-50 transition-colors" data-graph="90">Last 90 Days</button>
+                    </div>
+                    <div class="p-4">
+                        <div class="graph-content active" data-graph="28">
+                            <img src="graph-28-days.png" alt="28 day subscriber growth chart" class="w-full rounded-lg">
+                        </div>
+                        <div class="graph-content hidden" data-graph="90">
+                            <img src="graph-90-days.png" alt="90 day subscriber growth chart" class="w-full rounded-lg">
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 text-center">
+                        <p class="text-xs text-gray-500 flex items-center justify-center gap-1">
+                            <i data-lucide="lock" class="w-3 h-3"></i>
+                            Real YouTube Studio data · Channel name removed for privacy
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How It Works / System Section -->
-    <section class="py-20 bg-ink text-white border-b-2 border-black">
+    <section id="how-it-works" class="py-20 bg-ink text-white border-b-2 border-black">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
                 <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-white mb-4">HOW IT WORKS</span>
@@ -1078,52 +1162,68 @@
         </div>
     </section>
 
-    <!-- Comparison Table -->
+    <!-- Comparison Table - Clean 3-Column Design -->
     <section class="py-20 bg-brand-red-soft border-b-2 border-black">
-        <div class="max-w-4xl mx-auto px-4">
+        <div class="max-w-5xl mx-auto px-4">
             <div class="text-center mb-10">
                 <h3 class="text-2xl md:text-3xl font-display mb-2">Cheap Subscribers vs. Real Growth</h3>
                 <p class="text-gray-600">Not all subscribers are created equal. Here's what you're actually buying.</p>
             </div>
 
-            <!-- Desktop Table -->
-            <div class="comparison-table overflow-x-auto">
-                <table class="w-full bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
-                    <thead>
-                        <tr>
-                            <th class="p-4 text-left bg-ink text-white font-bold">Factor</th>
-                            <th class="p-4 text-center bg-brand-red text-white font-bold">Cheap Services<br><span class="font-normal text-xs opacity-80">($120 for 500 subs)</span></th>
-                            <th class="p-4 text-center bg-green-600 text-white font-bold">LYNCK System<br><span class="font-normal text-xs opacity-80">(Real Google Ads)</span></th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm">
-                        <tr class="border-t border-gray-200">
-                            <td class="p-4 font-semibold bg-gray-50">Subscriber Type</td>
-                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>Bots & fake accounts</td>
-                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Real people via Google Ads</td>
-                        </tr>
-                        <tr class="border-t border-gray-200">
-                            <td class="p-4 font-semibold bg-gray-50">Watch Time</td>
-                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>0 hours (bots don't watch)</td>
-                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Real potential viewers</td>
-                        </tr>
-                        <tr class="border-t border-gray-200">
-                            <td class="p-4 font-semibold bg-gray-50">YouTube ToS</td>
-                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>Violation (ban risk)</td>
-                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Fully compliant</td>
-                        </tr>
-                        <tr class="border-t border-gray-200">
-                            <td class="p-4 font-semibold bg-gray-50">Longevity</td>
-                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>Purged in YouTube sweeps</td>
-                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Permanent real followers</td>
-                        </tr>
-                        <tr class="border-t border-gray-200">
-                            <td class="p-4 font-semibold bg-gray-50">Business Value</td>
-                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>Zero (no real audience)</td>
-                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Actual audience asset</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Desktop Table - Clean 3-Column -->
+            <div class="comparison-table">
+                <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
+                    <!-- Header Row -->
+                    <div class="grid grid-cols-3">
+                        <div class="bg-ink text-white p-6">
+                            <p class="font-bold text-lg">Factor</p>
+                        </div>
+                        <div class="bg-brand-red text-white p-6 text-center">
+                            <p class="font-bold text-lg">Cheap Services</p>
+                            <p class="text-sm opacity-80">($120 for 500 subs)</p>
+                        </div>
+                        <div class="bg-green-700 text-white p-6 text-center">
+                            <p class="font-bold text-lg">LYNCK System</p>
+                            <p class="text-sm opacity-80">(Real Google Ads growth)</p>
+                        </div>
+                    </div>
+                    <!-- Data Rows -->
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Subscriber Type</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Bots & fake accounts</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real people via Google Ads</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Watch Time</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>0 hours (bots don't watch)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real potential viewers</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Engagement</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Zero (dead audience)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Likes, comments, shares</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">YouTube ToS</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Violation (ban risk)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Fully compliant</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Monetization Path</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Still blocked (no watch hours)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Real path to monetization</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Longevity</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Purged in next YouTube sweep</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Permanent real followers</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-t border-gray-200">
+                        <div class="p-5 font-semibold bg-gray-50 border-r border-gray-200">Business Value</div>
+                        <div class="p-5 text-center text-brand-red border-r border-gray-200"><i data-lucide="x" class="w-4 h-4 inline mr-2"></i>Zero (no real audience)</div>
+                        <div class="p-5 text-center text-green-700"><i data-lucide="check" class="w-4 h-4 inline mr-2"></i>Actual audience asset</div>
+                    </div>
+                </div>
             </div>
 
             <!-- Mobile Cards -->
@@ -1135,23 +1235,31 @@
                     </div>
                     <div class="p-4 space-y-3 text-sm">
                         <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>Subscriber Type:</strong> Bots & fake accounts</span>
                         </div>
                         <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>Watch Time:</strong> 0 hours (bots don't watch)</span>
                         </div>
                         <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Engagement:</strong> Zero (dead audience)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>YouTube ToS:</strong> Violation (ban risk)</span>
                         </div>
                         <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Monetization:</strong> Still blocked (no watch hours)</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-red">
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>Longevity:</strong> Purged in YouTube sweeps</span>
                         </div>
                         <div class="flex items-center gap-2 text-brand-red">
-                            <i data-lucide="x" class="w-4 h-4"></i>
+                            <i data-lucide="x" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>Business Value:</strong> Zero (no real audience)</span>
                         </div>
                     </div>
@@ -1159,36 +1267,45 @@
 
                 <!-- LYNCK System Card -->
                 <div class="bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
-                    <div class="bg-green-600 text-white p-4 font-bold text-center">
-                        LYNCK System<br><span class="font-normal text-xs opacity-80">(Real Google Ads)</span>
+                    <div class="bg-green-700 text-white p-4 font-bold text-center">
+                        LYNCK System<br><span class="font-normal text-xs opacity-80">(Real Google Ads growth)</span>
                     </div>
                     <div class="p-4 space-y-3 text-sm">
-                        <div class="flex items-center gap-2 text-green-600">
-                            <i data-lucide="check" class="w-4 h-4"></i>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>Subscriber Type:</strong> Real people via Google Ads</span>
                         </div>
-                        <div class="flex items-center gap-2 text-green-600">
-                            <i data-lucide="check" class="w-4 h-4"></i>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>Watch Time:</strong> Real potential viewers</span>
                         </div>
-                        <div class="flex items-center gap-2 text-green-600">
-                            <i data-lucide="check" class="w-4 h-4"></i>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Engagement:</strong> Likes, comments, shares</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>YouTube ToS:</strong> Fully compliant</span>
                         </div>
-                        <div class="flex items-center gap-2 text-green-600">
-                            <i data-lucide="check" class="w-4 h-4"></i>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
+                            <span><strong>Monetization:</strong> Real path to monetization</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>Longevity:</strong> Permanent real followers</span>
                         </div>
-                        <div class="flex items-center gap-2 text-green-600">
-                            <i data-lucide="check" class="w-4 h-4"></i>
+                        <div class="flex items-center gap-2 text-green-700">
+                            <i data-lucide="check" class="w-4 h-4 flex-shrink-0"></i>
                             <span><strong>Business Value:</strong> Actual audience asset</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-6 bg-green-50 rounded-xl border-2 border-black p-4 text-center">
-                <p class="text-gray-700"><strong class="text-green-700">Bottom line:</strong> Cheap subscribers cost you money AND your channel's future. Real subscribers unlock monetization, generate leads, and build lasting authority.</p>
+            <!-- Bottom Line -->
+            <div class="mt-8 bg-brand-red-soft rounded-2xl border-2 border-black p-6 text-center">
+                <p class="text-lg text-gray-700"><strong class="text-ink">Bottom line:</strong> Cheap subscribers cost you money AND your channel's future. Real subscribers build an actual audience.</p>
             </div>
         </div>
     </section>
@@ -1569,6 +1686,21 @@
 
         document.getElementById('calc-brands-subs')?.addEventListener('change', updateBrandsCalc);
         document.getElementById('calc-brands-field')?.addEventListener('change', updateBrandsCalc);
+
+        // Graph tabs functionality
+        document.querySelectorAll('.graph-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const graph = tab.dataset.graph;
+                // Update tab active states
+                document.querySelectorAll('.graph-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                // Show/hide graph content
+                document.querySelectorAll('.graph-content').forEach(c => c.classList.add('hidden'));
+                document.querySelector(`.graph-content[data-graph="${graph}"]`).classList.remove('hidden');
+                // Re-initialize icons
+                lucide.createIcons();
+            });
+        });
 
         // Initialize calculators
         if (document.getElementById('calc-creators-subs')) updateCreatorsCalc();
