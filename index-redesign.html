@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turn your YouTube channel into a revenue engine. Unlock monetization, generate organic leads, and build real authority — done-for-you by a Google Partner.">
+    <meta property="og:title" content="LYNCK — YouTube Revenue System | Monetization, Leads, Authority">
+    <meta property="og:description" content="Turn your YouTube channel into a revenue engine. Unlock monetization, generate organic leads, and build real authority — done-for-you by a Google Partner.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lynckstudio.pro/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LYNCK — YouTube Revenue System | Monetization, Leads, Authority">
+    <meta name="twitter:description" content="Turn your YouTube channel into a revenue engine. Unlock monetization, generate organic leads, and build real authority — done-for-you by a Google Partner.">
+    <title>LYNCK — YouTube Revenue System | Monetization, Leads, Authority</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='%23faf9f7' font-family='monospace' font-weight='bold' font-size='18'>L</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Titan+One&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#c41e3a',
+                        'brand-red-light': '#e63950',
+                        'brand-red-soft': '#fef2f2',
+                        'brand-pink': '#ffe4e6',
+                        'ink': '#0a0a0a',
+                        'paper': '#faf9f7',
+                    },
+                    fontFamily: {
+                        'display': ['Titan One', 'cursive'],
+                        'body': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .font-display { font-family: 'Titan One', cursive; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fef2f2; }
+        ::-webkit-scrollbar-thumb { background: #0a0a0a; border-radius: 4px; }
+
+        /* Text Stroke */
+        .text-stroke-3 {
+            -webkit-text-stroke: 3px black;
+            paint-order: stroke fill;
+        }
+
+        /* Hard Shadow Utilities */
+        .shadow-hard { box-shadow: 4px 4px 0px 0px #000000; }
+        .shadow-hard-sm { box-shadow: 2px 2px 0px 0px #000000; }
+        .shadow-hard-red { box-shadow: 4px 4px 0px 0px #c41e3a; }
+        .shadow-text-hard { text-shadow: 6px 6px 0px #000000; }
+
+        @media (max-width: 768px) {
+            .shadow-text-hard { text-shadow: 3px 3px 0px #000000; }
+            .text-stroke-3 { -webkit-text-stroke: 1.5px black; }
+        }
+
+        /* Smooth scroll */
+        html { scroll-behavior: smooth; }
+
+        /* Selection */
+        ::selection { background: #c41e3a; color: white; }
+
+        /* FAQ Animation */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+        }
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Testimonial Carousel */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .testimonials-track {
+            animation: scroll 60s linear infinite;
+        }
+        .testimonials-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* Tab active states */
+        .profile-tab.active {
+            background: #c41e3a;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-brand-red-soft text-ink antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 px-4 md:px-6 py-4 bg-brand-red-soft/90 backdrop-blur-sm border-b-2 border-black">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-4">
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-ink rounded-lg flex items-center justify-center group-hover:rotate-6 transition-transform">
+                        <span class="text-white font-bold text-xl">L</span>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight">LYNCK</span>
+                </a>
+                <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="hidden sm:block">
+                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-16">
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-6 font-semibold text-sm">
+                <a href="#proof" class="hover:text-brand-red transition-colors">Proof</a>
+                <a href="#benefits" class="hover:text-brand-red transition-colors">Benefits</a>
+                <a href="#how-it-works" class="hover:text-brand-red transition-colors">How It Works</a>
+                <a href="#pricing" class="hover:text-brand-red transition-colors">Pricing</a>
+                <a href="#faq" class="hover:text-brand-red transition-colors">FAQ</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#pricing" class="hidden md:flex items-center gap-3 bg-brand-red border-2 border-black rounded-full px-1 pl-1 py-1 pr-6 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all duration-200 group text-white">
+                <div class="bg-white border-2 border-black rounded-full p-1.5 group-hover:rotate-45 transition-transform duration-300">
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-black stroke-[2.5]"></i>
+                </div>
+                <span class="font-bold text-xs tracking-wide">SEE PRICING</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden p-2">
+                <i data-lucide="menu" class="w-8 h-8 text-black"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-28 pb-16 md:pt-36 md:pb-24 min-h-screen flex flex-col justify-center overflow-hidden bg-brand-red-soft">
+
+        <!-- Decorative shapes -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-brand-red/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-40 right-10 w-48 h-48 bg-brand-red/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/4 w-4 h-4 bg-brand-red rounded-full opacity-50"></div>
+        <div class="absolute top-1/3 right-1/3 w-3 h-3 bg-ink rounded-full opacity-30"></div>
+
+        <!-- Main Content -->
+        <div class="relative z-10 max-w-6xl mx-auto w-full px-4">
+
+            <!-- Badge -->
+            <div class="flex justify-center mb-6">
+                <div class="inline-flex items-center gap-2 bg-white border-2 border-black rounded-full px-4 py-2 shadow-hard-sm">
+                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-semibold">Proven system · Real results</span>
+                </div>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display text-center mb-6 tracking-tight leading-tight">
+                Turn Your YouTube<br>
+                Into a <span class="text-brand-red">Revenue Engine</span>
+            </h1>
+
+            <!-- Stats Badge -->
+            <div class="flex justify-center mb-6">
+                <div class="inline-flex items-center gap-3 bg-ink text-white rounded-full px-6 py-3 text-sm font-semibold">
+                    <span>3,500+ real subscribers</span>
+                    <span class="w-1 h-1 bg-brand-red rounded-full"></span>
+                    <span>46 days</span>
+                    <span class="w-1 h-1 bg-brand-red rounded-full"></span>
+                    <span>$0.40/sub</span>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <p class="text-lg md:text-xl text-center text-gray-600 max-w-3xl mx-auto mb-10">
+                Monetize faster. Generate organic leads. Build real authority. We deliver the subscribers you need to unlock what YouTube can actually do for you.
+            </p>
+
+            <!-- CTAs -->
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                <a href="#pricing" class="w-full md:w-auto flex items-center justify-center gap-4 bg-brand-red text-white border-2 border-black rounded-full pl-2 pr-8 py-2 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                    <div class="bg-white border-2 border-black rounded-full p-2">
+                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-black"></i>
+                    </div>
+                    <span class="font-bold">Choose Your Plan</span>
+                </a>
+
+                <a href="#proof" class="w-full md:w-auto flex items-center justify-center gap-4 bg-white border-2 border-black rounded-full pl-2 pr-8 py-2 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                    <div class="bg-brand-pink border-2 border-black rounded-full p-2">
+                        <i data-lucide="play" class="w-5 h-5 text-brand-red"></i>
+                    </div>
+                    <span class="font-bold">See the Proof</span>
+                </a>
+            </div>
+
+            <!-- Audience Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl border-2 border-black p-5 shadow-hard-sm hover:-translate-y-1 transition-transform">
+                    <div class="w-12 h-12 bg-brand-red rounded-xl border-2 border-black flex items-center justify-center mb-4">
+                        <i data-lucide="play-circle" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Creators</h3>
+                    <p class="text-gray-600 text-sm">Reach 1K subs faster. Unlock monetization and start earning from your content.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl border-2 border-black p-5 shadow-hard-sm hover:-translate-y-1 transition-transform">
+                    <div class="w-12 h-12 bg-brand-red rounded-xl border-2 border-black flex items-center justify-center mb-4">
+                        <i data-lucide="building-2" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Businesses</h3>
+                    <p class="text-gray-600 text-sm">Build an evergreen lead engine. Content you post today generates leads for years.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl border-2 border-black p-5 shadow-hard-sm hover:-translate-y-1 transition-transform">
+                    <div class="w-12 h-12 bg-brand-red rounded-xl border-2 border-black flex items-center justify-center mb-4">
+                        <i data-lucide="user" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Personal Brands</h3>
+                    <p class="text-gray-600 text-sm">Establish authority in your niche. Attract speaking gigs, clients, and opportunities.</p>
+                </div>
+            </div>
+
+            <!-- Sub-text -->
+            <p class="text-center text-sm text-gray-500 mt-8">
+                One-time service <span class="mx-2">·</span> We implement it for you <span class="mx-2">·</span> No ongoing contracts
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="py-8 bg-ink border-y-2 border-black overflow-hidden">
+        <div class="testimonials-track flex gap-6 whitespace-nowrap">
+            <!-- Testimonial Cards -->
+            <div class="flex-shrink-0 bg-white rounded-2xl border-2 border-black p-6 w-[350px] shadow-hard">
+                <div class="flex gap-1 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <p class="text-sm mb-4 whitespace-normal">"Finally broke through 1,000 subscribers after 2 years of trying. LYNCK delivered exactly what they promised."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">MK</div>
+                    <div>
+                        <div class="font-bold text-sm">Marcus K.</div>
+                        <div class="text-xs text-gray-500">Tech Review Channel</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 bg-white rounded-2xl border-2 border-black p-6 w-[350px] shadow-hard">
+                <div class="flex gap-1 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <p class="text-sm mb-4 whitespace-normal">"3,000 subscribers in 6 weeks. The best part? They're actually our target audience — IT decision makers."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">SR</div>
+                    <div>
+                        <div class="font-bold text-sm">Sarah R.</div>
+                        <div class="text-xs text-gray-500">SaaS Marketing Director</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 bg-white rounded-2xl border-2 border-black p-6 w-[350px] shadow-hard">
+                <div class="flex gap-1 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <p class="text-sm mb-4 whitespace-normal">"From 800 to 4,200 subscribers. Hit monetization in 5 weeks. The Google Partner badge gave me confidence."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">AL</div>
+                    <div>
+                        <div class="font-bold text-sm">Amanda L.</div>
+                        <div class="text-xs text-gray-500">DIY & Crafts Channel</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 bg-white rounded-2xl border-2 border-black p-6 w-[350px] shadow-hard">
+                <div class="flex gap-1 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <p class="text-sm mb-4 whitespace-normal">"My course sales doubled after hitting 5K subs. The targeting was incredible — found people actually interested."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">TN</div>
+                    <div>
+                        <div class="font-bold text-sm">Tom N.</div>
+                        <div class="text-xs text-gray-500">Music Education Channel</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 bg-white rounded-2xl border-2 border-black p-6 w-[350px] shadow-hard">
+                <div class="flex gap-1 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <p class="text-sm mb-4 whitespace-normal">"10K subscribers for our agency's channel. Sponsors started reaching out within a month. Game changer."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">MP</div>
+                    <div>
+                        <div class="font-bold text-sm">Michael P.</div>
+                        <div class="text-xs text-gray-500">Agency Owner</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Duplicate for seamless loop -->
+            <div class="flex-shrink-0 bg-white rounded-2xl border-2 border-black p-6 w-[350px] shadow-hard">
+                <div class="flex gap-1 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <p class="text-sm mb-4 whitespace-normal">"Finally broke through 1,000 subscribers after 2 years of trying. LYNCK delivered exactly what they promised."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">MK</div>
+                    <div>
+                        <div class="font-bold text-sm">Marcus K.</div>
+                        <div class="text-xs text-gray-500">Tech Review Channel</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 bg-white rounded-2xl border-2 border-black p-6 w-[350px] shadow-hard">
+                <div class="flex gap-1 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <p class="text-sm mb-4 whitespace-normal">"3,000 subscribers in 6 weeks. The best part? They're actually our target audience — IT decision makers."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">SR</div>
+                    <div>
+                        <div class="font-bold text-sm">Sarah R.</div>
+                        <div class="text-xs text-gray-500">SaaS Marketing Director</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 bg-white rounded-2xl border-2 border-black p-6 w-[350px] shadow-hard">
+                <div class="flex gap-1 mb-3">
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                </div>
+                <p class="text-sm mb-4 whitespace-normal">"From 800 to 4,200 subscribers. Hit monetization in 5 weeks. The Google Partner badge gave me confidence."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-red rounded-full flex items-center justify-center text-white font-bold text-sm">AL</div>
+                    <div>
+                        <div class="font-bold text-sm">Amanda L.</div>
+                        <div class="text-xs text-gray-500">DIY & Crafts Channel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Calculator Section -->
+    <section id="benefits" class="py-20 bg-white border-b-2 border-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">05 — THE OPPORTUNITY</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">What Could Your Channel Be Worth?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">YouTube isn't just a platform — it's an asset that pays you for years</p>
+            </div>
+
+            <!-- Profile Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <button class="profile-tab active bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="creators">
+                    <i data-lucide="play-circle" class="w-5 h-5"></i>
+                    Creators
+                </button>
+                <button class="profile-tab bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="businesses">
+                    <i data-lucide="building-2" class="w-5 h-5"></i>
+                    Businesses
+                </button>
+                <button class="profile-tab bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="brands">
+                    <i data-lucide="user" class="w-5 h-5"></i>
+                    Personal Brands
+                </button>
+            </div>
+
+            <!-- Creators Content -->
+            <div class="profile-content active" data-profile="creators">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Calculator -->
+                    <div class="bg-brand-red-soft rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="mb-6">
+                            <h3 class="font-bold text-xl mb-1">Revenue Estimator</h3>
+                            <p class="text-gray-600 text-sm">See what your channel could earn from ads alone</p>
+                        </div>
+                        <div class="space-y-4 mb-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Target Subscribers</label>
+                                <select id="calc-creators-subs" class="w-full bg-white border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-brand-red">
+                                    <option value="1000">1,000 subscribers</option>
+                                    <option value="5000" selected>5,000 subscribers</option>
+                                    <option value="10000">10,000 subscribers</option>
+                                    <option value="25000">25,000 subscribers</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Your Niche</label>
+                                <select id="calc-creators-niche" class="w-full bg-white border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-brand-red">
+                                    <option value="finance" data-cpm="20">Finance / Business ($15–25 RPM)</option>
+                                    <option value="tech" data-cpm="14">Tech / Software ($10–18 RPM)</option>
+                                    <option value="health" data-cpm="12">Health / Fitness ($8–15 RPM)</option>
+                                    <option value="education" data-cpm="10" selected>Education / How-to ($7–12 RPM)</option>
+                                    <option value="lifestyle" data-cpm="6">Lifestyle / Vlog ($4–8 RPM)</option>
+                                    <option value="gaming" data-cpm="3">Gaming / Entertainment ($2–5 RPM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border-2 border-black p-4 text-center">
+                            <div class="text-sm text-gray-500 mb-1">Estimated Monthly Income</div>
+                            <div class="text-3xl font-display text-brand-red" id="calc-creators-result">$750 – $2,500</div>
+                            <div class="text-xs text-gray-500 mt-1" id="calc-creators-result-note">Ad revenue + sponsorship potential</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 mt-4">
+                            <div class="bg-white rounded-lg border border-black/20 p-3 text-center">
+                                <div class="text-xs text-gray-500">At 10K subs</div>
+                                <div class="font-bold text-brand-red" id="calc-creators-10k">$800 – $1,200</div>
+                            </div>
+                            <div class="bg-white rounded-lg border border-black/20 p-3 text-center">
+                                <div class="text-xs text-gray-500">At 25K subs</div>
+                                <div class="font-bold text-brand-red" id="calc-creators-25k">$2,000 – $3,000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits List -->
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-14 h-14 bg-brand-red rounded-xl border-2 border-black flex items-center justify-center">
+                                <i data-lucide="play-circle" class="w-7 h-7 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl">For Creators</h3>
+                                <p class="text-gray-600 text-sm">Turn your passion into income</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3" id="creators-benefits-list">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Unlock monetization faster</strong> — hit 1K subs in weeks instead of years</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Earn passive income</strong> — videos you made months ago keep paying you</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Attract sponsorships</strong> — brands pay $500-$5,000+ per video at 10K+ subs</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Algorithm momentum</strong> — more subs = more reach = more organic growth</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Sell your own products</strong> — courses, merch, coaching to your audience</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Businesses Content -->
+            <div class="profile-content hidden" data-profile="businesses">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Calculator -->
+                    <div class="bg-blue-50 rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="mb-6">
+                            <h3 class="font-bold text-xl mb-1">Lead Value Calculator</h3>
+                            <p class="text-gray-600 text-sm">Compare YouTube leads vs paid advertising</p>
+                        </div>
+                        <div class="space-y-4 mb-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Target Subscribers</label>
+                                <select id="calc-business-subs" class="w-full bg-white border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="1000">1,000 subscribers</option>
+                                    <option value="5000" selected>5,000 subscribers</option>
+                                    <option value="10000">10,000 subscribers</option>
+                                    <option value="25000">25,000 subscribers</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Your Industry</label>
+                                <select id="calc-business-industry" class="w-full bg-white border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="saas" data-cpl="150">SaaS / Software</option>
+                                    <option value="consulting" data-cpl="200" selected>Consulting / Services</option>
+                                    <option value="ecommerce" data-cpl="50">E-commerce</option>
+                                    <option value="realestate" data-cpl="300">Real Estate</option>
+                                    <option value="finance" data-cpl="250">Financial Services</option>
+                                    <option value="health" data-cpl="100">Health / Wellness</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border-2 border-black p-4 text-center">
+                            <div class="text-sm text-gray-500 mb-1">Equivalent Ad Spend (Monthly)</div>
+                            <div class="text-3xl font-display text-blue-600" id="calc-business-result">$5,000 – $10,000</div>
+                            <div class="text-xs text-gray-500 mt-1">Value of organic leads vs paid acquisition</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 mt-4">
+                            <div class="bg-white rounded-lg border border-black/20 p-3 text-center">
+                                <div class="text-xs text-gray-500">Leads/month</div>
+                                <div class="font-bold text-blue-600" id="calc-business-leads">25 – 50</div>
+                            </div>
+                            <div class="bg-white rounded-lg border border-black/20 p-3 text-center">
+                                <div class="text-xs text-gray-500">Cost per lead</div>
+                                <div class="font-bold text-blue-600" id="calc-business-cpl">$0 (organic)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits List -->
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-14 h-14 bg-blue-600 rounded-xl border-2 border-black flex items-center justify-center">
+                                <i data-lucide="building-2" class="w-7 h-7 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl">For Businesses</h3>
+                                <p class="text-gray-600 text-sm">Build an evergreen lead engine</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3" id="business-benefits-list">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Leads that cost $0</strong> — organic traffic from videos posted months ago</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Pre-sold prospects</strong> — they've watched your content, they trust you</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Evergreen content</strong> — a video today generates leads for 3-5+ years</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Lower CAC</strong> — reduce dependence on expensive paid ads</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>SEO benefits</strong> — YouTube videos rank in Google search results</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Brands Content -->
+            <div class="profile-content hidden" data-profile="brands">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Calculator -->
+                    <div class="bg-green-50 rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="mb-6">
+                            <h3 class="font-bold text-xl mb-1">Authority Multiplier</h3>
+                            <p class="text-gray-600 text-sm">See how subscribers unlock opportunities</p>
+                        </div>
+                        <div class="space-y-4 mb-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Target Subscribers</label>
+                                <select id="calc-brands-subs" class="w-full bg-white border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <option value="1000">1,000 subscribers</option>
+                                    <option value="5000" selected>5,000 subscribers</option>
+                                    <option value="10000">10,000 subscribers</option>
+                                    <option value="25000">25,000 subscribers</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Your Field</label>
+                                <select id="calc-brands-field" class="w-full bg-white border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <option value="coaching" data-rate="300">Coaching / Consulting</option>
+                                    <option value="speaker" data-rate="5000" selected>Speaking / Training</option>
+                                    <option value="author" data-rate="50">Author / Educator</option>
+                                    <option value="expert" data-rate="500">Industry Expert</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border-2 border-black p-4 text-center">
+                            <div class="text-sm text-gray-500 mb-1">Premium You Can Command</div>
+                            <div class="text-3xl font-display text-green-600" id="calc-brands-result">+40% – 80%</div>
+                            <div class="text-xs text-gray-500 mt-1">On consulting/speaking rates with 5K+ subs</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 mt-4">
+                            <div class="bg-white rounded-lg border border-black/20 p-3 text-center">
+                                <div class="text-xs text-gray-500">Speaking fee unlock</div>
+                                <div class="font-bold text-green-600" id="calc-brands-speaking">$2K – $10K</div>
+                            </div>
+                            <div class="bg-white rounded-lg border border-black/20 p-3 text-center">
+                                <div class="text-xs text-gray-500">Course potential</div>
+                                <div class="font-bold text-green-600" id="calc-brands-course">$5K – $25K/mo</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits List -->
+                    <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-14 h-14 bg-green-600 rounded-xl border-2 border-black flex items-center justify-center">
+                                <i data-lucide="user" class="w-7 h-7 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl">For Personal Brands</h3>
+                                <p class="text-gray-600 text-sm">Establish authority in your space</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3" id="brands-benefits-list">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Instant credibility</strong> — "10K subscribers" signals authority</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Speaking gigs</strong> — event organizers check your YouTube first</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Premium pricing</strong> — charge 50-100% more for coaching/consulting</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Book/course sales</strong> — built-in audience ready to buy</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                                <span class="text-sm"><strong>Media opportunities</strong> — podcasts, interviews, features find you</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-sm text-gray-500 mt-8">Estimates based on industry averages. Actual results vary by niche, content quality, and audience engagement.</p>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section id="proof" class="py-20 bg-brand-red-soft border-b-2 border-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">04 — PROOF</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">Real Results, Real Channel</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Not a mockup. Not a demo account. This is actual YouTube Studio data from a channel using our system.</p>
+            </div>
+
+            <!-- Proof Card -->
+            <div class="bg-brand-red-soft rounded-3xl border-2 border-black p-6 md:p-10 shadow-hard max-w-4xl mx-auto">
+                <!-- Metrics -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-white rounded-xl border-2 border-black p-4 text-center shadow-hard-sm">
+                        <div class="text-3xl md:text-4xl font-display text-brand-red">3,571</div>
+                        <div class="text-xs text-gray-500 font-semibold">New Subscribers</div>
+                    </div>
+                    <div class="bg-white rounded-xl border-2 border-black p-4 text-center shadow-hard-sm">
+                        <div class="text-3xl md:text-4xl font-display text-brand-red">46</div>
+                        <div class="text-xs text-gray-500 font-semibold">Days</div>
+                    </div>
+                    <div class="bg-white rounded-xl border-2 border-black p-4 text-center shadow-hard-sm">
+                        <div class="text-3xl md:text-4xl font-display text-brand-red">$0.40</div>
+                        <div class="text-xs text-gray-500 font-semibold">Cost per Sub</div>
+                    </div>
+                    <div class="bg-white rounded-xl border-2 border-black p-4 text-center shadow-hard-sm">
+                        <div class="text-3xl md:text-4xl font-display text-brand-red">500+</div>
+                        <div class="text-xs text-gray-500 font-semibold">Subs/Week</div>
+                    </div>
+                </div>
+
+                <!-- Differentiators -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <div class="flex items-center gap-2 bg-white rounded-full px-4 py-2 border-2 border-black text-sm font-semibold">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-green-600"></i>
+                        100% compliant
+                    </div>
+                    <div class="flex items-center gap-2 bg-white rounded-full px-4 py-2 border-2 border-black text-sm font-semibold">
+                        <i data-lucide="users" class="w-4 h-4 text-blue-600"></i>
+                        Real people
+                    </div>
+                    <div class="flex items-center gap-2 bg-white rounded-full px-4 py-2 border-2 border-black text-sm font-semibold">
+                        <i data-lucide="ban" class="w-4 h-4 text-brand-red"></i>
+                        No bots
+                    </div>
+                    <div class="flex items-center gap-2 bg-white rounded-full px-4 py-2 border-2 border-black text-sm font-semibold">
+                        <i data-lucide="x" class="w-4 h-4 text-brand-red"></i>
+                        No engagement pods
+                    </div>
+                </div>
+
+                <!-- Explanation -->
+                <div class="bg-white rounded-xl border-2 border-black p-6 mb-8">
+                    <p class="text-gray-700 mb-2"><strong class="text-ink">No viral videos. No trends. No luck.</strong> Just a strategically targeted Google Ads campaign that put this channel in front of the right audience — people who watched, subscribed, and stayed.</p>
+                    <p class="text-gray-600">This is the exact system we implement for you.</p>
+                </div>
+
+                <!-- Graph Images -->
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="relative">
+                        <img src="graph-28-days.png" alt="28 day growth" class="w-full rounded-xl border-2 border-black">
+                        <div class="absolute top-3 left-3 bg-ink text-white text-xs font-bold px-3 py-1 rounded-full">28 Days</div>
+                    </div>
+                    <div class="relative">
+                        <img src="graph-90-days.png" alt="90 day growth" class="w-full rounded-xl border-2 border-black">
+                        <div class="absolute top-3 left-3 bg-ink text-white text-xs font-bold px-3 py-1 rounded-full">90 Days</div>
+                    </div>
+                </div>
+
+                <p class="text-center text-sm text-gray-500 mt-4 flex items-center justify-center gap-2">
+                    <i data-lucide="lock" class="w-4 h-4"></i>
+                    Real YouTube Studio data · Channel name removed for privacy
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-brand-red-soft border-b-2 border-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-ink text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">01 — THE REALITY</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">Most YouTube channels never reach their potential.</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Whether you're chasing monetization or building a lead engine for your business — subscriber growth doesn't happen by accident. You need a system.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-brand-pink rounded-xl border-2 border-black flex items-center justify-center mb-4">
+                        <i data-lucide="clock" class="w-7 h-7 text-brand-red"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Waiting for Organic Growth</h3>
+                    <p class="text-gray-600">Hoping the algorithm will find you. Most channels wait months or years and never break the 1,000 subscriber threshold.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-brand-pink rounded-xl border-2 border-black flex items-center justify-center mb-4">
+                        <i data-lucide="target" class="w-7 h-7 text-brand-red"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">DIY Guesswork</h3>
+                    <p class="text-gray-600">Trying every tactic from YouTube gurus. No cohesive strategy. No measurable results. Just wasted time and effort.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-brand-pink rounded-xl border-2 border-black flex items-center justify-center mb-4">
+                        <i data-lucide="alert-triangle" class="w-7 h-7 text-brand-red"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">The Monetization Barrier</h3>
+                    <p class="text-gray-600">Stuck below 1,000 subscribers means no ad revenue, no sponsorships, no credibility. It's the ceiling that keeps most channels invisible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shift Section -->
+    <section id="how-it-works" class="py-20 bg-white border-b-2 border-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">02 — THE SHIFT</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">Why most channels fail<br>& what actually works</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Wrong -->
+                <div class="bg-gray-100 rounded-2xl border-2 border-black p-6">
+                    <h3 class="font-bold text-xl mb-6 text-gray-500 flex items-center gap-2">
+                        <i data-lucide="x-circle" class="w-6 h-6 text-brand-red"></i>
+                        What people try
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-600">Buying $10 subscriber packages from Fiverr</span>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-600">Sub-for-sub groups and engagement pods</span>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-600">Running untargeted ads without a strategy</span>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-600">Hiring a YouTube "guru" who delivers a PDF</span>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="x" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-600">Waiting months for organic growth that never comes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="bg-green-50 rounded-2xl border-2 border-black p-6">
+                    <h3 class="font-bold text-xl mb-6 text-green-700 flex items-center gap-2">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-green-600"></i>
+                        What actually works
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-700">Running targeted Google Ads that attract real subscribers</span>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-700">Acquiring people who watch, engage, and stick around</span>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-700">Partnering with a certified Google Ads agency</span>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-700">Tracking every dollar with transparent cost-per-subscriber</span>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white rounded-xl border border-black/10 p-4">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-gray-700">Building 100% YouTube-compliant growth that compounds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works / System Section -->
+    <section class="py-20 bg-ink text-white border-b-2 border-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-white mb-4">03 — HOW IT WORKS</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">From stuck to<br>monetization-ready in weeks</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">A simple, proven process that delivers real subscribers without you lifting a finger.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="relative">
+                    <div class="bg-brand-red rounded-2xl border-2 border-white p-6 h-full">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center font-display text-2xl text-brand-red mb-4">1</div>
+                        <h3 class="font-bold text-xl mb-3">Channel Analysis</h3>
+                        <p class="text-red-100">We analyze your channel, niche, and target audience to build a custom campaign strategy.</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-white/10 rounded-2xl border-2 border-white/30 p-6 h-full">
+                        <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-display text-2xl text-white mb-4">2</div>
+                        <h3 class="font-bold text-xl mb-3">Campaign Build</h3>
+                        <p class="text-gray-400">We create targeted Google Ads campaigns designed to attract real, engaged subscribers.</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-white/10 rounded-2xl border-2 border-white/30 p-6 h-full">
+                        <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-display text-2xl text-white mb-4">3</div>
+                        <h3 class="font-bold text-xl mb-3">Launch & Optimize</h3>
+                        <p class="text-gray-400">Campaigns go live. We optimize daily to lower your cost-per-subscriber and maximize results.</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-white/10 rounded-2xl border-2 border-white/30 p-6 h-full">
+                        <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-display text-2xl text-white mb-4">4</div>
+                        <h3 class="font-bold text-xl mb-3">Watch Growth</h3>
+                        <p class="text-gray-400">See real subscribers flowing in. We report progress and hit your subscriber target.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-brand-red-soft border-b-2 border-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">06 — PRICING</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">Choose your path to results</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">One-time payment. We handle everything. Monetization, leads, or authority — pick your outcome.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Tier 1 -->
+                <div class="bg-white rounded-3xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
+                    <div class="mb-6">
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Starter</span>
+                        <h3 class="text-2xl font-bold mt-1">Monetization Milestone</h3>
+                        <p class="text-gray-500 text-sm mt-2">Unlock the YouTube Partner Program — hit the 1,000 subscriber requirement.</p>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-display">$999</span>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Unlock YouTube Partner Program eligibility</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Start earning ad revenue from your content</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Custom targeting campaign</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Performance reporting</span>
+                        </li>
+                    </ul>
+                    <div class="text-xs text-gray-500 mb-4 text-center">1,000 real subscribers · ~$1.00/sub</div>
+                    <a href="#" class="block w-full py-3 text-center rounded-xl border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
+                        Choose Plan
+                    </a>
+                </div>
+
+                <!-- Tier 2 - Popular -->
+                <div class="bg-brand-red text-white rounded-3xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-ink text-white text-xs font-bold px-4 py-1 rounded-full border-2 border-white">BEST VALUE</div>
+                    <div class="mb-6">
+                        <span class="text-xs font-bold text-red-200 uppercase tracking-wider">Growth</span>
+                        <h3 class="text-2xl font-bold mt-1">Authority Builder</h3>
+                        <p class="text-red-100 text-sm mt-2">Build real authority — algorithm momentum, sponsor interest, and serious social proof.</p>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-display">$2,999</span>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
+                            <span class="text-sm">Attract sponsor interest & brand deals</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
+                            <span class="text-sm">Trigger algorithm momentum for organic reach</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
+                            <span class="text-sm">Advanced targeting campaign</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
+                            <span class="text-sm">Daily optimization & reporting</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
+                            <span class="text-sm">Google Partner-level management</span>
+                        </li>
+                    </ul>
+                    <div class="text-xs text-red-200 mb-4 text-center">5,000 real subscribers · ~$0.60/sub · Save 40%</div>
+                    <a href="#" class="block w-full py-3 text-center rounded-xl bg-white text-brand-red border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
+                        Choose Plan
+                    </a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="bg-white rounded-3xl border-2 border-black p-6 shadow-hard hover:-translate-y-1 transition-transform">
+                    <div class="mb-6">
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Scale</span>
+                        <h3 class="text-2xl font-bold mt-1">Niche Dominator</h3>
+                        <p class="text-gray-500 text-sm mt-2">Dominate your niche — 10,000 subscribers puts you in the top tier of channels.</p>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-display">$4,999</span>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Establish niche authority & premium positioning</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Command higher rates for sponsorships & services</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Premium targeting campaign</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Daily optimization & reporting</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
+                            <span class="text-sm">Google Partner-level management</span>
+                        </li>
+                    </ul>
+                    <div class="text-xs text-gray-500 mb-4 text-center">10,000 real subscribers · ~$0.50/sub · Save 50%</div>
+                    <a href="#" class="block w-full py-3 text-center rounded-xl border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
+                        Choose Plan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Guarantee -->
+            <div class="mt-10 bg-white rounded-2xl border-2 border-black p-6 max-w-3xl mx-auto text-center shadow-hard-sm">
+                <div class="flex items-center justify-center gap-3 mb-3">
+                    <i data-lucide="shield-check" class="w-6 h-6 text-green-600"></i>
+                    <span class="font-bold text-lg">Subscriber Delivery Guarantee</span>
+                </div>
+                <p class="text-gray-600 text-sm">Every subscriber is acquired through YouTube-compliant Google Ads — real people genuinely interested in your niche. They watch, engage, and convert into the revenue, leads, and opportunities that make YouTube worth your time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white border-b-2 border-black">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-ink text-white text-xs font-bold px-4 py-2 rounded-full border-2 border-black mb-4">07 — QUESTIONS</span>
+                <h2 class="text-3xl md:text-5xl font-display mb-4">Before you decide</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                        Can you guarantee I'll reach monetization?
+                        <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-5 pb-5 text-gray-600">
+                            <p class="mb-3">No. YouTube monetization requires <strong class="text-ink">1,000 subscribers AND 4,000 watch hours</strong>. We can't guarantee both — but we can guarantee progress on one.</p>
+                            <p>We help you hit the <strong class="text-ink">1,000 subscriber requirement</strong> — one of the two thresholds you need. And because we acquire real subscribers (not bots), those subscribers can actually watch your content, which contributes to your watch hours over time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                        How long until I see results?
+                        <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-5 pb-5 text-gray-600">
+                            <p class="mb-3">Most clients see subscriber momentum within the first few weeks.</p>
+                            <p>In our reference case, the channel grew from <strong class="text-ink">~1,000 to over 4,500 subscribers in 46 days</strong> — that's 3,500+ new subscribers at just <strong class="text-ink">$0.40 per subscriber</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                        Is the ad spend included in the price?
+                        <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-5 pb-5 text-gray-600">
+                            <p class="mb-3">Yes — our pricing is all-inclusive. The price you see covers <strong class="text-ink">everything</strong>: campaign strategy, ad spend, targeting, optimization, and reporting. There are no hidden fees or separate ad budgets to manage.</p>
+                            <p>You pay once, we handle the rest. That's the point of a done-for-you service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                        What happens after I purchase?
+                        <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-5 pb-5 text-gray-600">
+                            <p class="mb-2"><strong class="text-ink">Day 1–2:</strong> We review your channel and audience, then design your custom campaign strategy.</p>
+                            <p class="mb-2"><strong class="text-ink">Day 3–5:</strong> Campaign goes live. You'll start seeing new subscribers within the first few days.</p>
+                            <p><strong class="text-ink">Ongoing:</strong> We optimize daily to lower your cost-per-subscriber and send you regular performance reports. Most campaigns reach their subscriber target within 4–8 weeks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                        Can't I just buy cheap subscribers elsewhere?
+                        <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-5 pb-5 text-gray-600">
+                            <p class="mb-3">Yes — services sell 500 subscribers for ~$120. But those subscribers are <strong class="text-ink">bots and fake accounts</strong> that don't watch, don't engage, and get purged by YouTube regularly.</p>
+                            <p>We acquire <strong class="text-ink">real subscribers through targeted Google Ads</strong>. Real people who clicked, watched, and chose to subscribe. They count toward monetization, they can engage with your content, and they don't disappear in YouTube's next purge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-20 bg-brand-red-soft border-b-2 border-black">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h3 class="text-2xl md:text-3xl font-display mb-2">Cheap Subscribers vs. Real Growth</h3>
+                <p class="text-gray-600">Not all subscribers are created equal. Here's what you're actually buying.</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-2xl border-2 border-black overflow-hidden shadow-hard">
+                    <thead>
+                        <tr>
+                            <th class="p-4 text-left bg-ink text-white font-bold">Factor</th>
+                            <th class="p-4 text-center bg-brand-red text-white font-bold">Cheap Services<br><span class="font-normal text-xs opacity-80">($120 for 500 subs)</span></th>
+                            <th class="p-4 text-center bg-green-600 text-white font-bold">LYNCK System<br><span class="font-normal text-xs opacity-80">(Real Google Ads)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-t border-gray-200">
+                            <td class="p-4 font-semibold bg-gray-50">Subscriber Type</td>
+                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>Bots & fake accounts</td>
+                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Real people via Google Ads</td>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                            <td class="p-4 font-semibold bg-gray-50">Watch Time</td>
+                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>0 hours (bots don't watch)</td>
+                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Real potential viewers</td>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                            <td class="p-4 font-semibold bg-gray-50">YouTube ToS</td>
+                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>Violation (ban risk)</td>
+                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Fully compliant</td>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                            <td class="p-4 font-semibold bg-gray-50">Longevity</td>
+                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>Purged in YouTube sweeps</td>
+                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Permanent real followers</td>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                            <td class="p-4 font-semibold bg-gray-50">Business Value</td>
+                            <td class="p-4 text-center text-brand-red"><i data-lucide="x" class="w-4 h-4 inline mr-1"></i>Zero (no real audience)</td>
+                            <td class="p-4 text-center text-green-600"><i data-lucide="check" class="w-4 h-4 inline mr-1"></i>Actual audience asset</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-6 bg-green-50 rounded-xl border-2 border-black p-4 text-center">
+                <p class="text-gray-700"><strong class="text-green-700">Bottom line:</strong> Cheap subscribers cost you money AND your channel's future. Real subscribers unlock monetization, generate leads, and build lasting authority.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-ink text-white relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-brand-red rounded-full opacity-20"></div>
+        <div class="absolute top-10 -right-10 w-40 h-40 bg-brand-red rounded-full opacity-20"></div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-display mb-6">Ready to unlock what<br>YouTube can do for you?</h2>
+            <p class="text-xl text-gray-400 mb-10">Monetization. Leads. Authority. Pick your outcome — we handle the rest.</p>
+
+            <a href="#pricing" class="inline-flex items-center gap-4 bg-brand-red text-white border-2 border-white rounded-full pl-2 pr-8 py-3 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                <div class="bg-white border-2 border-black rounded-full p-2">
+                    <i data-lucide="arrow-up-right" class="w-6 h-6 text-black"></i>
+                </div>
+                <span class="font-bold text-lg">Choose Your Plan</span>
+            </a>
+
+            <p class="text-sm text-gray-500 mt-8">
+                One-time payment <span class="mx-2">·</span> We handle everything <span class="mx-2">·</span> No ongoing contracts
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-white py-12 border-t-2 border-white/10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-10">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">L</span>
+                        </div>
+                        <span class="text-2xl font-bold">LYNCK</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Turn YouTube into revenue — monetization, leads, and authority through strategic Google Ads campaigns.</p>
+                    <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="inline-block mt-4">
+                        <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="refund.html" class="hover:text-white transition-colors">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold mb-4">Get in Touch</h4>
+                    <a href="mailto:info@lynckstudio.pro" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm mb-2">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        info@lynckstudio.pro
+                    </a>
+                    <p class="text-gray-500 text-xs mt-4">Brussels, Belgium</p>
+                </div>
+            </div>
+
+            <!-- Disclaimers -->
+            <div class="border-t border-white/10 pt-8">
+                <p class="text-xs text-gray-500 mb-4">This site is not a part of YouTube, Google, or Alphabet Inc. Additionally, this site is NOT endorsed by YouTube or Google in any way. YouTube is a trademark of Google LLC. Google Partner badge indicates certified partnership status for advertising services.</p>
+                <p class="text-xs text-gray-500">Results shown are from actual client campaigns but are not guaranteed. Individual results vary based on niche, content quality, and market conditions.</p>
+                <p class="text-gray-500 text-sm mt-6">&copy; 2026 LYNCK. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-brand-red-soft z-[60] flex flex-col items-center justify-center gap-6 p-8 transform translate-x-full transition-transform duration-300">
+        <button id="close-menu" class="absolute top-6 right-6 p-2">
+            <i data-lucide="x" class="w-8 h-8 text-black"></i>
+        </button>
+        <a href="#home" class="text-2xl font-display hover:text-brand-red">Home</a>
+        <a href="#proof" class="text-2xl font-display hover:text-brand-red">Proof</a>
+        <a href="#how-it-works" class="text-2xl font-display hover:text-brand-red">How It Works</a>
+        <a href="#pricing" class="text-2xl font-display hover:text-brand-red">Pricing</a>
+        <a href="#faq" class="text-2xl font-display hover:text-brand-red">FAQ</a>
+        <a href="#pricing" class="mt-4 px-8 py-3 bg-brand-red text-white border-2 border-black rounded-full font-bold shadow-hard">Choose Plan</a>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn?.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeBtn?.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = 'auto';
+        });
+
+        mobileMenu?.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isOpen = item.classList.contains('open');
+
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+
+                // Open clicked if it was closed
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // Profile tabs for benefits section
+        document.querySelectorAll('.profile-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const profile = tab.getAttribute('data-profile');
+
+                // Update tabs
+                document.querySelectorAll('.profile-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Update content
+                document.querySelectorAll('.profile-content').forEach(c => {
+                    c.classList.add('hidden');
+                    c.classList.remove('active');
+                });
+                const activeContent = document.querySelector(`.profile-content[data-profile="${profile}"]`);
+                activeContent.classList.remove('hidden');
+                activeContent.classList.add('active');
+
+                // Re-initialize icons in newly visible content
+                lucide.createIcons();
+            });
+        });
+
+        // Creators Calculator
+        function updateCreatorsCalc() {
+            const subs = parseInt(document.getElementById('calc-creators-subs').value);
+            const nicheSelect = document.getElementById('calc-creators-niche');
+            const rpm = parseInt(nicheSelect.options[nicheSelect.selectedIndex].getAttribute('data-cpm'));
+
+            const viewsPerSub = 15;
+            const monthlyViews = subs * viewsPerSub;
+
+            const lowRevenue = Math.round((monthlyViews / 1000) * rpm * 0.8);
+            const highRevenue = Math.round((monthlyViews / 1000) * rpm * 1.3);
+
+            let sponsorLow = 0, sponsorHigh = 0;
+            if (subs >= 1000) { sponsorLow = 200; sponsorHigh = 500; }
+            if (subs >= 5000) { sponsorLow = 500; sponsorHigh = 2000; }
+            if (subs >= 10000) { sponsorLow = 1500; sponsorHigh = 5000; }
+            if (subs >= 25000) { sponsorLow = 3000; sponsorHigh = 10000; }
+
+            const totalLow = lowRevenue + sponsorLow;
+            const totalHigh = highRevenue + sponsorHigh;
+
+            document.getElementById('calc-creators-result').textContent = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()}`;
+            document.getElementById('calc-creators-result-note').textContent = `Ad revenue: $${lowRevenue}–$${highRevenue} + Sponsorships: $${sponsorLow}–$${sponsorHigh}`;
+
+            const calc10k = Math.round((10000 * viewsPerSub / 1000) * rpm);
+            const calc25k = Math.round((25000 * viewsPerSub / 1000) * rpm);
+            document.getElementById('calc-creators-10k').textContent = `$${(calc10k + 1500).toLocaleString()} – $${(Math.round(calc10k * 1.3) + 5000).toLocaleString()}`;
+            document.getElementById('calc-creators-25k').textContent = `$${(calc25k + 3000).toLocaleString()} – $${(Math.round(calc25k * 1.3) + 10000).toLocaleString()}`;
+
+            updateCreatorsBenefits(subs);
+        }
+
+        function updateCreatorsBenefits(subs) {
+            const benefitsList = document.getElementById('creators-benefits-list');
+            if (!benefitsList) return;
+
+            let benefits = [];
+            if (subs <= 1000) {
+                benefits = [
+                    { title: 'Unlock monetization', desc: 'hit the 1K subscriber requirement for YouTube Partner Program' },
+                    { title: 'Start earning ad revenue', desc: 'typically $50–$500/month once monetized (niche dependent)' },
+                    { title: 'First sponsorship opportunities', desc: 'micro-influencer deals at $50–$200 per video' },
+                    { title: 'Algorithm boost', desc: 'YouTube promotes monetized channels more in search & suggested' },
+                    { title: 'Community building', desc: 'enough audience to get real feedback and engagement' }
+                ];
+            } else if (subs <= 5000) {
+                benefits = [
+                    { title: 'Consistent ad revenue', desc: '$200–$1,500/month depending on niche and views' },
+                    { title: 'Regular sponsorships', desc: 'brands pay $200–$1,000 per sponsored video' },
+                    { title: 'Affiliate income unlocked', desc: 'promote products and earn 5–30% commissions' },
+                    { title: 'Algorithm momentum', desc: 'your videos get suggested to similar audiences' },
+                    { title: 'Course/product launch viable', desc: 'enough audience to validate and sell digital products' }
+                ];
+            } else if (subs <= 10000) {
+                benefits = [
+                    { title: 'Serious ad revenue', desc: '$500–$3,000/month from ads alone' },
+                    { title: 'Premium sponsorships', desc: 'brands pay $500–$3,000+ per video at this level' },
+                    { title: 'Industry recognition', desc: '"10K subscribers" is a credibility milestone' },
+                    { title: 'Product launch potential', desc: 'courses, merch, and digital products can generate $5K–$20K' },
+                    { title: 'Media opportunities', desc: 'podcasts and publications start reaching out' }
+                ];
+            } else {
+                benefits = [
+                    { title: 'Significant ad revenue', desc: '$2,000–$8,000+/month from ads in high-CPM niches' },
+                    { title: 'Major sponsorship deals', desc: 'brands pay $2,000–$10,000+ per sponsored video' },
+                    { title: 'Authority status', desc: 'recognized as a thought leader in your niche' },
+                    { title: 'Multiple revenue streams', desc: 'ads + sponsors + affiliates + products = $10K–$30K+/month potential' },
+                    { title: 'Business opportunities', desc: 'speaking gigs, consulting, book deals come to you' }
+                ];
+            }
+
+            benefitsList.innerHTML = benefits.map(b =>
+                `<li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5"></i><span class="text-sm"><strong>${b.title}</strong> — ${b.desc}</span></li>`
+            ).join('');
+            lucide.createIcons();
+        }
+
+        document.getElementById('calc-creators-subs')?.addEventListener('change', updateCreatorsCalc);
+        document.getElementById('calc-creators-niche')?.addEventListener('change', updateCreatorsCalc);
+
+        // Business Calculator
+        function updateBusinessCalc() {
+            const subs = parseInt(document.getElementById('calc-business-subs').value);
+            const industrySelect = document.getElementById('calc-business-industry');
+            const cpl = parseInt(industrySelect.options[industrySelect.selectedIndex].getAttribute('data-cpl'));
+
+            const engagedViewers = subs * 0.15;
+            const lowLeads = Math.max(2, Math.round(engagedViewers * 0.01));
+            const highLeads = Math.round(engagedViewers * 0.03);
+
+            const lowValue = Math.round(lowLeads * cpl);
+            const highValue = Math.round(highLeads * cpl);
+
+            document.getElementById('calc-business-result').textContent = `$${lowValue.toLocaleString()} – $${highValue.toLocaleString()}`;
+            document.getElementById('calc-business-leads').textContent = `${lowLeads} – ${highLeads}`;
+            document.getElementById('calc-business-cpl').textContent = `$0 (organic)`;
+
+            updateBusinessBenefits(subs);
+        }
+
+        function updateBusinessBenefits(subs) {
+            const benefitsList = document.getElementById('business-benefits-list');
+            if (!benefitsList) return;
+
+            let benefits = [];
+            if (subs <= 1000) {
+                benefits = [
+                    { title: 'Proof of concept', desc: '1K subs validates your content resonates with your market' },
+                    { title: 'First organic leads', desc: '2–10 warm leads/month from people who found your videos' },
+                    { title: 'Trust builder', desc: 'prospects watch your videos before sales calls' },
+                    { title: 'SEO foundation', desc: 'your videos start ranking in Google search results' },
+                    { title: 'Content library', desc: 'evergreen assets that keep working for years' }
+                ];
+            } else if (subs <= 5000) {
+                benefits = [
+                    { title: 'Consistent lead flow', desc: '10–30 organic leads/month from YouTube alone' },
+                    { title: 'Pre-sold prospects', desc: 'leads who watched 5+ videos close at 2–3x higher rates' },
+                    { title: 'Reduced ad dependency', desc: 'organic traffic lowers your customer acquisition cost' },
+                    { title: 'Brand authority', desc: '"5K subscribers" signals established expertise' },
+                    { title: 'Compounding returns', desc: 'every video adds to your lead-generating library' }
+                ];
+            } else if (subs <= 10000) {
+                benefits = [
+                    { title: 'Serious lead volume', desc: '30–75 organic leads/month from YouTube' },
+                    { title: 'Industry credibility', desc: '10K subs makes you a recognized voice in your space' },
+                    { title: 'Partnership opportunities', desc: 'other businesses want to collaborate and cross-promote' },
+                    { title: 'Lower CAC', desc: 'organic YouTube leads cost 60–80% less than paid ads' },
+                    { title: 'Evergreen sales asset', desc: 'videos from years ago still generate leads today' }
+                ];
+            } else {
+                benefits = [
+                    { title: 'Lead generation machine', desc: '75–200+ organic leads/month from your channel' },
+                    { title: 'Market authority', desc: "you're the go-to expert prospects find on YouTube" },
+                    { title: 'Massive CAC reduction', desc: 'organic traffic can replace $10K–$50K/month in ad spend' },
+                    { title: 'Inbound sales', desc: 'prospects come to you pre-educated and ready to buy' },
+                    { title: 'Competitive moat', desc: "competitors can't easily replicate years of content" }
+                ];
+            }
+
+            benefitsList.innerHTML = benefits.map(b =>
+                `<li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"></i><span class="text-sm"><strong>${b.title}</strong> — ${b.desc}</span></li>`
+            ).join('');
+            lucide.createIcons();
+        }
+
+        document.getElementById('calc-business-subs')?.addEventListener('change', updateBusinessCalc);
+        document.getElementById('calc-business-industry')?.addEventListener('change', updateBusinessCalc);
+
+        // Personal Brands Calculator
+        function updateBrandsCalc() {
+            const subs = parseInt(document.getElementById('calc-brands-subs').value);
+
+            let premiumLow, premiumHigh, speakingLow, speakingHigh, courseLow, courseHigh;
+
+            if (subs <= 1000) {
+                premiumLow = 10; premiumHigh = 25;
+                speakingLow = 500; speakingHigh = 2000;
+                courseLow = 1000; courseHigh = 5000;
+            } else if (subs <= 5000) {
+                premiumLow = 25; premiumHigh = 50;
+                speakingLow = 2000; speakingHigh = 5000;
+                courseLow = 5000; courseHigh = 15000;
+            } else if (subs <= 10000) {
+                premiumLow = 50; premiumHigh = 100;
+                speakingLow = 5000; speakingHigh = 15000;
+                courseLow = 10000; courseHigh = 50000;
+            } else {
+                premiumLow = 100; premiumHigh = 200;
+                speakingLow = 10000; speakingHigh = 30000;
+                courseLow = 25000; courseHigh = 100000;
+            }
+
+            document.getElementById('calc-brands-result').textContent = `+${premiumLow}% – ${premiumHigh}%`;
+            document.getElementById('calc-brands-speaking').textContent = `$${(speakingLow/1000).toFixed(0)}K – $${(speakingHigh/1000).toFixed(0)}K`;
+            document.getElementById('calc-brands-course').textContent = `$${(courseLow/1000).toFixed(0)}K – $${(courseHigh/1000).toFixed(0)}K/mo`;
+
+            updateBrandsBenefits(subs);
+        }
+
+        function updateBrandsBenefits(subs) {
+            const benefitsList = document.getElementById('brands-benefits-list');
+            if (!benefitsList) return;
+
+            let benefits = [];
+            if (subs <= 1000) {
+                benefits = [
+                    { title: 'Credibility foundation', desc: '"1K subscribers" shows you have an audience' },
+                    { title: 'Speaking opportunities start', desc: 'local events and podcasts begin reaching out' },
+                    { title: 'Rate justification', desc: 'charge 10–25% more for services with a YouTube presence' },
+                    { title: 'Content portfolio', desc: 'your videos become proof of expertise for clients' },
+                    { title: 'Network expansion', desc: 'connect with peers and potential collaborators' }
+                ];
+            } else if (subs <= 5000) {
+                benefits = [
+                    { title: 'Established authority', desc: '"5K subscribers" signals serious expertise in your field' },
+                    { title: 'Speaking fees unlock', desc: 'command $2K–$5K for keynotes and workshops' },
+                    { title: 'Premium pricing power', desc: 'charge 25–50% more for consulting/coaching' },
+                    { title: 'Course launch viable', desc: 'audience size supports $5K–$15K course launches' },
+                    { title: 'Media interest', desc: 'podcasts and publications feature you as an expert' }
+                ];
+            } else if (subs <= 10000) {
+                benefits = [
+                    { title: 'Industry recognition', desc: '"10K subscribers" makes you a go-to expert' },
+                    { title: 'Premium speaking fees', desc: 'command $5K–$15K for keynotes and corporate training' },
+                    { title: 'Significant rate premium', desc: 'charge 50–100% more than competitors without a channel' },
+                    { title: 'Major course potential', desc: 'launch courses generating $10K–$50K/month' },
+                    { title: 'Book deal potential', desc: 'publishers pay attention at this subscriber level' }
+                ];
+            } else {
+                benefits = [
+                    { title: 'Thought leader status', desc: "you're a recognized authority in your industry" },
+                    { title: 'Top-tier speaking fees', desc: 'command $10K–$30K+ for keynotes and corporate gigs' },
+                    { title: 'Maximum rate premium', desc: 'charge 100–200% more than non-YouTube competitors' },
+                    { title: 'High-ticket courses', desc: 'launch courses generating $25K–$100K+/month' },
+                    { title: 'Opportunities find you', desc: 'book deals, TV, podcasts, and major media come inbound' }
+                ];
+            }
+
+            benefitsList.innerHTML = benefits.map(b =>
+                `<li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"></i><span class="text-sm"><strong>${b.title}</strong> — ${b.desc}</span></li>`
+            ).join('');
+            lucide.createIcons();
+        }
+
+        document.getElementById('calc-brands-subs')?.addEventListener('change', updateBrandsCalc);
+        document.getElementById('calc-brands-field')?.addEventListener('change', updateBrandsCalc);
+
+        // Initialize calculators
+        if (document.getElementById('calc-creators-subs')) updateCreatorsCalc();
+        if (document.getElementById('calc-business-subs')) updateBusinessCalc();
+        if (document.getElementById('calc-brands-subs')) updateBrandsCalc();
+    </script>
+</body>
+</html>

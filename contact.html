@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact LYNCK for YouTube subscriber growth services. Get in touch with our team.">
+    <title>Contact Us — LYNCK</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='%23faf9f7' font-family='monospace' font-weight='bold' font-size='18'>L</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #0a0a0a;
+            --paper: #faf9f7;
+            --paper-warm: #f5f3ef;
+            --accent: #c41e3a;
+            --muted: #6b6b6b;
+            --border: #e0ddd8;
+            --success: #1a5f4a;
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-body: 'DM Sans', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { font-size: 17px; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 1rem 0;
+            background: var(--paper);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+        }
+
+        .logo {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .back-link {
+            font-size: 0.9rem;
+            color: var(--muted);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover { color: var(--ink); }
+
+        /* Page Content */
+        .page-header {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+
+        .page-content {
+            padding: 2rem 0 4rem;
+        }
+
+        /* Contact Form */
+        .contact-section {
+            background: var(--paper-warm);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-section h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info p {
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .contact-item a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            transition: border-color 0.2s;
+        }
+
+        .contact-item a:hover {
+            border-color: var(--accent);
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--ink);
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            border: 1px solid var(--border);
+            background: var(--paper);
+            color: var(--ink);
+            margin-bottom: 1.5rem;
+            transition: border-color 0.2s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--paper);
+            background: var(--ink);
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .contact-form button:hover {
+            background: var(--accent);
+        }
+
+        .response-time {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(26, 95, 74, 0.08);
+            border-left: 3px solid var(--success);
+        }
+
+        .response-time p {
+            font-size: 0.9rem;
+            color: var(--ink);
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--ink);
+            color: var(--paper);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        footer .container {
+            max-width: 1200px;
+        }
+
+        footer p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--paper);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">LYNCK</a>
+            <a href="index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+                <p>Have a question? We're here to help.</p>
+            </div>
+
+            <div class="page-content">
+                <div class="contact-section">
+                    <h2>Get in Touch</h2>
+
+                    <div class="contact-info">
+                        <p>Whether you have questions about our service, need help choosing the right plan, or want to discuss your channel's specific needs — reach out and we'll get back to you promptly.</p>
+
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:info@lynckstudio.pro">info@lynckstudio.pro</a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="#" method="POST">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                        <label for="channel">YouTube Channel URL (optional)</label>
+                        <input type="url" id="channel" name="channel" placeholder="https://youtube.com/@yourchannel">
+
+                        <label for="inquiry">What can we help you with?</label>
+                        <select id="inquiry" name="inquiry">
+                            <option value="general">General Question</option>
+                            <option value="pricing">Pricing & Plans</option>
+                            <option value="custom">Custom Campaign Request</option>
+                            <option value="support">Support for Existing Order</option>
+                            <option value="partnership">Partnership Inquiry</option>
+                        </select>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell us more about what you're looking for..."></textarea>
+
+                        <button type="submit">
+                            Send Message
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="response-time">
+                        <p><strong>Response Time:</strong> We typically respond within 24-48 hours during business days. For urgent matters related to an active campaign, please mention "URGENT" in your subject line.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LYNCK. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="refund.html">Refund Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
