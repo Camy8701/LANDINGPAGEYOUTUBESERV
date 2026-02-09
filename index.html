@@ -191,16 +191,36 @@
             display: flex;
             align-items: center;
             padding-top: var(--space-xl);
+            padding-bottom: var(--space-lg);
             position: relative;
-            overflow-x: clip;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--ink) 0%, #1a1a1a 100%);
+            z-index: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .hero::before {
+                display: none;
+            }
         }
 
         .hero .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.1fr;
             gap: var(--space-xl);
             align-items: center;
-            max-width: 1400px;
+            max-width: 1440px;
+            position: relative;
+            z-index: 1;
         }
 
         @media (max-width: 1024px) {
@@ -435,22 +455,44 @@
             position: relative;
             opacity: 0;
             animation: fadeUp 0.8s ease 0.4s forwards;
+            padding: var(--space-md);
+        }
+
+        .hero-charts-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-charts-header h3 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 400;
+            color: var(--paper);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-charts-header p {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.6);
         }
 
         .hero-charts-grid {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
-            background: var(--ink);
-            border-radius: 16px;
-            padding: 1.75rem;
-            box-shadow:
-                0 32px 80px rgba(0,0,0,0.2),
-                0 16px 40px rgba(0,0,0,0.15);
+            gap: 2rem;
         }
 
         .hero-chart-card {
             position: relative;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 1.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .hero-chart-card:hover {
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.15);
         }
 
         .hero-chart-label {
@@ -461,45 +503,59 @@
         }
 
         .hero-chart-label-icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 8px;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .hero-chart-label-icon svg {
-            width: 18px;
-            height: 18px;
+            width: 20px;
+            height: 20px;
         }
 
         .hero-chart-label-icon.long-term {
-            background: rgba(26, 95, 74, 0.25);
+            background: linear-gradient(135deg, rgba(74, 222, 128, 0.2), rgba(74, 222, 128, 0.1));
             color: #4ade80;
         }
 
         .hero-chart-label-icon.short-term {
-            background: rgba(196, 30, 58, 0.25);
+            background: linear-gradient(135deg, rgba(248, 113, 113, 0.2), rgba(248, 113, 113, 0.1));
             color: #f87171;
+        }
+
+        .hero-chart-label-text {
+            flex: 1;
         }
 
         .hero-chart-label h4 {
             font-family: var(--font-body);
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: var(--paper);
-            margin: 0;
+            margin: 0 0 0.15rem 0;
         }
 
-        .hero-chart-label span {
+        .hero-chart-label-subtitle {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .hero-chart-label span.badge {
             font-family: var(--font-mono);
             font-size: 0.75rem;
-            color: rgba(255,255,255,0.5);
-            background: rgba(255,255,255,0.1);
-            padding: 0.25rem 0.6rem;
-            border-radius: 4px;
-            margin-left: auto;
+            color: #4ade80;
+            background: rgba(74, 222, 128, 0.15);
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .hero-chart-label span.badge.accent {
+            color: #f87171;
+            background: rgba(248, 113, 113, 0.15);
         }
 
         .hero-chart-img {
@@ -507,23 +563,24 @@
             height: auto;
             display: block;
             border-radius: 8px;
-            border: 1px solid rgba(255,255,255,0.1);
+            background: var(--paper);
         }
 
         .hero-charts-footer {
-            padding-top: 1.25rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            font-size: 0.8rem;
+            gap: 0.75rem;
+            font-size: 0.85rem;
             color: rgba(255,255,255,0.5);
         }
 
         .hero-charts-footer svg {
-            width: 14px;
-            height: 14px;
+            width: 16px;
+            height: 16px;
             color: #4ade80;
         }
 
@@ -531,6 +588,9 @@
             .hero-charts {
                 max-width: 100%;
                 margin: var(--space-lg) auto 0;
+                background: var(--ink);
+                border-radius: 16px;
+                padding: var(--space-md);
             }
         }
 
@@ -1901,6 +1961,10 @@
 
             <!-- Hero Proof Charts -->
             <div class="hero-charts">
+                <div class="hero-charts-header">
+                    <h3>Real Results, Real Data</h3>
+                    <p>YouTube Studio analytics from an actual client channel</p>
+                </div>
                 <div class="hero-charts-grid">
                     <!-- 365 Days Chart -->
                     <div class="hero-chart-card">
@@ -1910,8 +1974,11 @@
                                     <path d="M3 3v18h18"/><path d="M3 17l5-5 4 4 9-11"/>
                                 </svg>
                             </div>
-                            <h4>The Full Picture</h4>
-                            <span>365 days</span>
+                            <div class="hero-chart-label-text">
+                                <h4>The Full Picture</h4>
+                                <span class="hero-chart-label-subtitle">1 year of subscriber growth</span>
+                            </div>
+                            <span class="badge">365 days</span>
                         </div>
                         <img src="graph-365-days.png" alt="YouTube subscriber growth over 365 days" class="hero-chart-img">
                     </div>
@@ -1924,8 +1991,11 @@
                                     <polyline points="17 6 23 6 23 12"/>
                                 </svg>
                             </div>
-                            <h4>The Growth Spike</h4>
-                            <span>28 days</span>
+                            <div class="hero-chart-label-text">
+                                <h4>The Growth Spike</h4>
+                                <span class="hero-chart-label-subtitle">When the system kicked in</span>
+                            </div>
+                            <span class="badge accent">28 days</span>
                         </div>
                         <img src="graph-28-days.png" alt="YouTube subscriber growth spike over 28 days" class="hero-chart-img">
                     </div>
