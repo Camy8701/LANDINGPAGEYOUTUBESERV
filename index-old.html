@@ -1,0 +1,3333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grow your YouTube channel with real subscribers via targeted Google Ads. Whether you want monetization, organic leads, or brand authority — 500+ subs/week at $0.40 each. Done-for-you by a Google Partner.">
+    <meta property="og:title" content="LYNCK — YouTube Subscriber Growth System">
+    <meta property="og:description" content="Grow your YouTube channel with real subscribers. Monetization, leads, or authority — 500+ subs/week at $0.40 each. Done-for-you by a Google Partner.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lynckstudio.pro/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LYNCK — YouTube Subscriber Growth System">
+    <meta name="twitter:description" content="Grow your YouTube channel with real subscribers. Monetization, leads, or authority — 500+ subs/week at $0.40 each. Done-for-you by a Google Partner.">
+    <meta property="og:image" content="https://www.lynckstudio.pro/og-image.jpg">
+    <meta name="twitter:image" content="https://www.lynckstudio.pro/og-image.jpg">
+    <title>LYNCK — YouTube Subscriber Growth System | 500+ Subscribers/Week</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='%23faf9f7' font-family='monospace' font-weight='bold' font-size='18'>L</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #0a0a0a;
+            --paper: #faf9f7;
+            --paper-warm: #f5f3ef;
+            --accent: #c41e3a;
+            --accent-soft: #e8d5d9;
+            --muted: #6b6b6b;
+            --border: #e0ddd8;
+            --success: #1a5f4a;
+            --code-bg: #0f0f0f;
+            --google-blue: #4285f4;
+
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-body: 'DM Sans', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 8rem;
+            --space-2xl: 12rem;
+
+            --max-width: 1200px;
+            --content-width: 720px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 17px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        h1 { font-size: clamp(2.25rem, 5vw, 3.75rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); }
+        h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+        h4 { font-size: 1.25rem; }
+
+        p {
+            font-size: 1rem;
+            color: var(--muted);
+        }
+
+        .text-large {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        .narrow {
+            max-width: var(--content-width);
+        }
+
+        section {
+            padding: var(--space-xl) 0;
+            position: relative;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: var(--space-sm) 0;
+            background: rgba(250, 249, 247, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        nav.scrolled {
+            border-color: var(--border);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .google-partner-badge {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .google-partner-img {
+            height: 48px;
+            width: auto;
+        }
+
+        .nav-cta {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--paper);
+            background: var(--ink);
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent);
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: var(--space-xl);
+            position: relative;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: var(--space-lg);
+            align-items: center;
+            max-width: 1500px;
+        }
+
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-proof-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        .proof-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--success);
+            padding: 0.5rem 1rem;
+            background: rgba(26, 95, 74, 0.08);
+            border: 1px solid rgba(26, 95, 74, 0.2);
+        }
+
+        .proof-pill::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero h1 {
+            margin-bottom: var(--space-xs);
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.1s forwards;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .hero-stat {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+            color: var(--ink);
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.08), rgba(196, 30, 58, 0.03));
+            padding: 0.6rem 1rem;
+            margin-bottom: var(--space-sm);
+            border-left: 3px solid var(--accent);
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.15s forwards;
+        }
+
+        .hero-description {
+            max-width: 520px;
+            margin-bottom: var(--space-md);
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.2s forwards;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.3s forwards;
+        }
+
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--paper);
+            background: var(--ink);
+            padding: 1.1rem 2.25rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-primary::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-primary:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(196, 30, 58, 0.25);
+        }
+
+        .cta-primary:hover::after {
+            left: 100%;
+        }
+
+        .cta-secondary {
+            font-size: 0.9rem;
+            color: var(--muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .cta-secondary:hover {
+            color: var(--ink);
+            border-color: var(--ink);
+        }
+
+        .cta-subtext {
+            width: 100%;
+            margin-top: var(--space-sm);
+            font-size: 0.85rem;
+            color: var(--muted);
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.35s forwards;
+        }
+
+        .cta-subtext span {
+            margin: 0 0.5rem;
+            color: var(--border);
+        }
+
+        /* Hero Audience Cards */
+        .hero-audience-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: var(--space-md);
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.35s forwards;
+        }
+
+        @media (max-width: 640px) {
+            .hero-audience-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .audience-card {
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .audience-card:hover {
+            border-color: var(--success);
+            box-shadow: 0 4px 20px rgba(26, 95, 74, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .audience-card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .audience-card-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .audience-card-icon.creators {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(196, 30, 58, 0.05));
+            color: var(--accent);
+        }
+
+        .audience-card-icon.businesses {
+            background: linear-gradient(135deg, rgba(66, 133, 244, 0.1), rgba(66, 133, 244, 0.05));
+            color: var(--google-blue);
+        }
+
+        .audience-card-icon.brands {
+            background: linear-gradient(135deg, rgba(26, 95, 74, 0.1), rgba(26, 95, 74, 0.05));
+            color: var(--success);
+        }
+
+        .audience-card h4 {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 0.35rem;
+        }
+
+        .audience-card p {
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        /* Hero Proof Charts - Glassmorphism Card */
+        .hero-charts {
+            position: relative;
+            opacity: 0;
+            animation: fadeUp 0.8s ease 0.4s forwards;
+            background: rgba(10, 10, 10, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1.25rem;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .hero-charts:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-charts-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .hero-chart-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-chart-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-chart-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem;
+            background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, transparent 40%, transparent 60%, rgba(0,0,0,0.5) 100%);
+        }
+
+        .hero-chart-label {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .hero-chart-label-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-chart-label-icon svg {
+            width: 14px;
+            height: 14px;
+            color: #fff;
+        }
+
+        .hero-chart-label h4 {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .hero-chart-label span.badge {
+            margin-left: auto;
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-chart-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-chart-stat {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.8);
+            background: rgba(0, 0, 0, 0.4);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero-chart-icons {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-chart-icons svg {
+            width: 14px;
+            height: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .hero-charts-footer {
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .hero-charts-footer svg {
+            width: 14px;
+            height: 14px;
+            color: #4ade80;
+        }
+
+        .hero-charts-title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 400;
+            font-style: italic;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-charts-subtitle {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 1.25rem;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-charts {
+                max-width: 100%;
+                margin: var(--space-lg) auto 0;
+            }
+        }
+
+        /* Credibility bar */
+        .credibility-bar {
+            padding: var(--space-md) 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            background: var(--paper-warm);
+        }
+
+        .credibility-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .credibility-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .credibility-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--ink);
+        }
+
+        .credibility-item strong {
+            color: var(--ink);
+            font-weight: 500;
+        }
+
+        .credibility-badge-link {
+            text-decoration: none;
+        }
+
+        .credibility-partner-img {
+            height: 64px;
+            width: auto;
+        }
+
+        /* Testimonials carousel */
+        .testimonials {
+            padding: var(--space-xs) 0 var(--space-sm);
+            margin-top: calc(-1 * var(--space-lg));
+            background: var(--paper);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .testimonials::before,
+        .testimonials::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 120px;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .testimonials::before {
+            left: 0;
+            background: linear-gradient(to right, var(--paper), transparent);
+        }
+
+        .testimonials::after {
+            right: 0;
+            background: linear-gradient(to left, var(--paper), transparent);
+        }
+
+        .testimonials-track {
+            display: flex;
+            gap: var(--space-md);
+            animation: scroll-testimonials 60s linear infinite;
+            width: max-content;
+        }
+
+        .testimonials-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll-testimonials {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .testimonial-card {
+            flex-shrink: 0;
+            width: 320px;
+            background: var(--paper-warm);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: var(--space-md);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+            border-color: var(--accent);
+        }
+
+        .testimonial-quote-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: rgba(196, 30, 58, 0.08);
+            border-radius: 6px;
+            margin-bottom: var(--space-sm);
+        }
+
+        .testimonial-quote-icon svg {
+            width: 16px;
+            height: 16px;
+            color: var(--accent);
+        }
+
+        .testimonial-text {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--ink);
+            margin-bottom: var(--space-md);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: var(--space-sm);
+            border-top: 1px solid var(--border);
+        }
+
+        .testimonial-author-info {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .testimonial-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--muted);
+        }
+
+        .testimonial-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--ink);
+        }
+
+        .testimonial-role {
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        .testimonial-rating {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .testimonial-rating svg {
+            width: 14px;
+            height: 14px;
+            fill: #f59e0b;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials::before,
+            .testimonials::after {
+                width: 60px;
+            }
+
+            .testimonial-card {
+                width: 280px;
+                padding: var(--space-sm);
+            }
+
+            .testimonial-text {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Problem section */
+        .problem {
+            background: var(--paper);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        .problem-card {
+            padding: var(--space-md);
+            background: var(--paper-warm);
+            border: 1px solid var(--border);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--accent);
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .problem-icon {
+            width: 40px;
+            height: 40px;
+            margin-bottom: var(--space-sm);
+            color: var(--accent);
+        }
+
+        .problem-card h4 {
+            margin-bottom: var(--space-xs);
+            font-family: var(--font-body);
+            font-weight: 600;
+        }
+
+        .section-header {
+            margin-bottom: var(--space-lg);
+        }
+
+        .section-number {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-sm);
+            display: block;
+        }
+
+        /* Shift section */
+        .shift {
+            position: relative;
+            overflow: hidden;
+            background: var(--paper-warm);
+        }
+
+        .shift::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, var(--border), transparent);
+        }
+
+        .shift-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+        }
+
+        @media (max-width: 768px) {
+            .shift-content {
+                grid-template-columns: 1fr;
+            }
+            .shift::before {
+                display: none;
+            }
+        }
+
+        .shift-column h3 {
+            margin-bottom: var(--space-md);
+        }
+
+        .shift-column.wrong h3 {
+            color: var(--muted);
+        }
+
+        .shift-column.right h3 {
+            color: var(--success);
+        }
+
+        .shift-list {
+            list-style: none;
+        }
+
+        .shift-list li {
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+
+        .shift-list li:last-child {
+            border-bottom: none;
+        }
+
+        .shift-icon {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+        }
+
+        .shift-column.wrong .shift-icon {
+            color: var(--accent);
+        }
+
+        .shift-column.right .shift-icon {
+            color: var(--success);
+        }
+
+        /* System section */
+        .system {
+            background: var(--code-bg);
+            color: var(--paper);
+        }
+
+        .system .section-number {
+            color: var(--accent-soft);
+        }
+
+        .system h2 {
+            color: var(--paper);
+        }
+
+        .system p {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .system-intro {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.7);
+            margin-top: var(--space-sm);
+            padding-left: var(--space-md);
+            border-left: 2px solid var(--accent);
+        }
+
+        .system-steps {
+            display: grid;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        .system-step {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: var(--space-md);
+            padding: var(--space-md);
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .system-step:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(255,255,255,0.15);
+        }
+
+        .step-number {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--accent);
+        }
+
+        .step-content h4 {
+            font-family: var(--font-body);
+            font-weight: 600;
+            color: var(--paper);
+            margin-bottom: var(--space-xs);
+        }
+
+        .step-content p {
+            font-size: 0.95rem;
+        }
+
+        /* Audience section */
+        .audience {
+            background: var(--paper);
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-lg);
+            margin-top: var(--space-lg);
+        }
+
+        @media (max-width: 768px) {
+            .audience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .audience-column {
+            padding: var(--space-md);
+            background: var(--paper-warm);
+            border: 1px solid var(--border);
+        }
+
+        .audience-column.for {
+            border-top: 3px solid var(--success);
+        }
+
+        .audience-column.not-for {
+            border-top: 3px solid var(--accent);
+        }
+
+        .audience-column h3 {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .audience-column.for h3 {
+            color: var(--success);
+        }
+
+        .audience-column.not-for h3 {
+            color: var(--accent);
+        }
+
+        .audience-list {
+            list-style: none;
+        }
+
+        .audience-list li {
+            padding: var(--space-xs) 0;
+            font-size: 0.95rem;
+            color: var(--muted);
+            padding-left: var(--space-md);
+            position: relative;
+        }
+
+        .audience-list li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--border);
+        }
+
+        /* PROOF SECTION - Major visual upgrade */
+        .proof {
+            background: var(--paper-warm);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .proof::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(26, 95, 74, 0.03) 100%);
+            pointer-events: none;
+        }
+
+        .proof-header {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .proof-header h2 {
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+        }
+
+        .proof-header h2 .highlight {
+            color: var(--success);
+        }
+
+        .proof-subhead {
+            font-size: 1.1rem;
+            color: var(--muted);
+            margin-top: var(--space-sm);
+        }
+
+        .proof-card {
+            background: var(--paper);
+            border: 1px solid var(--border);
+            padding: var(--space-lg);
+            position: relative;
+        }
+
+        .proof-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .proof-metric {
+            text-align: center;
+            padding: var(--space-md);
+            background: linear-gradient(135deg, rgba(26, 95, 74, 0.05), transparent);
+            border: 1px solid rgba(26, 95, 74, 0.15);
+        }
+
+        .proof-metric-value {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            color: var(--success);
+            line-height: 1;
+            margin-bottom: var(--space-xs);
+        }
+
+        .proof-metric-value .prefix {
+            font-size: 0.6em;
+            vertical-align: top;
+            margin-right: 2px;
+        }
+
+        .proof-metric-label {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .proof-differentiators {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-lg);
+            padding: var(--space-md);
+            background: var(--ink);
+        }
+
+        .proof-diff {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--paper);
+        }
+
+        .proof-diff svg {
+            width: 16px;
+            height: 16px;
+            color: var(--accent);
+        }
+
+        .proof-explanation {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .proof-explanation p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: var(--space-sm);
+        }
+
+        .proof-explanation p:last-child {
+            font-weight: 500;
+            color: var(--ink);
+        }
+
+        /* Proof Graphs */
+        .proof-graphs {
+            margin-top: var(--space-lg);
+        }
+
+        .proof-graph-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 0;
+        }
+
+        .graph-tab {
+            flex: 1;
+            padding: var(--space-sm) var(--space-md);
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-bottom: none;
+            border-radius: 8px 8px 0 0;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .graph-tab:hover {
+            background: var(--paper-warm);
+            color: var(--ink);
+        }
+
+        .graph-tab.active {
+            background: var(--paper-warm);
+            color: var(--ink);
+            font-weight: 500;
+            border-color: var(--border);
+            position: relative;
+        }
+
+        .graph-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--paper-warm);
+        }
+
+        .proof-graph-container {
+            background: var(--paper-warm);
+            border: 1px solid var(--border);
+            border-radius: 0 0 8px 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .proof-graph-img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+
+        .proof-graph-img.active {
+            display: block;
+        }
+
+        .proof-graph-label {
+            margin-top: var(--space-sm);
+            font-size: 0.8rem;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .proof-graph-label svg {
+            color: var(--muted);
+        }
+
+        /* Offer section */
+        .offer {
+            background: var(--ink);
+            color: var(--paper);
+        }
+
+        .offer .section-number {
+            color: var(--accent-soft);
+        }
+
+        .offer h2 {
+            color: var(--paper);
+        }
+
+        .offer p {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .offer .cta-subtext {
+            color: rgba(255,255,255,0.4);
+        }
+
+        /* FAQ section */
+        .faq {
+            background: var(--paper-warm);
+        }
+
+        .faq-grid {
+            display: grid;
+            gap: var(--space-sm);
+            margin-top: var(--space-lg);
+        }
+
+        .faq-item {
+            background: var(--paper);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: var(--space-md);
+            background: none;
+            border: none;
+            text-align: left;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--ink);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--space-md);
+            transition: background 0.2s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--paper-warm);
+        }
+
+        .faq-question svg {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.open .faq-question svg {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer-inner {
+            padding: 0 var(--space-md) var(--space-md);
+            font-size: 0.95rem;
+        }
+
+        .faq-answer-inner p {
+            margin-bottom: var(--space-sm);
+        }
+
+        .faq-answer-inner p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-answer-inner strong {
+            color: var(--ink);
+        }
+
+        /* Comparison Table */
+        .comparison-header {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .comparison-header h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: var(--space-xs);
+        }
+
+        .comparison-header p {
+            font-size: 1rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--paper);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .comparison-table thead {
+            background: var(--ink);
+            color: var(--paper);
+        }
+
+        .comparison-table th {
+            padding: var(--space-md);
+            text-align: left;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th:first-child {
+            width: 30%;
+        }
+
+        .comparison-table th.cheap-col {
+            background: #dc2626;
+            text-align: center;
+            width: 35%;
+        }
+
+        .comparison-table th.lynck-col {
+            background: var(--success);
+            text-align: center;
+            width: 35%;
+        }
+
+        .comparison-table td {
+            padding: var(--space-sm) var(--space-md);
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+            vertical-align: top;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table td:first-child {
+            font-weight: 500;
+            color: var(--ink);
+            background: var(--paper-warm);
+        }
+
+        .comparison-table td.cheap-cell {
+            background: rgba(220, 38, 38, 0.04);
+            text-align: center;
+            color: var(--muted);
+        }
+
+        .comparison-table td.lynck-cell {
+            background: rgba(26, 95, 74, 0.04);
+            text-align: center;
+            color: var(--ink);
+        }
+
+        .cell-bad {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #dc2626;
+            font-weight: 500;
+        }
+
+        .cell-bad svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .cell-good {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--success);
+            font-weight: 500;
+        }
+
+        .cell-good svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .comparison-verdict {
+            margin-top: var(--space-lg);
+            padding: var(--space-md);
+            background: linear-gradient(135deg, rgba(26, 95, 74, 0.08), rgba(26, 95, 74, 0.03));
+            border: 1px solid rgba(26, 95, 74, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .comparison-verdict p {
+            font-size: 1.1rem;
+            color: var(--ink);
+            margin: 0;
+        }
+
+        .comparison-verdict strong {
+            color: var(--success);
+        }
+
+        @media (max-width: 768px) {
+            .comparison-table th,
+            .comparison-table td {
+                padding: var(--space-sm);
+                font-size: 0.8rem;
+            }
+
+            .cell-bad, .cell-good {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+
+        /* Comparison table wrapper — no breakout needed, lives in .container */
+
+        /* Pricing Grid */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        @media (max-width: 900px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 480px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .pricing-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: var(--space-md);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            border-color: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-4px);
+        }
+
+        .pricing-card.popular {
+            border-color: var(--accent);
+            background: rgba(196, 30, 58, 0.06);
+        }
+
+        .pricing-card.popular:hover {
+            background: rgba(196, 30, 58, 0.1);
+        }
+
+        .pricing-popular-badge {
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--paper);
+            background: var(--accent);
+            padding: 0.35rem 1rem;
+        }
+
+        .pricing-label {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.4);
+        }
+
+        .pricing-name {
+            font-size: 1.35rem;
+            color: var(--paper);
+            margin: var(--space-xs) 0;
+        }
+
+        .pricing-card-header .pricing-desc {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.5;
+        }
+
+        .pricing-amount {
+            padding: var(--space-md) 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            margin-bottom: var(--space-md);
+        }
+
+        .pricing-currency {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.5);
+            vertical-align: top;
+            line-height: 1.3;
+        }
+
+        .pricing-number {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 4vw, 3.25rem);
+            color: var(--paper);
+            line-height: 1;
+        }
+
+        .pricing-features {
+            list-style: none;
+            flex-grow: 1;
+            margin-bottom: var(--space-md);
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            padding: 0.5rem 0;
+        }
+
+        .pricing-features li svg {
+            color: var(--success);
+            flex-shrink: 0;
+        }
+
+        .pricing-card.popular .pricing-features li svg {
+            color: var(--accent);
+        }
+
+        .pricing-sub {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.35);
+            margin-bottom: var(--space-sm);
+            text-align: center;
+        }
+
+        .pricing-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--ink);
+            background: var(--paper);
+            padding: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .pricing-cta:hover {
+            background: var(--accent);
+            color: var(--paper);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        .pricing-cta-popular {
+            background: var(--accent);
+            color: var(--paper);
+        }
+
+        .pricing-cta-popular:hover {
+            background: var(--paper);
+            color: var(--ink);
+        }
+
+        .pricing-guarantee {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            margin-top: var(--space-lg);
+            padding: var(--space-md);
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .pricing-guarantee svg {
+            color: var(--success);
+            flex-shrink: 0;
+        }
+
+        .pricing-guarantee p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+            margin: 0;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            text-align: center;
+            padding: var(--space-2xl) 0;
+            background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+        }
+
+        .final-cta h2 {
+            margin-bottom: var(--space-sm);
+        }
+
+        .final-cta .text-large {
+            max-width: 540px;
+            margin: 0 auto var(--space-lg);
+        }
+
+        .final-cta .cta-subtext {
+            margin-top: var(--space-sm);
+        }
+
+        /* Footer */
+        footer {
+            padding: var(--space-lg) 0;
+            border-top: 1px solid var(--border);
+            background: var(--paper-warm);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .footer-brand .footer-logo {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .footer-brand .google-badge {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .footer-partner-img {
+            height: 72px;
+            width: auto;
+        }
+
+        .footer-disclaimer {
+            font-size: 0.8rem;
+            color: var(--muted);
+            max-width: 500px;
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer-brand {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-sm);
+            }
+            .footer-partner-img { height: 56px; }
+            .footer-disclaimer {
+                text-align: center;
+                max-width: 100%;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Counter animation */
+        .count-up {
+            display: inline-block;
+        }
+
+        /* Responsive — Mobile */
+        @media (max-width: 768px) {
+            html { font-size: 16px; }
+            section { padding: var(--space-lg) 0; }
+            .hero { min-height: auto; padding: calc(var(--space-lg) + 60px) 0 var(--space-lg); }
+
+            /* Nav — show badge but smaller */
+            .nav-right { gap: var(--space-sm); }
+            .nav-cta { padding: 0.6rem 1.2rem; font-size: 0.8rem; }
+            .google-partner-img { height: 32px; }
+
+            /* Hero */
+            .hero-stat { font-size: 0.85rem; }
+            .hero-cta-group { flex-direction: column; align-items: stretch; gap: var(--space-sm); }
+            .cta-primary { justify-content: center; padding: 1rem 1.5rem; }
+            .cta-secondary { text-align: center; align-self: center; }
+            .cta-subtext { text-align: center; }
+            .hero-objections { margin-top: var(--space-sm); }
+            .hero-objection { font-size: 0.85rem; }
+
+            /* Credibility */
+            .credibility-content { flex-direction: column; gap: var(--space-md); text-align: center; }
+            .credibility-partner-img { height: 48px; }
+
+            /* Problem */
+            .problem-grid { gap: var(--space-sm); }
+
+            /* System */
+            .system-step { grid-template-columns: 1fr; gap: var(--space-sm); }
+            .step-number { width: auto; display: inline-flex; padding: 0.25rem 0.75rem; }
+
+            /* Proof */
+            .proof-card { padding: var(--space-md); }
+            .proof-metrics { grid-template-columns: 1fr; gap: var(--space-sm); }
+            .proof-metric-value { font-size: 2.5rem; }
+            .proof-differentiators { flex-direction: column; align-items: center; gap: var(--space-sm); padding: var(--space-sm); }
+            .proof-diff { font-size: 0.75rem; }
+
+            /* Audience */
+            .audience-column { padding: var(--space-sm) var(--space-md); }
+
+            /* Pricing */
+            .pricing-card { padding: var(--space-sm) var(--space-md); }
+            .pricing-popular-badge { font-size: 0.65rem; }
+
+            /* Comparison */
+            .comparison-verdict { margin-top: var(--space-md); }
+
+            /* FAQ */
+            .faq-question { min-height: 48px; }
+
+            /* Final CTA */
+            .final-cta { padding: var(--space-xl) 0; }
+            .final-cta .cta-primary { width: 100%; justify-content: center; text-align: center; }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.75rem; }
+            .hero-stat { font-size: 0.8rem; padding: 0.5rem 0.75rem; }
+            .proof-header h2 { font-size: 1.5rem; }
+            .pricing-number { font-size: 2.25rem; }
+            .google-partner-img { height: 28px; }
+            .nav-cta { padding: 0.5rem 0.8rem; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="container">
+            <div class="nav-left">
+                <div class="logo">LYNCK</div>
+                <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="google-partner-badge">
+                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="google-partner-img">
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="#get-system" class="nav-cta">See Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-proof-badge">
+                    <span class="proof-pill">Proven system · Real results</span>
+                </div>
+                <h1>500+ New Subscribers<br>Per Week — <em>Proven</em></h1>
+                <div class="hero-stat">3,500+ subscribers in 46 days · $0.40/sub ad cost · via Google Ads</div>
+                <p class="hero-description text-large">
+                    A done-for-you subscriber growth service. Whether you want to monetize your channel, generate organic leads for your business, or build authority in your space — we bring real subscribers who actually engage.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#get-system" class="cta-primary">
+                        Choose Your Plan
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#proof" class="cta-secondary">See the proof</a>
+                </div>
+                <p class="cta-subtext">
+                    One-time service <span>·</span> We implement it for you <span>·</span> No ongoing contracts
+                </p>
+
+                <!-- Audience Cards -->
+                <div class="hero-audience-cards">
+                    <div class="audience-card">
+                        <div class="audience-card-icon creators">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
+                            </svg>
+                        </div>
+                        <h4>Creators</h4>
+                        <p>Reach 1K subs faster. Unlock monetization and start earning from your content.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-card-icon businesses">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <h4>Businesses</h4>
+                        <p>Build an evergreen lead engine. Content you post today generates leads for years.</p>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-card-icon brands">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h4>Personal Brands</h4>
+                        <p>Establish authority in your niche. Attract speaking gigs, clients, and opportunities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Proof Charts -->
+            <div class="hero-charts">
+                <p class="hero-charts-title">Real Results</p>
+                <p class="hero-charts-subtitle">YouTube Studio analytics from an actual client</p>
+                <div class="hero-charts-grid">
+                    <!-- 365 Days Chart -->
+                    <div class="hero-chart-card">
+                        <img src="graph-365-days.png" alt="YouTube subscriber growth over 365 days" class="hero-chart-img">
+                        <div class="hero-chart-overlay">
+                            <div class="hero-chart-label">
+                                <div class="hero-chart-label-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 3v18h18"/><path d="M3 17l5-5 4 4 9-11"/>
+                                    </svg>
+                                </div>
+                                <h4>The Full Picture</h4>
+                                <span class="badge">365 days</span>
+                            </div>
+                            <div class="hero-chart-bottom">
+                                <span class="hero-chart-stat">+3,500 subscribers</span>
+                                <div class="hero-chart-icons">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="9" y1="3" x2="9" y2="21"/>
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 28 Days Chart -->
+                    <div class="hero-chart-card">
+                        <img src="graph-28-days.png" alt="YouTube subscriber growth spike over 28 days" class="hero-chart-img">
+                        <div class="hero-chart-overlay">
+                            <div class="hero-chart-label">
+                                <div class="hero-chart-label-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                                        <polyline points="17 6 23 6 23 12"/>
+                                    </svg>
+                                </div>
+                                <h4>The Growth Spike</h4>
+                                <span class="badge">28 days</span>
+                            </div>
+                            <div class="hero-chart-bottom">
+                                <span class="hero-chart-stat">$0.40/subscriber</span>
+                                <div class="hero-chart-icons">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="9" y1="3" x2="9" y2="21"/>
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-charts-footer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 6L9 17l-5-5"/>
+                    </svg>
+                    Real YouTube Studio data · Channel name removed for privacy
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <div class="testimonials">
+        <div class="testimonials-track">
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"Finally broke through 1,000 subscribers after 2 years of trying. LYNCK delivered exactly what they promised — real subscribers who actually watch my content."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">MK</div>
+                        <div>
+                            <div class="testimonial-name">Marcus K.</div>
+                            <div class="testimonial-role">Tech Review Channel</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"We used LYNCK for our B2B SaaS channel. 3,000 subscribers in 6 weeks. The best part? They're actually our target audience — IT decision makers."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">SR</div>
+                        <div>
+                            <div class="testimonial-name">Sarah R.</div>
+                            <div class="testimonial-role">SaaS Marketing Director</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"I was skeptical about paid subscriber services, but these are clearly real people. My engagement rate actually went UP after the campaign. Highly recommend."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">JT</div>
+                        <div>
+                            <div class="testimonial-name">James T.</div>
+                            <div class="testimonial-role">Fitness Coach Channel</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"From 800 to 4,200 subscribers. Hit monetization in 5 weeks. The Google Partner badge gave me confidence — these guys know what they're doing with ads."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">AL</div>
+                        <div>
+                            <div class="testimonial-name">Amanda L.</div>
+                            <div class="testimonial-role">DIY & Crafts Channel</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"Our ecommerce brand needed YouTube presence. LYNCK got us 5,000 subscribers — now our product videos actually get views. ROI was clear within 2 months."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">DM</div>
+                        <div>
+                            <div class="testimonial-name">David M.</div>
+                            <div class="testimonial-role">Ecommerce Brand Owner</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"I run a B2B consulting channel. LYNCK targeted business owners in my niche specifically. These subscribers actually book calls from my videos. Insane value."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">RH</div>
+                        <div>
+                            <div class="testimonial-name">Rachel H.</div>
+                            <div class="testimonial-role">Business Consultant</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"Tried cheap Fiverr subscribers before — disaster. LYNCK is completely different. Real humans, real engagement. Worth every penny for the peace of mind alone."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">KP</div>
+                        <div>
+                            <div class="testimonial-name">Kevin P.</div>
+                            <div class="testimonial-role">Gaming Channel</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"The targeting was incredible. I teach guitar online — LYNCK found people actually interested in learning guitar. My course sales doubled after hitting 5K subs."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">TN</div>
+                        <div>
+                            <div class="testimonial-name">Tom N.</div>
+                            <div class="testimonial-role">Music Education Channel</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"Communication was excellent. They kept me updated throughout the campaign. Delivered 1,200 subs in 3 weeks — exactly as promised. Very professional team."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">LW</div>
+                        <div>
+                            <div class="testimonial-name">Lisa W.</div>
+                            <div class="testimonial-role">Lifestyle Vlogger</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"10K subscribers for our agency's channel. Sponsors started reaching out within a month. LYNCK literally changed our business model. Can't recommend enough."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">MP</div>
+                        <div>
+                            <div class="testimonial-name">Michael P.</div>
+                            <div class="testimonial-role">Agency Owner</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Duplicate cards for seamless loop -->
+            <!-- Card 1 duplicate -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"Finally broke through 1,000 subscribers after 2 years of trying. LYNCK delivered exactly what they promised — real subscribers who actually watch my content."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">MK</div>
+                        <div>
+                            <div class="testimonial-name">Marcus K.</div>
+                            <div class="testimonial-role">Tech Review Channel</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 duplicate -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"We used LYNCK for our B2B SaaS channel. 3,000 subscribers in 6 weeks. The best part? They're actually our target audience — IT decision makers."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">SR</div>
+                        <div>
+                            <div class="testimonial-name">Sarah R.</div>
+                            <div class="testimonial-role">SaaS Marketing Director</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 duplicate -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"I was skeptical about paid subscriber services, but these are clearly real people. My engagement rate actually went UP after the campaign. Highly recommend."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">JT</div>
+                        <div>
+                            <div class="testimonial-name">James T.</div>
+                            <div class="testimonial-role">Fitness Coach Channel</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 duplicate -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"From 800 to 4,200 subscribers. Hit monetization in 5 weeks. The Google Partner badge gave me confidence — these guys know what they're doing with ads."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">AL</div>
+                        <div>
+                            <div class="testimonial-name">Amanda L.</div>
+                            <div class="testimonial-role">DIY & Crafts Channel</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 duplicate -->
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                        <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <p class="testimonial-text">"Our ecommerce brand needed YouTube presence. LYNCK got us 5,000 subscribers — now our product videos actually get views. ROI was clear within 2 months."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-avatar">DM</div>
+                        <div>
+                            <div class="testimonial-name">David M.</div>
+                            <div class="testimonial-role">Ecommerce Brand Owner</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Credibility bar -->
+    <div class="credibility-bar fade-in">
+        <div class="container">
+            <div class="credibility-content">
+                <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="credibility-item credibility-badge-link">
+                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="credibility-partner-img">
+                </a>
+                <div class="credibility-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <strong>3+ years</strong> YouTube & Google Ads
+                </div>
+                <div class="credibility-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="8.5" cy="7" r="4"/>
+                        <path d="M20 8v6M23 11h-6"/>
+                    </svg>
+                    <strong>3,500+</strong> subscribers grown in 46 days
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <section class="problem fade-in">
+        <div class="container">
+            <div class="section-header narrow">
+                <span class="section-number">01 — The Reality</span>
+                <h2>Most YouTube channels never reach their potential.</h2>
+                <p class="text-large">
+                    Whether you're chasing monetization or building a lead engine for your business — subscriber growth doesn't happen by accident. You need a system.
+                </p>
+            </div>
+
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    <h4>Waiting for Organic Growth</h4>
+                    <p>Hoping the algorithm will find you. Most channels wait months or years and never break the 1,000 subscriber threshold.</p>
+                </div>
+                <div class="problem-card">
+                    <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2v20M2 12h20"/>
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    <h4>DIY Guesswork</h4>
+                    <p>Trying every tactic from YouTube gurus. No cohesive strategy. No measurable results. Just wasted time and effort.</p>
+                </div>
+                <div class="problem-card">
+                    <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <h4>Fake Shortcuts</h4>
+                    <p>Buying cheap bot subscribers that get purged, destroy your engagement rate, and can get your channel flagged or banned.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shift Section -->
+    <section class="shift fade-in" id="how-it-works">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-number">02 — The Shift</span>
+                <h2>Why most channels fail<br>& what actually works</h2>
+            </div>
+
+            <div class="shift-content">
+                <div class="shift-column wrong">
+                    <h3>What people try</h3>
+                    <ul class="shift-list">
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12"/>
+                            </svg>
+                            <span>Buying $10 subscriber packages from Fiverr</span>
+                        </li>
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12"/>
+                            </svg>
+                            <span>Sub-for-sub groups and engagement pods</span>
+                        </li>
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12"/>
+                            </svg>
+                            <span>Running untargeted ads without a strategy</span>
+                        </li>
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12"/>
+                            </svg>
+                            <span>Hiring a YouTube "guru" who delivers a PDF</span>
+                        </li>
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12"/>
+                            </svg>
+                            <span>Waiting months for organic growth that never comes</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shift-column right">
+                    <h3>What actually works</h3>
+                    <ul class="shift-list">
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Targeted subscriber acquisition via proven ad campaigns</span>
+                        </li>
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Real subscribers who chose to follow your channel</span>
+                        </li>
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Professional campaign management by a Google Partner</span>
+                        </li>
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Measurable results with transparent cost-per-subscriber</span>
+                        </li>
+                        <li>
+                            <svg class="shift-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>100% YouTube-compliant growth that compounds over time</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Section -->
+    <section class="system fade-in">
+        <div class="container">
+            <div class="section-header narrow">
+                <span class="section-number">03 — How It Works</span>
+                <h2>From zero momentum to<br>hundreds of subscribers per week</h2>
+                <p class="system-intro">
+                    You pay once. We handle everything. Real subscribers start arriving within days — not months.
+                </p>
+            </div>
+
+            <div class="system-steps">
+                <div class="system-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h4>Channel & Audience Analysis</h4>
+                        <p>We evaluate your channel, niche, and target audience to design the right acquisition strategy. Every campaign is custom-built — no templates.</p>
+                    </div>
+                </div>
+                <div class="system-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h4>Campaign Build & Launch</h4>
+                        <p>We build a targeted subscriber acquisition campaign designed to reach people who are genuinely interested in your content. Powered by 3+ years of Google Partner expertise.</p>
+                    </div>
+                </div>
+                <div class="system-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h4>Subscriber Delivery</h4>
+                        <p>Real subscribers start flowing to your channel within days. These are real people who chose to subscribe — not bots, not fakes, not engagement pods.</p>
+                    </div>
+                </div>
+                <div class="system-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h4>Optimization & Reporting</h4>
+                        <p>We monitor performance daily, optimize targeting to lower your cost-per-subscriber, and report results so you see exactly where every dollar goes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROOF SECTION - Major upgrade -->
+    <section class="proof fade-in" id="proof">
+        <div class="container">
+            <div class="proof-header">
+                <span class="section-number">04 — Proof</span>
+                <h2>From 1,000 to <span class="highlight">4,500+ subscribers</span><br>in 46 days</h2>
+                <p class="proof-subhead">A product-driven YouTube channel using the exact system we implement for you.</p>
+            </div>
+
+            <div class="proof-card">
+                <div class="proof-metrics">
+                    <div class="proof-metric">
+                        <div class="proof-metric-value"><span class="prefix">+</span><span class="count-up" data-target="3512">0</span></div>
+                        <div class="proof-metric-label">Subscribers in 46 days</div>
+                    </div>
+                    <div class="proof-metric">
+                        <div class="proof-metric-value">$<span class="count-up" data-target="0.40" data-decimals="2">0</span></div>
+                        <div class="proof-metric-label">Cost per subscriber</div>
+                    </div>
+                    <div class="proof-metric">
+                        <div class="proof-metric-value"><span class="count-up" data-target="500">0</span><span class="prefix">+</span></div>
+                        <div class="proof-metric-label">New subscribers per week</div>
+                    </div>
+                </div>
+
+                <div class="proof-differentiators">
+                    <div class="proof-diff">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                        No bots or fake accounts
+                    </div>
+                    <div class="proof-diff">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                        No Shorts or viral gimmicks
+                    </div>
+                    <div class="proof-diff">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                        No engagement pods
+                    </div>
+                </div>
+
+                <div class="proof-explanation">
+                    <p>This growth didn't come from a viral video or a trend. It came from a strategically targeted advertising campaign that put the channel in front of the right audience — real people who chose to subscribe.</p>
+                    <p>This is the exact service we deliver for you.</p>
+                </div>
+
+                <!-- Analytics Graphs -->
+                <div class="proof-graphs">
+                    <div class="proof-graph-tabs">
+                        <button class="graph-tab active" data-graph="28">Last 28 Days</button>
+                        <button class="graph-tab" data-graph="90">Last 90 Days</button>
+                    </div>
+                    <div class="proof-graph-container">
+                        <img src="graph-28-days.png" alt="YouTube subscriber growth over last 28 days - steady upward trajectory showing continued growth" class="proof-graph-img active" data-graph="28">
+                        <img src="graph-90-days.png" alt="YouTube subscriber growth over 90 days - consistent upward trajectory" class="proof-graph-img" data-graph="90">
+                    </div>
+                    <p class="proof-graph-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                        Real YouTube Studio data · Growth is steady and ongoing · Channel name removed for privacy
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Audience Section -->
+    <section class="audience fade-in">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-number">05 — Fit</span>
+                <h2>Is this right for you?</h2>
+            </div>
+
+            <div class="audience-grid">
+                <div class="audience-column for">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 6L9 17l-5-5"/>
+                        </svg>
+                        This is for you if...
+                    </h3>
+                    <ul class="audience-list">
+                        <li>You want measurable subscriber growth within weeks, not vague long-term promises</li>
+                        <li>You're a creator stuck below 1,000 subscribers</li>
+                        <li>You run an ecommerce brand wanting YouTube as a sales channel</li>
+                        <li>You sell equipment, hardware, or technical products</li>
+                        <li>You're in B2B with high-consideration purchases</li>
+                        <li>You want a done-for-you system, not DIY guesswork</li>
+                    </ul>
+                </div>
+
+                <div class="audience-column not-for">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                        This is not for you if...
+                    </h3>
+                    <ul class="audience-list">
+                        <li>You expect results without publishing content consistently</li>
+                        <li>You want guaranteed monetization timelines</li>
+                        <li>You're looking for viral video production</li>
+                        <li>You want to become a full-time YouTuber/influencer</li>
+                        <li>You expect guaranteed specific numbers regardless of niche or content</li>
+                        <li>You want watch hour guarantees</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="offer fade-in" id="get-system">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-number">06 — Pricing</span>
+                <h2>Choose your growth plan</h2>
+                <p class="text-large">
+                    One-time payment. We handle everything. Real subscribers delivered to your channel.
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Tier 1 -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <span class="pricing-label">Starter</span>
+                        <h3 class="pricing-name">Monetization Milestone</h3>
+                        <p class="pricing-desc">Unlock the YouTube Partner Program — hit the 1,000 subscriber requirement for monetization.</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="pricing-currency">$</span><span class="pricing-number">999</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            1,000 real subscribers delivered
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Channel & audience analysis
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Custom targeting campaign
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Performance reporting
+                        </li>
+                    </ul>
+                    <div class="pricing-sub">~$1.00 per subscriber</div>
+                    <a href="#" class="pricing-cta" onclick="alert('Connect to your checkout/payment system'); return false;">
+                        Choose Plan
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Tier 2 -->
+                <div class="pricing-card popular">
+                    <div class="pricing-popular-badge">Best Value</div>
+                    <div class="pricing-card-header">
+                        <span class="pricing-label">Growth</span>
+                        <h3 class="pricing-name">Authority Builder</h3>
+                        <p class="pricing-desc">Build real authority — 5,000 subscribers means algorithm momentum, sponsor interest, and serious social proof.</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="pricing-currency">$</span><span class="pricing-number">2,999</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            5,000 real subscribers delivered
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Channel & audience analysis
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Advanced targeting campaign
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Daily optimization & reporting
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Google Partner-level management
+                        </li>
+                    </ul>
+                    <div class="pricing-sub">~$0.60 per subscriber · Save 40%</div>
+                    <a href="#" class="pricing-cta pricing-cta-popular" onclick="alert('Connect to your checkout/payment system'); return false;">
+                        Choose Plan
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <span class="pricing-label">Scale</span>
+                        <h3 class="pricing-name">Niche Dominator</h3>
+                        <p class="pricing-desc">Dominate your niche — 10,000 subscribers puts you in the top tier of channels in most verticals.</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="pricing-currency">$</span><span class="pricing-number">4,999</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            10,000 real subscribers delivered
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Channel & audience analysis
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Premium targeting campaign
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Daily optimization & reporting
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 6L9 17l-5-5"/></svg>
+                            Google Partner-level management
+                        </li>
+                    </ul>
+                    <div class="pricing-sub">~$0.50 per subscriber · Save 50%</div>
+                    <a href="#" class="pricing-cta" onclick="alert('Connect to your checkout/payment system'); return false;">
+                        Choose Plan
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pricing-guarantee">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <p>100% real subscribers targeted for your niche — not random accounts. Every subscriber is acquired through YouTube-compliant Google Ads, meaning they're genuinely interested in your content and more likely to watch, engage, and buy from you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq fade-in">
+        <div class="container narrow">
+            <div class="section-header text-center">
+                <span class="section-number">07 — Questions</span>
+                <h2>Before you decide</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you guarantee I'll reach monetization?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>No. YouTube monetization requires <strong>1,000 subscribers AND 4,000 watch hours</strong>. We can't guarantee both — but we can guarantee progress on one.</p>
+                            <p>We help you hit the <strong>1,000 subscriber requirement</strong> — one of the two thresholds you need. And because we acquire real subscribers (not bots), those subscribers can actually watch your content, which contributes to your watch hours over time.</p>
+                            <p>Real subscribers → real views → real watch hours. That's the compounding effect fake subscribers can never give you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long until I see results?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Most clients see subscriber momentum within the first few weeks.</p>
+                            <p>In our reference case, the channel grew from <strong>~1,000 to over 4,500 subscribers in 46 days</strong> — that's 3,500+ new subscribers at just <strong>$0.40 per subscriber</strong>.</p>
+                            <p>Results vary by niche and execution, but this system is designed for speed, not slow experimentation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        I've tried YouTube before and it didn't work.
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Most channels fail not because of content quality — but because they never get in front of the right audience. Great content doesn't matter if nobody sees it.</p>
+                            <p>Our approach is different: we run targeted Google Ads campaigns that put your channel in front of people who are genuinely interested in your niche — driving real subscribers directly to you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        I don't want to become a full-time creator.
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Good — that's exactly who we work with. We specialize in brands and business owners who want YouTube as a marketing asset, not a personality platform.</p>
+                            <p>You don't need to be on camera. You don't need daily uploads. You need a system that works for your business context.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What makes you different from other YouTube agencies?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p><strong>Google Partner status</strong> — we've managed YouTube and Google Ads campaigns for 3+ years with verified results.</p>
+                            <p><strong>Subscriber-first focus</strong> — we optimize for subscribers, not vanity views or viral moments.</p>
+                            <p><strong>Done-for-you implementation</strong> — we don't hand you a PDF and wish you luck. We implement the system for you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is the ad spend included in the price?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Yes — our pricing is all-inclusive. The price you see covers <strong>everything</strong>: campaign strategy, ad spend, targeting, optimization, and reporting. There are no hidden fees or separate ad budgets to manage.</p>
+                            <p>You pay once, we handle the rest. That's the point of a done-for-you service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What happens after I purchase?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p><strong>Day 1–2:</strong> We review your channel and audience, then design your custom campaign strategy.</p>
+                            <p><strong>Day 3–5:</strong> Campaign goes live. You'll start seeing new subscribers within the first few days.</p>
+                            <p><strong>Ongoing:</strong> We optimize daily to lower your cost-per-subscriber and send you regular performance reports. Most campaigns reach their subscriber target within 4–8 weeks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can't I just buy cheap subscribers elsewhere?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Yes — services sell 500 subscribers for ~$120. But those subscribers are <strong>bots and fake accounts</strong> that don't watch, don't engage, and get purged by YouTube regularly.</p>
+                            <p>Worse: you'll still need <strong>4,000 watch hours</strong> to monetize (bots don't watch), and YouTube may flag your channel for artificial inflation — risking strikes or termination.</p>
+                            <p>We acquire <strong>real subscribers through targeted Google Ads</strong>. Real people who clicked, watched, and chose to subscribe. They count toward monetization, they can engage with your content, and they don't disappear in YouTube's next purge.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do I need hundreds of thousands of subscribers to make money?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p><strong>No.</strong> A 3,000-subscriber channel in a high-CPM niche (finance, business, tech) can generate <strong>$500–800/month in ad revenue alone</strong> — before sponsorships, affiliates, or product sales.</p>
+                            <p>CPM (what advertisers pay per 1,000 views) varies dramatically by niche: finance channels earn $15–40 per 1,000 views, while gaming channels earn $2–5. <strong>Niche selection matters more than subscriber count.</strong></p>
+                            <p>The key is hitting the 1,000 subscriber + 4,000 watch hour threshold to unlock monetization. We help you get there faster — so you can start earning sooner.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is this only for content creators, or does it work for businesses too?
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p><strong>Both.</strong> For creators, we accelerate your path to monetization and sustainable income.</p>
+                            <p>For businesses, YouTube becomes an <strong>evergreen marketing channel</strong>. Unlike paid ads that stop generating leads when you stop paying, a YouTube video you post today can bring in customers for years. It's an asset that compounds over time.</p>
+                            <p>Many of our clients are business owners, coaches, and consultants who want YouTube as a lead generation engine — not a personality platform. You don't need to be on camera or post daily. You need a system that works for your business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Table — own container for full width -->
+        <div class="container fade-in" style="margin-top: var(--space-lg);">
+            <div class="comparison-header">
+                <h3>Cheap Subscribers vs. Real Growth</h3>
+                <p>Not all subscribers are created equal. Here's what you're actually buying.</p>
+            </div>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th class="cheap-col">Cheap Services<br><small style="font-weight: 400; opacity: 0.8;">($120 for 500 subs)</small></th>
+                        <th class="lynck-col">LYNCK System<br><small style="font-weight: 400; opacity: 0.8;">(Real Google Ads growth)</small></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subscriber Type</td>
+                        <td class="cheap-cell">
+                            <span class="cell-bad">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                Bots & fake accounts
+                            </span>
+                        </td>
+                        <td class="lynck-cell">
+                            <span class="cell-good">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                Real people via Google Ads
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Watch Time</td>
+                        <td class="cheap-cell">
+                            <span class="cell-bad">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                0 hours (bots don't watch)
+                            </span>
+                        </td>
+                        <td class="lynck-cell">
+                            <span class="cell-good">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                Real potential viewers
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Engagement</td>
+                        <td class="cheap-cell">
+                            <span class="cell-bad">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                Zero (dead audience)
+                            </span>
+                        </td>
+                        <td class="lynck-cell">
+                            <span class="cell-good">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                Likes, comments, shares
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>YouTube ToS</td>
+                        <td class="cheap-cell">
+                            <span class="cell-bad">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                Violation (ban risk)
+                            </span>
+                        </td>
+                        <td class="lynck-cell">
+                            <span class="cell-good">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                Fully compliant
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monetization Path</td>
+                        <td class="cheap-cell">
+                            <span class="cell-bad">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                Still blocked (no watch hours)
+                            </span>
+                        </td>
+                        <td class="lynck-cell">
+                            <span class="cell-good">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                Real path to monetization
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Longevity</td>
+                        <td class="cheap-cell">
+                            <span class="cell-bad">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                Purged in next YouTube sweep
+                            </span>
+                        </td>
+                        <td class="lynck-cell">
+                            <span class="cell-good">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                Permanent real followers
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Business Value</td>
+                        <td class="cheap-cell">
+                            <span class="cell-bad">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                                Zero (no real audience)
+                            </span>
+                        </td>
+                        <td class="lynck-cell">
+                            <span class="cell-good">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                                Actual audience asset
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="comparison-verdict">
+                <p><strong>Bottom line:</strong> Cheap subscribers cost you money AND your channel's future. Real subscribers build an actual audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta fade-in">
+        <div class="container">
+            <h2>Ready to grow your<br>YouTube channel?</h2>
+            <p class="text-large">
+                Pick a plan. We handle everything. Real subscribers start arriving within days.
+            </p>
+            <a href="#get-system" class="cta-primary">
+                Choose Your Plan
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <p class="cta-subtext">
+                One-time payment <span>·</span> We handle everything <span>·</span> No ongoing contracts
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">LYNCK</div>
+                    <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="google-badge">
+                        <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="footer-partner-img">
+                    </a>
+                </div>
+                <p class="footer-disclaimer">
+                    Results vary by channel, niche, and execution. Subscriber delivery timelines may vary. We do not guarantee monetization or watch hours. YouTube's monetization requirements and algorithm are controlled by YouTube/Google, not LYNCK.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ accordions
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    // Trigger count-up animation for metrics
+                    if (entry.target.querySelector('.count-up')) {
+                        entry.target.querySelectorAll('.count-up').forEach(counter => {
+                            animateCounter(counter);
+                        });
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Counter animation
+        function animateCounter(element) {
+            const targetStr = element.getAttribute('data-target');
+            const decimals = element.getAttribute('data-decimals') ? parseInt(element.getAttribute('data-decimals')) : 0;
+            const target = parseFloat(targetStr);
+            const duration = 2000;
+            const start = performance.now();
+
+            function update(currentTime) {
+                const elapsed = currentTime - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const current = easeOut * target;
+
+                if (decimals > 0) {
+                    element.textContent = current.toFixed(decimals);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    if (decimals > 0) {
+                        element.textContent = target.toFixed(decimals);
+                    } else {
+                        element.textContent = target.toLocaleString();
+                    }
+                }
+            }
+
+            requestAnimationFrame(update);
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        // Graph tabs
+        document.querySelectorAll('.graph-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const graphId = tab.getAttribute('data-graph');
+                const container = tab.closest('.proof-graphs') || tab.closest('.proof-card');
+
+                // Update active tab within same container
+                tab.parentElement.querySelectorAll('.graph-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Update active graph within same container
+                const graphContainer = tab.parentElement.nextElementSibling;
+                graphContainer.querySelectorAll('.proof-graph-img').forEach(img => img.classList.remove('active'));
+                graphContainer.querySelector(`.proof-graph-img[data-graph="${graphId}"]`).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
