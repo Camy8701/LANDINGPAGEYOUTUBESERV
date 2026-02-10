@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Turn your YouTube channel into a revenue engine. Unlock monetization, generate organic leads, and build real authority — done-for-you by a Google Partner.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lynckstudio.pro/">
     <meta property="og:title" content="LYNCK — YouTube Revenue System | Monetization, Leads, Authority">
     <meta property="og:description" content="Turn your YouTube channel into a revenue engine. Unlock monetization, generate organic leads, and build real authority — done-for-you by a Google Partner.">
     <meta property="og:type" content="website">
@@ -14,9 +16,14 @@
     <meta name="twitter:title" content="LYNCK — YouTube Revenue System | Monetization, Leads, Authority">
     <meta name="twitter:description" content="Turn your YouTube channel into a revenue engine. Unlock monetization, generate organic leads, and build real authority — done-for-you by a Google Partner.">
     <title>LYNCK — YouTube Revenue System | Monetization, Leads, Authority</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='%23faf9f7' font-family='monospace' font-weight='bold' font-size='18'>L</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='%23faf9f7' font-family='monospace' font-weight='bold' font-size='18'>L</text></svg>">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.372.0/dist/umd/lucide.min.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Titan+One&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -36,6 +43,99 @@
                     }
                 }
             }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "LYNCK",
+            "url": "https://www.lynckstudio.pro/",
+            "logo": "https://www.lynckstudio.pro/favicon-32x32.png",
+            "sameAs": ["https://www.google.com/partners/agency?id=6214402482"],
+            "email": "info@lynckstudio.pro"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "YouTube Revenue Growth System",
+            "provider": {
+                "@type": "Organization",
+                "name": "LYNCK"
+            },
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Monetization Milestone",
+                    "price": "999",
+                    "priceCurrency": "USD",
+                    "url": "https://www.lynckstudio.pro/checkout.html"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Authority Builder",
+                    "price": "2999",
+                    "priceCurrency": "USD",
+                    "url": "https://www.lynckstudio.pro/checkout.html"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Niche Dominator",
+                    "price": "4999",
+                    "priceCurrency": "USD",
+                    "url": "https://www.lynckstudio.pro/checkout.html"
+                }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can you guarantee I'll reach monetization?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "YouTube monetization requires 1,000 subscribers and 4,000 watch hours. We guarantee progress on subscriber targets and optimize for real audience growth."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long until I see results?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most clients see subscriber momentum within the first few weeks. Campaign pace varies by niche and content quality."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is the ad spend included in the price?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Pricing includes campaign strategy, ad spend, targeting, optimization, and reporting."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What happens after I purchase?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We review your channel, launch your campaign, and optimize regularly with reporting updates until the subscriber target is achieved."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can't I just buy cheap subscribers elsewhere?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Cheap subscriber services often deliver low-quality or fake accounts. LYNCK targets real people through compliant Google Ads campaigns."
+                    }
+                }
+            ]
         }
     </script>
     <style>
@@ -66,6 +166,7 @@
 
         /* Smooth scroll */
         html { scroll-behavior: smooth; }
+        section[id] { scroll-margin-top: 110px; }
 
         /* Selection */
         ::selection { background: #c41e3a; color: white; }
@@ -145,10 +246,30 @@
         @media (max-width: 768px) {
             .comparison-table { display: none; }
             .comparison-cards { display: block; }
+            .testimonials-track {
+                animation: none;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                padding: 0 3rem 0.5rem;
+                -webkit-overflow-scrolling: touch;
+            }
+            .testimonials-track > div { scroll-snap-align: start; }
+            .testimonials-track::-webkit-scrollbar { display: none; }
         }
         @media (min-width: 769px) {
             .comparison-table { display: block; }
             .comparison-cards { display: none; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .testimonials-track { animation: none !important; }
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
         }
 
         /* Graph tabs */
@@ -174,8 +295,8 @@
                     </div>
                     <span class="text-2xl font-bold tracking-tight">LYNCK</span>
                 </a>
-                <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="hidden sm:block">
-                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12">
+                <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" rel="noopener noreferrer" class="hidden sm:block">
+                    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12" decoding="async">
                 </a>
             </div>
 
@@ -192,11 +313,11 @@
                 <div class="bg-white border-2 border-black rounded-full p-1.5 group-hover:rotate-45 transition-transform duration-300">
                     <i data-lucide="arrow-up-right" class="w-4 h-4 text-black stroke-[2.5]"></i>
                 </div>
-                <span class="font-bold text-xs tracking-wide">SEE PRICING</span>
+                <span class="font-bold text-xs tracking-wide">SEE PLANS</span>
             </a>
 
             <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-btn" class="md:hidden p-2">
+            <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open navigation menu">
                 <i data-lucide="menu" class="w-8 h-8 text-black"></i>
             </button>
         </div>
@@ -240,7 +361,7 @@
                             <div class="bg-white border-2 border-black rounded-full p-3">
                                 <i data-lucide="arrow-up-right" class="w-6 h-6 text-black"></i>
                             </div>
-                            <span class="font-bold text-lg">Invest in Your Channel</span>
+                            <span class="font-bold text-lg">See Plans & Pricing</span>
                         </a>
                         <a href="#benefits" class="flex items-center justify-center gap-4 bg-white border-2 border-black rounded-full pl-3 pr-10 py-3 shadow-hard hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
                             <div class="bg-brand-pink border-2 border-black rounded-full p-3">
@@ -269,7 +390,7 @@
                     <!-- Metrics Grid -->
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="bg-brand-red-soft rounded-xl border border-black/20 p-4 text-center">
-                            <div class="text-3xl md:text-4xl font-display text-brand-red">3,571</div>
+                            <div class="text-3xl md:text-4xl font-display text-brand-red">3,512</div>
                             <div class="text-sm text-gray-500 font-semibold mt-1">New Subscribers</div>
                         </div>
                         <div class="bg-brand-red-soft rounded-xl border border-black/20 p-4 text-center">
@@ -304,7 +425,7 @@
 
                     <!-- Graph Preview -->
                     <div class="relative rounded-xl overflow-hidden border-2 border-black/20 mb-4">
-                        <img src="graph-28-days.png" alt="28 day subscriber growth" class="w-full">
+                        <img src="graph-28-days.png" alt="28 day subscriber growth" class="w-full" decoding="async">
                         <div class="absolute top-3 left-3 bg-ink text-white text-sm font-bold px-3 py-1 rounded-full">28 Days</div>
                     </div>
 
@@ -325,10 +446,10 @@
     <!-- Testimonials Carousel -->
     <section class="py-8 bg-ink border-y-2 border-black overflow-hidden relative">
         <!-- Mobile Navigation Arrows -->
-        <button id="testimonial-prev" class="md:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-brand-red border-2 border-black rounded-full flex items-center justify-center shadow-hard-sm hover:scale-105 transition-transform">
+        <button id="testimonial-prev" class="md:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-brand-red border-2 border-black rounded-full flex items-center justify-center shadow-hard-sm hover:scale-105 transition-transform" aria-label="Previous testimonials">
             <i data-lucide="chevron-left" class="w-5 h-5 text-white"></i>
         </button>
-        <button id="testimonial-next" class="md:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-brand-red border-2 border-black rounded-full flex items-center justify-center shadow-hard-sm hover:scale-105 transition-transform">
+        <button id="testimonial-next" class="md:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-brand-red border-2 border-black rounded-full flex items-center justify-center shadow-hard-sm hover:scale-105 transition-transform" aria-label="Next testimonials">
             <i data-lucide="chevron-right" class="w-5 h-5 text-white"></i>
         </button>
         <div id="testimonials-container" class="testimonials-track flex gap-6 whitespace-nowrap">
@@ -535,23 +656,23 @@
             </div>
 
             <!-- Profile Tabs -->
-            <div class="flex flex-wrap justify-center gap-3 mb-8">
-                <button class="profile-tab active bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="creators">
+            <div class="flex flex-wrap justify-center gap-3 mb-8" role="tablist" aria-label="Audience profile selectors">
+                <button class="profile-tab active bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="creators" id="profile-tab-creators" role="tab" aria-selected="true" aria-controls="profile-panel-creators" tabindex="0">
                     <i data-lucide="play-circle" class="w-5 h-5"></i>
                     Creators
                 </button>
-                <button class="profile-tab bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="businesses">
+                <button class="profile-tab bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="businesses" id="profile-tab-businesses" role="tab" aria-selected="false" aria-controls="profile-panel-businesses" tabindex="-1">
                     <i data-lucide="building-2" class="w-5 h-5"></i>
                     Businesses
                 </button>
-                <button class="profile-tab bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="brands">
+                <button class="profile-tab bg-white border-2 border-black rounded-full px-6 py-3 font-bold text-sm flex items-center gap-2 shadow-hard-sm hover:-translate-y-0.5 transition-all" data-profile="brands" id="profile-tab-brands" role="tab" aria-selected="false" aria-controls="profile-panel-brands" tabindex="-1">
                     <i data-lucide="user" class="w-5 h-5"></i>
                     Personal Brands
                 </button>
             </div>
 
             <!-- Creators Content -->
-            <div class="profile-content active" data-profile="creators">
+            <div class="profile-content active" data-profile="creators" id="profile-panel-creators" role="tabpanel" aria-labelledby="profile-tab-creators">
                 <div class="grid md:grid-cols-2 gap-6">
                     <!-- Calculator -->
                     <div class="bg-brand-red-soft rounded-2xl border-2 border-black p-6 shadow-hard">
@@ -636,7 +757,7 @@
             </div>
 
             <!-- Businesses Content -->
-            <div class="profile-content hidden" data-profile="businesses">
+            <div class="profile-content hidden" data-profile="businesses" id="profile-panel-businesses" role="tabpanel" aria-labelledby="profile-tab-businesses" hidden>
                 <div class="grid md:grid-cols-2 gap-6">
                     <!-- Calculator -->
                     <div class="bg-blue-50 rounded-2xl border-2 border-black p-6 shadow-hard">
@@ -721,7 +842,7 @@
             </div>
 
             <!-- Personal Brands Content -->
-            <div class="profile-content hidden" data-profile="brands">
+            <div class="profile-content hidden" data-profile="brands" id="profile-panel-brands" role="tabpanel" aria-labelledby="profile-tab-brands" hidden>
                 <div class="grid md:grid-cols-2 gap-6">
                     <!-- Calculator -->
                     <div class="bg-green-50 rounded-2xl border-2 border-black p-6 shadow-hard">
@@ -969,7 +1090,7 @@
                     <div class="bg-white border-2 border-black rounded-full p-2">
                         <i data-lucide="arrow-up-right" class="w-5 h-5 text-black"></i>
                     </div>
-                    <span class="font-bold">Invest in Your Channel</span>
+                    <span class="font-bold">See Plans & Pricing</span>
                 </a>
             </div>
         </div>
@@ -1027,16 +1148,16 @@
 
                 <!-- Graph Tabs -->
                 <div class="bg-white rounded-2xl border-2 border-black overflow-hidden">
-                    <div class="flex border-b-2 border-black">
-                        <button class="graph-tab flex-1 py-4 font-bold text-center bg-brand-red-soft border-r border-black active" data-graph="28">Last 28 Days</button>
-                        <button class="graph-tab flex-1 py-4 font-bold text-center hover:bg-gray-50 transition-colors" data-graph="90">Last 90 Days</button>
+                    <div class="flex border-b-2 border-black" role="tablist" aria-label="Case study timeline selector">
+                        <button class="graph-tab flex-1 py-4 font-bold text-center bg-brand-red-soft border-r border-black active" data-graph="28" id="graph-tab-28" role="tab" aria-selected="true" aria-controls="graph-panel-28" tabindex="0">Last 28 Days</button>
+                        <button class="graph-tab flex-1 py-4 font-bold text-center hover:bg-gray-50 transition-colors" data-graph="90" id="graph-tab-90" role="tab" aria-selected="false" aria-controls="graph-panel-90" tabindex="-1">Last 90 Days</button>
                     </div>
                     <div class="p-4">
-                        <div class="graph-content active" data-graph="28">
-                            <img src="graph-28-days.png" alt="28 day subscriber growth chart" class="w-full rounded-lg">
+                        <div class="graph-content active" data-graph="28" id="graph-panel-28" role="tabpanel" aria-labelledby="graph-tab-28">
+                            <img src="graph-28-days.png" alt="28 day subscriber growth chart" class="w-full rounded-lg" loading="lazy" decoding="async">
                         </div>
-                        <div class="graph-content hidden" data-graph="90">
-                            <img src="graph-90-days.png" alt="90 day subscriber growth chart" class="w-full rounded-lg">
+                        <div class="graph-content hidden" data-graph="90" id="graph-panel-90" role="tabpanel" aria-labelledby="graph-tab-90" hidden>
+                            <img src="graph-90-days.png" alt="90 day subscriber growth chart" class="w-full rounded-lg" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="px-4 pb-4 text-center">
@@ -1053,7 +1174,7 @@
                         <div class="bg-white border-2 border-black rounded-full p-2">
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-black"></i>
                         </div>
-                        <span class="font-bold">Get Results Like This</span>
+                        <span class="font-bold">See Plans & Pricing</span>
                     </a>
                 </div>
             </div>
@@ -1120,7 +1241,7 @@
                     <div class="mb-6">
                         <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Starter</span>
                         <h3 class="text-2xl font-bold mt-1">Monetization Milestone</h3>
-                        <p class="text-gray-500 text-sm mt-2">Unlock the YouTube Partner Program — hit the 1,000 subscriber requirement.</p>
+                        <p class="text-gray-500 text-sm mt-2">Foundation package to clear your first major milestone and build a real audience base.</p>
                     </div>
                     <div class="mb-6">
                         <span class="text-5xl font-display">$999</span>
@@ -1128,24 +1249,24 @@
                     <ul class="space-y-3 mb-6">
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Unlock YouTube Partner Program eligibility</span>
+                            <span class="text-sm">Reach the 1,000-subscriber milestone with qualified audience targeting</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Start earning ad revenue from your content</span>
+                            <span class="text-sm">Build a monetization-ready foundation for long-term growth</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Custom targeting campaign</span>
+                            <span class="text-sm">Custom campaign setup and audience targeting strategy</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Performance reporting</span>
+                            <span class="text-sm">Performance report with next-step growth roadmap</span>
                         </li>
                     </ul>
-                    <div class="text-xs text-gray-500 mb-4 text-center">1,000 real subscribers · ~$1.00/sub</div>
+                    <div class="text-xs text-gray-500 mb-4 text-center">Foundation package · 1,000 real subscribers target</div>
                     <a href="checkout.html" class="block w-full py-3 text-center rounded-xl border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
-                        Invest in Your Channel
+                        Choose This Plan
                     </a>
                     <p class="text-xs text-gray-400 mt-3 text-center">Subscribers only. Watch hours (4,000) required separately for YPP.</p>
                 </div>
@@ -1156,7 +1277,7 @@
                     <div class="mb-6">
                         <span class="text-xs font-bold text-red-200 uppercase tracking-wider">Growth</span>
                         <h3 class="text-2xl font-bold mt-1">Authority Builder</h3>
-                        <p class="text-red-100 text-sm mt-2">Build real authority — algorithm momentum, sponsor interest, and serious social proof.</p>
+                        <p class="text-red-100 text-sm mt-2">Growth package for channels ready to become visible, trusted, and commercially attractive.</p>
                     </div>
                     <div class="mb-6">
                         <span class="text-5xl font-display">$2,999</span>
@@ -1164,15 +1285,15 @@
                     <ul class="space-y-3 mb-6">
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
-                            <span class="text-sm">Attract sponsor interest & brand deals</span>
+                            <span class="text-sm">Drive a 5,000-subscriber authority push in your niche</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
-                            <span class="text-sm">Trigger algorithm momentum for organic reach</span>
+                            <span class="text-sm">Increase algorithm momentum and repeat discovery</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
-                            <span class="text-sm">Advanced targeting campaign</span>
+                            <span class="text-sm">Multi-segment targeting with creative testing</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
@@ -1180,12 +1301,12 @@
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-white flex-shrink-0"></i>
-                            <span class="text-sm">Google Partner-level management</span>
+                            <span class="text-sm">Sponsor-readiness positioning and partner-level management</span>
                         </li>
                     </ul>
-                    <div class="text-xs text-red-200 mb-4 text-center">5,000 real subscribers · ~$0.60/sub · Save 40%</div>
+                    <div class="text-xs text-red-200 mb-4 text-center">Growth package · 5,000 real subscribers target</div>
                     <a href="checkout.html" class="block w-full py-3 text-center rounded-xl bg-white text-brand-red border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
-                        Invest in Your Channel
+                        Choose This Plan
                     </a>
                     <p class="text-xs text-red-200 mt-3 text-center">Subscribers only. Watch hours (4,000) required separately for YPP.</p>
                 </div>
@@ -1195,7 +1316,7 @@
                     <div class="mb-6">
                         <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Scale</span>
                         <h3 class="text-2xl font-bold mt-1">Niche Dominator</h3>
-                        <p class="text-gray-500 text-sm mt-2">Dominate your niche — 10,000 subscribers puts you in the top tier of channels.</p>
+                        <p class="text-gray-500 text-sm mt-2">Scale package for category leadership, premium positioning, and long-run market dominance.</p>
                     </div>
                     <div class="mb-6">
                         <span class="text-5xl font-display">$4,999</span>
@@ -1203,28 +1324,28 @@
                     <ul class="space-y-3 mb-6">
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Establish niche authority & premium positioning</span>
+                            <span class="text-sm">Push to 10,000 subscribers with advanced expansion strategy</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Command higher rates for sponsorships & services</span>
+                            <span class="text-sm">Strengthen category authority and premium sponsor positioning</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Premium targeting campaign</span>
+                            <span class="text-sm">Advanced targeting campaign with scale-oriented optimization</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Ongoing optimization & reporting</span>
+                            <span class="text-sm">Ongoing optimization and executive-level reporting</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <i data-lucide="check" class="w-5 h-5 text-green-600 flex-shrink-0"></i>
-                            <span class="text-sm">Google Partner-level management</span>
+                            <span class="text-sm">Strategic management designed for sustained market share growth</span>
                         </li>
                     </ul>
-                    <div class="text-xs text-gray-500 mb-4 text-center">10,000 real subscribers · ~$0.50/sub · Save 50%</div>
+                    <div class="text-xs text-gray-500 mb-4 text-center">Scale package · 10,000 real subscribers target</div>
                     <a href="checkout.html" class="block w-full py-3 text-center rounded-xl border-2 border-black font-bold hover:bg-ink hover:text-white transition-colors">
-                        Invest in Your Channel
+                        Choose This Plan
                     </a>
                     <p class="text-xs text-gray-400 mt-3 text-center">Subscribers only. Watch hours (4,000) required separately for YPP.</p>
                 </div>
@@ -1237,7 +1358,7 @@
                     <span class="font-bold text-lg">Subscriber Delivery Guarantee</span>
                 </div>
                 <p class="text-gray-600 text-sm mb-3">Every subscriber is acquired through YouTube-compliant Google Ads — real people genuinely interested in your niche. They watch, engage, and convert into the revenue, leads, and opportunities that make YouTube worth your time.</p>
-                <p class="text-ink font-bold text-sm">If we don't deliver your subscriber target, we keep working until we do — at no extra cost.</p>
+                <p class="text-ink font-bold text-sm">If we don't deliver your subscriber target, we keep optimizing at no extra cost until we do.</p>
             </div>
         </div>
     </section>
@@ -1253,11 +1374,11 @@
             <div class="space-y-4">
                 <!-- FAQ Item 1 -->
                 <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
-                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold" id="faq-question-1" aria-expanded="false" aria-controls="faq-answer-1">
                         Can you guarantee I'll reach monetization?
                         <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" aria-hidden="true">
                         <div class="px-5 pb-5 text-gray-600">
                             <p class="mb-3">No. YouTube monetization requires <strong class="text-ink">1,000 subscribers AND 4,000 watch hours</strong>. We can't guarantee both — but we can guarantee progress on one.</p>
                             <p>We help you hit your subscriber target — whether that's <strong class="text-ink">1,000 for monetization</strong>, <strong class="text-ink">5,000 for authority</strong>, or <strong class="text-ink">10,000 for niche dominance</strong>. And because we acquire real subscribers (not bots), those subscribers can actually watch your content, which contributes to your watch hours over time.</p>
@@ -1267,11 +1388,11 @@
 
                 <!-- FAQ Item 2 -->
                 <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
-                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2">
                         How long until I see results?
                         <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" aria-hidden="true">
                         <div class="px-5 pb-5 text-gray-600">
                             <p class="mb-3">Most clients see subscriber momentum within the first few weeks.</p>
                             <p>In our reference case, the channel grew from <strong class="text-ink">~1,000 to over 4,500 subscribers in 46 days</strong> — that's 3,500+ new subscribers at just <strong class="text-ink">$0.40 per subscriber</strong>.</p>
@@ -1281,11 +1402,11 @@
 
                 <!-- FAQ Item 3 -->
                 <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
-                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3">
                         Is the ad spend included in the price?
                         <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" aria-hidden="true">
                         <div class="px-5 pb-5 text-gray-600">
                             <p class="mb-3">Yes — our pricing is all-inclusive. The price you see covers <strong class="text-ink">everything</strong>: campaign strategy, ad spend, targeting, optimization, and reporting. There are no hidden fees or separate ad budgets to manage.</p>
                             <p>You pay once, we handle the rest. That's the point of a done-for-you service.</p>
@@ -1295,26 +1416,26 @@
 
                 <!-- FAQ Item 4 -->
                 <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
-                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4">
                         What happens after I purchase?
                         <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" aria-hidden="true">
                         <div class="px-5 pb-5 text-gray-600">
                             <p class="mb-2"><strong class="text-ink">Day 1–2:</strong> We review your channel and audience, then design your custom campaign strategy.</p>
                             <p class="mb-2"><strong class="text-ink">Day 3–5:</strong> Campaign goes live. You'll start seeing new subscribers within the first few days.</p>
-                            <p><strong class="text-ink">Ongoing:</strong> We optimize daily to lower your cost-per-subscriber and send you regular performance reports. Most campaigns reach their subscriber target within 4–8 weeks.</p>
+                            <p><strong class="text-ink">Ongoing:</strong> We optimize regularly to lower your cost-per-subscriber and send you regular performance reports. Most campaigns reach their subscriber target within 4–8 weeks.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- FAQ Item 5 -->
                 <div class="faq-item bg-brand-red-soft rounded-2xl border-2 border-black overflow-hidden">
-                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold">
+                    <button class="faq-question w-full flex items-center justify-between p-5 text-left font-bold" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5">
                         Can't I just buy cheap subscribers elsewhere?
                         <i data-lucide="plus" class="w-5 h-5 faq-icon transition-transform"></i>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" aria-hidden="true">
                         <div class="px-5 pb-5 text-gray-600">
                             <p class="mb-3">Yes — services sell 500 subscribers for ~$120. But those subscribers are <strong class="text-ink">bots and fake accounts</strong> that don't watch, don't engage, and get purged by YouTube regularly.</p>
                             <p>We acquire <strong class="text-ink">real subscribers through targeted Google Ads</strong>. Real people who clicked, watched, and chose to subscribe. They count toward monetization, they can engage with your content, and they don't disappear in YouTube's next purge.</p>
@@ -1404,7 +1525,7 @@
                 <div class="bg-white border-2 border-black rounded-full p-2">
                     <i data-lucide="arrow-up-right" class="w-6 h-6 text-black"></i>
                 </div>
-                <span class="font-bold text-lg">Invest in Your Channel</span>
+                <span class="font-bold text-lg">See Plans & Pricing</span>
             </a>
 
             <p class="text-sm text-gray-500 mt-8">
@@ -1426,8 +1547,8 @@
                         <span class="text-2xl font-bold">LYNCK</span>
                     </div>
                     <p class="text-gray-400 text-sm">Turn YouTube into revenue — monetization, leads, and authority through strategic Google Ads campaigns.</p>
-                    <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="inline-block mt-4">
-                        <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12">
+                    <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" rel="noopener noreferrer" class="inline-block mt-4">
+                        <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12" loading="lazy" decoding="async">
                     </a>
                 </div>
 
@@ -1464,7 +1585,7 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 bg-brand-red-soft z-[60] flex flex-col items-center justify-center gap-6 p-8 transform translate-x-full transition-transform duration-300">
-        <button id="close-menu" class="absolute top-6 right-6 p-2">
+        <button id="close-menu" class="absolute top-6 right-6 p-2" aria-label="Close navigation menu">
             <i data-lucide="x" class="w-8 h-8 text-black"></i>
         </button>
         <a href="#home" class="text-2xl font-display hover:text-brand-red">Home</a>
@@ -1472,10 +1593,11 @@
         <a href="#how-it-works" class="text-2xl font-display hover:text-brand-red">How It Works</a>
         <a href="#pricing" class="text-2xl font-display hover:text-brand-red">Pricing</a>
         <a href="#faq" class="text-2xl font-display hover:text-brand-red">FAQ</a>
-        <a href="#pricing" class="mt-4 px-8 py-3 bg-brand-red text-white border-2 border-black rounded-full font-bold shadow-hard">Invest in Your Channel</a>
+        <a href="#pricing" class="mt-4 px-8 py-3 bg-brand-red text-white border-2 border-black rounded-full font-bold shadow-hard">See Plans & Pricing</a>
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
         // Initialize Lucide icons
         lucide.createIcons();
 
@@ -1494,6 +1616,13 @@
             document.body.style.overflow = 'auto';
         });
 
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('translate-x-full')) {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
         mobileMenu?.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('translate-x-full');
@@ -1502,17 +1631,23 @@
         });
 
         // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const item = button.parentElement;
+        const faqItems = Array.from(document.querySelectorAll('.faq-item'));
+        const setFaqState = (item, open) => {
+            const button = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            item.classList.toggle('open', open);
+            button?.setAttribute('aria-expanded', open ? 'true' : 'false');
+            answer?.setAttribute('aria-hidden', open ? 'false' : 'true');
+        };
+
+        faqItems.forEach(item => {
+            setFaqState(item, false);
+            const button = item.querySelector('.faq-question');
+            button?.addEventListener('click', () => {
                 const isOpen = item.classList.contains('open');
-
-                // Close all
-                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-
-                // Open clicked if it was closed
+                faqItems.forEach(faqItem => setFaqState(faqItem, false));
                 if (!isOpen) {
-                    item.classList.add('open');
+                    setFaqState(item, true);
                 }
             });
         });
@@ -1524,38 +1659,55 @@
         const cardWidth = 350 + 24; // card width + gap
 
         if (testimonialPrev && testimonialNext && testimonialContainer) {
+            const scrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
             testimonialPrev.addEventListener('click', () => {
-                testimonialContainer.style.animation = 'none';
-                testimonialContainer.scrollLeft -= cardWidth;
+                testimonialContainer.scrollBy({ left: -cardWidth, behavior: scrollBehavior });
             });
             testimonialNext.addEventListener('click', () => {
-                testimonialContainer.style.animation = 'none';
-                testimonialContainer.scrollLeft += cardWidth;
+                testimonialContainer.scrollBy({ left: cardWidth, behavior: scrollBehavior });
             });
         }
 
         // Profile tabs for benefits section
-        document.querySelectorAll('.profile-tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                const profile = tab.getAttribute('data-profile');
+        const profileTabs = Array.from(document.querySelectorAll('.profile-tab'));
+        const profilePanels = Array.from(document.querySelectorAll('.profile-content'));
+        const handleTabKeydown = (event, tabs, activateTab) => {
+            const currentIndex = tabs.indexOf(event.currentTarget);
+            if (currentIndex < 0) return;
+            if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+            event.preventDefault();
+            let nextIndex = currentIndex;
+            if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabs.length;
+            if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+            if (event.key === 'Home') nextIndex = 0;
+            if (event.key === 'End') nextIndex = tabs.length - 1;
+            activateTab(tabs[nextIndex]);
+            tabs[nextIndex].focus();
+        };
 
-                // Update tabs
-                document.querySelectorAll('.profile-tab').forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-
-                // Update content
-                document.querySelectorAll('.profile-content').forEach(c => {
-                    c.classList.add('hidden');
-                    c.classList.remove('active');
-                });
-                const activeContent = document.querySelector(`.profile-content[data-profile="${profile}"]`);
-                activeContent.classList.remove('hidden');
-                activeContent.classList.add('active');
-
-                // Re-initialize icons in newly visible content
-                lucide.createIcons();
+        const activateProfileTab = (tab) => {
+            const profile = tab.getAttribute('data-profile');
+            profileTabs.forEach(t => {
+                const selected = t === tab;
+                t.classList.toggle('active', selected);
+                t.setAttribute('aria-selected', selected ? 'true' : 'false');
+                t.setAttribute('tabindex', selected ? '0' : '-1');
             });
+            profilePanels.forEach(panel => {
+                const isActive = panel.getAttribute('data-profile') === profile;
+                panel.classList.toggle('hidden', !isActive);
+                panel.classList.toggle('active', isActive);
+                panel.hidden = !isActive;
+            });
+            lucide.createIcons();
+        };
+
+        profileTabs.forEach(tab => {
+            tab.addEventListener('click', () => activateProfileTab(tab));
+            tab.addEventListener('keydown', (event) => handleTabKeydown(event, profileTabs, activateProfileTab));
         });
+        const activeProfileTab = profileTabs.find(tab => tab.classList.contains('active'));
+        if (activeProfileTab) activateProfileTab(activeProfileTab);
 
         // Creators Calculator
         function updateCreatorsCalc() {
@@ -1785,19 +1937,30 @@
         document.getElementById('calc-brands-field')?.addEventListener('change', updateBrandsCalc);
 
         // Graph tabs functionality
-        document.querySelectorAll('.graph-tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                const graph = tab.dataset.graph;
-                // Update tab active states
-                document.querySelectorAll('.graph-tab').forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                // Show/hide graph content
-                document.querySelectorAll('.graph-content').forEach(c => c.classList.add('hidden'));
-                document.querySelector(`.graph-content[data-graph="${graph}"]`).classList.remove('hidden');
-                // Re-initialize icons
-                lucide.createIcons();
+        const graphTabs = Array.from(document.querySelectorAll('.graph-tab'));
+        const graphPanels = Array.from(document.querySelectorAll('.graph-content'));
+        const activateGraphTab = (tab) => {
+            const graph = tab.dataset.graph;
+            graphTabs.forEach(t => {
+                const selected = t === tab;
+                t.classList.toggle('active', selected);
+                t.setAttribute('aria-selected', selected ? 'true' : 'false');
+                t.setAttribute('tabindex', selected ? '0' : '-1');
             });
+            graphPanels.forEach(panel => {
+                const isActive = panel.getAttribute('data-graph') === graph;
+                panel.classList.toggle('hidden', !isActive);
+                panel.hidden = !isActive;
+            });
+            lucide.createIcons();
+        };
+
+        graphTabs.forEach(tab => {
+            tab.addEventListener('click', () => activateGraphTab(tab));
+            tab.addEventListener('keydown', (event) => handleTabKeydown(event, graphTabs, activateGraphTab));
         });
+        const activeGraphTab = graphTabs.find(tab => tab.classList.contains('active'));
+        if (activeGraphTab) activateGraphTab(activeGraphTab);
 
         // Initialize calculators
         if (document.getElementById('calc-creators-subs')) updateCreatorsCalc();
@@ -1816,7 +1979,7 @@
             }
 
             // Show/hide based on scroll
-            window.addEventListener('scroll', () => {
+            const updateStickyCTA = () => {
                 if (sessionStorage.getItem('stickyCTADismissed')) return;
 
                 const heroBottom = heroSection?.getBoundingClientRect().bottom || 0;
@@ -1825,7 +1988,10 @@
                 } else {
                     stickyCTA.classList.add('translate-y-full');
                 }
-            });
+            };
+
+            window.addEventListener('scroll', updateStickyCTA, { passive: true });
+            updateStickyCTA();
 
             // Dismiss button
             stickyCTAClose.addEventListener('click', () => {
@@ -1833,15 +1999,16 @@
                 sessionStorage.setItem('stickyCTADismissed', 'true');
             });
         }
+        });
     </script>
 
     <!-- Sticky Mobile CTA Bar -->
     <div id="sticky-mobile-cta" class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t-2 border-black shadow-[0_-4px_20px_rgba(0,0,0,0.15)] p-4 z-50 translate-y-full transition-transform duration-300">
         <div class="flex items-center gap-3">
             <a href="#pricing" class="flex-1 bg-brand-red text-white text-center py-3 rounded-xl border-2 border-black font-bold shadow-hard-sm">
-                Invest in Your Channel
+                See Plans & Pricing
             </a>
-            <button id="sticky-cta-close" class="w-10 h-10 flex items-center justify-center border-2 border-black rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors">
+            <button id="sticky-cta-close" class="w-10 h-10 flex items-center justify-center border-2 border-black rounded-xl bg-gray-100 hover:bg-gray-200 transition-colors" aria-label="Dismiss sticky call to action">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
         </div>
