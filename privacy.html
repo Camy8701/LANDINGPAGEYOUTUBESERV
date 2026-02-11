@@ -44,17 +44,14 @@
     <nav class="bg-brand-red-soft border-b-2 border-black px-4 md:px-6 py-4">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <a href="index-redesign.html" class="flex items-center gap-2 group">
-                    <div class="w-10 h-10 bg-ink rounded-lg flex items-center justify-center group-hover:rotate-6 transition-transform">
-                        <span class="text-white font-bold text-xl">L</span>
-                    </div>
-                    <span class="text-2xl font-bold tracking-tight">LYNCK</span>
+                <a href="index.html" class="flex items-center group" aria-label="Home">
+                    <img src="pie.png" alt="The Billion Dollar Pie logo" class="h-24 md:h-28 w-auto object-contain group-hover:scale-105 transition-transform" decoding="async">
                 </a>
                 <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank" class="hidden sm:block">
                     <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-14">
                 </a>
             </div>
-            <a href="index-redesign.html" class="flex items-center gap-2 text-gray-600 hover:text-ink transition-colors font-semibold text-sm">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-ink transition-colors font-semibold text-sm">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i>
                 Back to Home
             </a>
@@ -309,11 +306,8 @@
     <footer class="bg-ink text-white py-12 border-t-2 border-black">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
-                <div class="flex items-center gap-2">
-                    <div class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-xl">L</span>
-                    </div>
-                    <span class="text-2xl font-bold">LYNCK</span>
+                <div>
+                    <img src="pie.png" alt="The Billion Dollar Pie logo" class="h-20 w-auto object-contain" loading="lazy" decoding="async">
                 </div>
                 <a href="https://www.google.com/partners/agency?id=6214402482" target="_blank">
                     <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="h-12">
@@ -327,12 +321,16 @@
                 <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
             </div>
 
-            <p class="text-center text-xs text-gray-500">&copy; 2026 LYNCK. All Rights Reserved.</p>
+            <p class="text-center text-xs text-gray-500">&copy; 2026 The Billion Dollar Pie. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide && typeof window.lucide.createIcons === 'function') {
+                window.lucide.createIcons();
+            }
+        });
     </script>
 </body>
 </html>
