@@ -7,10 +7,10 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://www.lynckstudio.pro/checkout.html">
     <title>Checkout — The Billion Dollar Pie</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' fill='%23faf9f7' font-family='monospace' font-weight='bold' font-size='18'>L</text></svg>">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="pie.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pie.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pie.png">
+    <link rel="shortcut icon" href="pie.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -248,8 +248,8 @@
                         <!-- Stripe Element Placeholder -->
                         <div id="stripe-placeholder" class="bg-brand-red-soft border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
                             <i data-lucide="credit-card" class="w-12 h-12 text-gray-400 mx-auto mb-4"></i>
-                            <p class="text-gray-500 font-medium mb-2">Stripe Payment Form</p>
-                            <p class="text-gray-400 text-sm">Secure payment integration will be added here</p>
+                            <p class="text-gray-500 font-medium mb-2">Secure Stripe Checkout</p>
+                            <p class="text-gray-400 text-sm">Click "Complete Purchase" to continue to Stripe's hosted payment page.</p>
                         </div>
 
                         <!-- Payment Security -->
@@ -368,6 +368,22 @@
                 window.lucide.createIcons();
             }
 
+            const trackEvent = (eventName, eventParams = {}) => {
+                const payload = {
+                    event: eventName,
+                    page_path: window.location.pathname,
+                    page_title: document.title,
+                    ...eventParams
+                };
+
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push(payload);
+
+                if (typeof window.gtag === 'function') {
+                    window.gtag('event', eventName, eventParams);
+                }
+            };
+
             // Plan selection logic
             const planCards = document.querySelectorAll('.plan-card');
             const summaryPlanName = document.getElementById('summary-plan-name');
@@ -388,23 +404,39 @@
                 'scale': 'https://buy.stripe.com/28EdR88b032o6fj7xq8Ra02'
             };
 
+            const selectPlan = (card, source = 'manual') => {
+                if (!card) return;
+                planCards.forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+
+                const plan = card.dataset.plan;
+                const price = card.dataset.price;
+                const subs = card.dataset.subs;
+
+                summaryPlanName.textContent = planNames[plan];
+                summaryPlanSubs.textContent = parseInt(subs, 10).toLocaleString() + ' subscribers';
+                summaryPlanPrice.textContent = '$' + parseInt(price, 10).toLocaleString();
+                summarySubtotal.textContent = '$' + parseInt(price, 10).toLocaleString();
+                summaryTotal.textContent = '$' + parseInt(price, 10).toLocaleString();
+
+                trackEvent('checkout_plan_select', {
+                    source,
+                    plan_key: plan,
+                    plan_name: planNames[plan],
+                    plan_price: parseInt(price, 10)
+                });
+            };
+
+            // Optional deep-link support: checkout.html?plan=starter|growth|scale
+            const planFromUrl = new URLSearchParams(window.location.search).get('plan');
+            const initialPlanCard = [...planCards].find(card => card.dataset.plan === planFromUrl) || document.querySelector('.plan-card.selected');
+            if (initialPlanCard) {
+                selectPlan(initialPlanCard, 'page_load');
+            }
+
             planCards.forEach(card => {
                 card.addEventListener('click', () => {
-                    // Remove selected from all
-                    planCards.forEach(c => c.classList.remove('selected'));
-                    // Add selected to clicked
-                    card.classList.add('selected');
-
-                    // Update summary
-                    const plan = card.dataset.plan;
-                    const price = card.dataset.price;
-                    const subs = card.dataset.subs;
-
-                    summaryPlanName.textContent = planNames[plan];
-                    summaryPlanSubs.textContent = parseInt(subs, 10).toLocaleString() + ' subscribers';
-                    summaryPlanPrice.textContent = '$' + parseInt(price, 10).toLocaleString();
-                    summarySubtotal.textContent = '$' + parseInt(price, 10).toLocaleString();
-                    summaryTotal.textContent = '$' + parseInt(price, 10).toLocaleString();
+                    selectPlan(card, 'click');
                 });
             });
 
@@ -413,9 +445,27 @@
                 e.preventDefault();
                 const selectedPlan = document.querySelector('.plan-card.selected')?.dataset.plan || 'growth';
                 const checkoutUrl = planCheckoutUrls[selectedPlan];
+                trackEvent('checkout_submit', {
+                    plan_key: selectedPlan,
+                    plan_name: planNames[selectedPlan]
+                });
+
                 if (checkoutUrl) {
+                    trackEvent('checkout_stripe_redirect', {
+                        plan_key: selectedPlan,
+                        checkout_url: checkoutUrl
+                    });
                     window.location.assign(checkoutUrl);
                 }
+            });
+
+            // Track back navigation to homepage.
+            document.querySelectorAll('a[href="index.html"]').forEach((link) => {
+                link.addEventListener('click', () => {
+                    trackEvent('checkout_back_to_home_click', {
+                        link_text: link.textContent.trim().slice(0, 80)
+                    });
+                });
             });
         });
     </script>
